@@ -1,0 +1,173 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{FA31C866-7477-42B2-8416-280A65A5E8E3}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CRE.CapaNegocio</RootNamespace>
+    <AssemblyName>CRE.CapaNegocio</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="clsCNActividadInternaConfig.cs" />
+    <Compile Include="ClsCNClienteExclusivo.cs" />
+    <Compile Include="clsCNAdministracionFiles.cs" />
+    <Compile Include="clsCNAlertaVariable.cs" />
+    <Compile Include="clsCNAPIKasNet.cs" />
+    <Compile Include="clsCNAPIPdp.cs" />
+    <Compile Include="clsCNAprobacionCredito.cs" />
+    <Compile Include="clsCNBuscaSolicitud.cs" />
+    <Compile Include="clsCNCalificacion.cs" />
+    <Compile Include="clsCNCalifInt.cs" />
+    <Compile Include="clsCNCargaArchivo.cs" />
+    <Compile Include="clsCNCargaGastosCred.cs" />
+    <Compile Include="clsCNCartaFianza.cs" />
+    <Compile Include="clsCNCategoriaOficina.cs" />
+    <Compile Include="clsCNCierreCredito.cs" />
+    <Compile Include="clsCNCobertura.cs" />
+    <Compile Include="clsCNComite.cs" />
+    <Compile Include="clsCNComiteCreditos.cs" />
+    <Compile Include="clsCNCondonacion.cs" />
+    <Compile Include="clsCNControlExp.cs" />
+    <Compile Include="clsCNCredito.cs" />
+    <Compile Include="clsCNCreditoCargaSeguro.cs" />
+    <Compile Include="clsCNCreditoJornalero.cs" />
+    <Compile Include="clsCNDestinoCredito.cs" />
+    <Compile Include="clsCNEmpresasConvenio.cs" />
+    <Compile Include="clsCNEstadoCartaFianza.cs" />
+    <Compile Include="clsCNEstadosFinancieros.cs" />
+    <Compile Include="clsCNEstadosFinancierosResumen.cs" />
+    <Compile Include="clsCNEvalAgrico.cs" />
+    <Compile Include="clsCNEvalAgrop.cs" />
+    <Compile Include="clsCNEvalConsumo.cs" />
+    <Compile Include="clsCNEvalCrediJornal.cs" />
+    <Compile Include="clsCNEvalCrediRural.cs" />
+    <Compile Include="clsCNEvalCredSimp.cs" />
+    <Compile Include="clsCNEvalEmp.cs" />
+    <Compile Include="clsCNEvalPyme.cs" />
+    <Compile Include="clsCNEvalPymeEstacional.cs" />
+    <Compile Include="clsCNEvaluacion.cs" />
+    <Compile Include="clsCNExcepcionesCreditos.cs" />
+    <Compile Include="clsCNExpedienteLinea.cs" />
+    <Compile Include="clsCNFechaValor.cs" />
+    <Compile Include="clsCNGarantia.cs" />
+    <Compile Include="clsCNGarantiaRural.cs" />
+    <Compile Include="clsCNGastosCuenta.cs" />
+    <Compile Include="clsCNGastosJudiciales.cs" />
+    <Compile Include="clsCNGestionObservaciones.cs" />
+    <Compile Include="clsCNGrupoEconomico.cs" />
+    <Compile Include="clsCNGrupoSolidario.cs" />
+    <Compile Include="clsCNGrupoSolidarioCargo.cs" />
+    <Compile Include="clsCNGrupoSolidarioCiclo.cs" />
+    <Compile Include="clsCNIntervCre.cs" />
+    <Compile Include="clsCNLimiteOperativCred.cs" />
+    <Compile Include="clsCNMantenimientoCanales.cs" />
+    <Compile Include="clsCNMeta.cs" />
+    <Compile Include="clsCNModDesembolso.cs" />
+    <Compile Include="clsCNMonitorOtorgamientoCred.cs" />
+    <Compile Include="clsCNMotivoExtorno.cs" />
+    <Compile Include="clsCNMotorDecision.cs" />
+    <Compile Include="clsCNNivelAprobacion.cs" />
+    <Compile Include="clsCNObservacionAprobador.cs" />
+    <Compile Include="clsCNOperacion.cs" />
+    <Compile Include="clsCNPagare.cs" />
+    <Compile Include="clsCNPaqueteSeguro.cs" />
+    <Compile Include="clsCNPlanPago.cs" />
+    <Compile Include="clsCNPolizaGarantia.cs" />
+    <Compile Include="clsCNPrelacion.cs" />
+    <Compile Include="clsCNPrePago.cs" />
+    <Compile Include="clsCNPreSolicitud.cs" />
+    <Compile Include="clsCNProcJud.cs" />
+    <Compile Include="clsCNProvision.cs" />
+    <Compile Include="clsCNReaprobSol.cs" />
+    <Compile Include="clsCNRegPubGarantia.cs" />
+    <Compile Include="clsCNReprogramacion.cs" />
+    <Compile Include="clsCNRevisionDocCred.cs" />
+    <Compile Include="clsCNScoring.cs" />
+    <Compile Include="clsCNSeguros.cs" />
+    <Compile Include="clsCNSiniestros.cs" />
+    <Compile Include="clsCNSeleccionarDocEvalAnterior.cs" />
+    <Compile Include="clsCNSolCre.cs" />
+    <Compile Include="clsCNSolicitudAmortiza.cs" />
+    <Compile Include="clsCNTasador.cs" />
+    <Compile Include="clsCNTipoActoProcesal.cs" />
+    <Compile Include="clsCNTipoGasto.cs" />
+    <Compile Include="clsCNTipoParticipacion.cs" />
+    <Compile Include="clsCNTipoPeriodo.cs" />
+    <Compile Include="clsCNTipoPersonaEjeActProc.cs" />
+    <Compile Include="clsCNValorizacionGar.cs" />
+    <Compile Include="clsCNVincAseProm.cs" />
+    <Compile Include="clsCNVincCredAdeudado.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CRE.AccesoDatos\CRE.AccesoDatos.csproj">
+      <Project>{E0432652-BEE5-442C-B059-C0A673ED92CB}</Project>
+      <Name>CRE.AccesoDatos</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\EntityLayer\EntityLayer.csproj">
+      <Project>{B5346A13-9B09-426B-AE99-BD8E300C032A}</Project>
+      <Name>EntityLayer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GEN.AccesoDatos\GEN.AccesoDatos.csproj">
+      <Project>{A7727AEC-6595-40F6-9FDA-12CD52005FA8}</Project>
+      <Name>GEN.AccesoDatos</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GEN.CapaNegocio\GEN.CapaNegocio.csproj">
+      <Project>{A2CAF7C5-A155-4D88-BEA5-E3988183F6A3}</Project>
+      <Name>GEN.CapaNegocio</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GEN.Funciones\GEN.Funciones.csproj">
+      <Project>{736DF628-39AB-41C0-AF28-B3FC7119261E}</Project>
+      <Name>GEN.Funciones</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,68 @@
+﻿################################################################################
+# Este archivo .tfignore ha sido creado automáticamente por
+# Microsoft(R) Visual Studio.
+#
+# Los elementos locales que coincidan con las especificaciones de este archivo 
+# no se agregarán al control de versiones. Este archivo se puede proteger para
+# compartir exclusiones con otros usuarios.
+#
+# Los caracteres comodín son * y ?. Los patrones se comparan recursivamente
+# a menos que vayan precedidos del carácter \.
+#
+# Puede anexar una ruta de acceso a un patrón para que sea más específico.
+# En tal caso, no se permiten caracteres comodín en la parte de la ruta de acceso.
+#
+# El carácter # al principio de una línea indica un comentario.
+#
+# El prefijo ! sirve para negar un patrón. Se puede usar para incluir de nuevo
+# un elemento que haya sido excluido por un archivo .tfignore que se encuentre
+# más alto en el árbol o por la lista de exclusiones globales de la colección
+# de proyectos de equipo.
+#
+# El carácter / se interpreta como un carácter \ en las plataformas Windows.
+#
+# Ejemplos:
+#
+#  # Excluye todos los archivos que terminan en .txt en Alfa\Beta y todas sus
+#  # subcarpetas.
+#  Alfa\Beta\*.txt
+#
+#  # Excluye todos los archivos que terminan en .cpp en esta carpeta únicamente.
+#  \*.cpp
+#
+#  # Excluye todos los archivos que terminan en .cpp en esta carpeta y en todas
+#  # las subcarpetas.
+#  *.cpp
+#
+#  # Si "Contoso" es una carpeta, se excluyen Contoso y todos sus elementos
+#  # secundarios. Si es un archivo, solo se excluye "Contoso" de esta carpeta.
+#  \Contoso
+#
+#  # Si Help.exe ha sido excluido por un archivo .tfignore más alto en el árbol
+#  # o por la lista de exclusiones globales de la colección de proyectos de equipo,
+#  # este patrón vuelve a incluirlo en esta carpeta únicamente.
+#  !\Help.exe    
+#
+################################################################################
+
+\.vs\slnx.sqlite
+\.vs\VSWorkspaceState.json
+\.vs\CB_Produccion\FileContentIndex\69c3f0c4-d4c9-49b9-be9b-6fab54a01517.vsidx
+\.vs\CB_Produccion\FileContentIndex\8a51a42f-ce1a-48b1-939e-661ec6b2166a.vsidx
+\.vs\CB_Produccion\FileContentIndex\a2c4ae88-89c9-4104-99d4-fd3c585fabad.vsidx
+\.vs\CB_Produccion\FileContentIndex\be2a750c-b6c5-4c69-87e8-71c863134242.vsidx
+\.vs\CB_Produccion\FileContentIndex\c324f270-6a9e-4fd0-8225-a59bc03dc53e.vsidx
+\.vs\CB_Produccion\FileContentIndex\de329b67-6228-4f85-b72d-61395d6352d1.vsidx
+\.vs\CB_Produccion\v17\workspaceFileList.bin
+\.vs\CoreBankApoloXV\FileContentIndex\0f40c4f7-3aa9-4506-a5e3-13d2cad59508.vsidx
+\.vs\CoreBankApoloXV\FileContentIndex\6cd3f364-2f0a-4d4e-b02a-fb6197e4fa7c.vsidx
+\.vs\CoreBankApoloXV\FileContentIndex\90890841-8e1f-42c1-afa1-e6ad64eb7ed7.vsidx
+\.vs\CoreBankApoloXV\FileContentIndex\b5b2fb55-6baa-4b9e-9563-e3eff4a76215.vsidx
+\.vs\CoreBankApoloXV\FileContentIndex\da898aad-067d-4931-a7c6-6f2c91438158.vsidx
+\.vs\CoreBankApoloXV\v17\fileList.bin
+\.vs\CoreBankApoloXV\v17\HierarchyCache.v1.txt
+\.tfignore
+\.vs\CoreBankApoloXV\FileContentIndex\edcebe4e-5e79-432d-bce0-454252b2596d.vsidx
+\.vs\CoreBankApoloXV\FileContentIndex\f8438225-a89a-450d-9da5-499a65c4d988.vsidx
+\.vs\CoreBankApoloXV\FileContentIndex\533c7049-fbc7-4579-bae3-d98d75448adb.vsidx
+\.vs\CoreBankApoloXV\FileContentIndex\b4bb6bcc-0909-46c3-bfa9-b13e02e90bba.vsidx

@@ -1,0 +1,97 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{82CD2EC4-C610-4963-AF39-B64DD2C8E4DE}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DEP.AccesoDatos</RootNamespace>
+    <AssemblyName>DEP.AccesoDatos</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AhorroWeb\clsADAWApertura.cs" />
+    <Compile Include="AhorroWeb\clsADAWCliente.cs" />
+    <Compile Include="AhorroWeb\clsADAWCuenta.cs" />
+    <Compile Include="AhorroWeb\clsADAWGeneral.cs" />
+    <Compile Include="AhorroWeb\clsADAWPostApertura.cs" />
+    <Compile Include="AhorroWeb\clsADAWPreApertura.cs" />
+    <Compile Include="clsADAperturaCta.cs" />
+    <Compile Include="clsADAutorTasaEsp.cs" />
+    <Compile Include="clsADCliVinculDep.cs" />
+    <Compile Include="clsADCompraVenta.cs" />
+    <Compile Include="clsADDeposito.cs" />
+    <Compile Include="clsADDepositosXProd.cs" />
+    <Compile Include="clsADEnvExtCtas.cs" />
+    <Compile Include="clsADExoneracionITF.cs" />
+    <Compile Include="clsADFsd.cs" />
+    <Compile Include="clsADOperacionDep.cs" />
+    <Compile Include="clsADRechazoSolApe.cs" />
+    <Compile Include="clsADRegDocumentoCTS.cs" />
+    <Compile Include="clsADRetDatosCuenta.cs" />
+    <Compile Include="clsADSolicCTS.cs" />
+    <Compile Include="clsADTipoCuenta.cs" />
+    <Compile Include="clsADTransferencia.cs" />
+    <Compile Include="clsADValorados.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\EntityLayer\EntityLayer.csproj">
+      <Project>{B5346A13-9B09-426B-AE99-BD8E300C032A}</Project>
+      <Name>EntityLayer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GEN.AccesoDatos\GEN.AccesoDatos.csproj">
+      <Project>{a7727aec-6595-40f6-9fda-12cd52005fa8}</Project>
+      <Name>GEN.AccesoDatos</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SolIntEls.GEN.Helper\SolIntEls.GEN.Helper.csproj">
+      <Project>{4459F866-3048-49EF-802A-318C02642FB4}</Project>
+      <Name>SolIntEls.GEN.Helper</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

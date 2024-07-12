@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<conexion>
+  <datos>
+    <server>SISTEMITO\MSSQL2012</server>
+    <database>SI_BDFinanciero</database>
+    <agencia>1</agencia>
+    <autenticacion>2</autenticacion>
+  </datos>
+</conexion>

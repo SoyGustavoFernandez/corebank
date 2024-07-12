@@ -1,0 +1,1765 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{86A5CEAC-77CC-41F4-8F11-8E56EA554642}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>RPT.Presentacion</RootNamespace>
+    <AssemblyName>RPT.Presentacion</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>\publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>1</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>9DE378396578F68992446D8C79CF8841DC7D2AC4</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>RPT.Presentacion_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>false</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <TargetZone>LocalIntranet</TargetZone>
+  </PropertyGroup>
+  <PropertyGroup />
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>..\packages\Microsoft.Office.Interop.Excel.14.0.0.1\lib\net20\Microsoft.Office.Interop.Excel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.SQLServer.ManagedDTS, Version=10.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\LibreriasExternas\Microsoft.SqlServer.ManagedDTS.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="Microsoft.CSharp">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="frmAnexo01.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAnexo01.Designer.cs">
+      <DependentUpon>frmAnexo01.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAnexo02.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAnexo02.Designer.cs">
+      <DependentUpon>frmAnexo02.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAnexo03.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAnexo03.designer.cs">
+      <DependentUpon>frmAnexo03.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAnexo05.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAnexo05.designer.cs">
+      <DependentUpon>frmAnexo05.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAnexo05Coop.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAnexo05Coop.designer.cs">
+      <DependentUpon>frmAnexo05Coop.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAnexo06.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAnexo06.designer.cs">
+      <DependentUpon>frmAnexo06.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAnexo07.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAnexo07.Designer.cs">
+      <DependentUpon>frmAnexo07.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAnexo08.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAnexo08.Designer.cs">
+      <DependentUpon>frmAnexo08.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAnexo09.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAnexo09.designer.cs">
+      <DependentUpon>frmAnexo09.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAnexo10.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAnexo10.designer.cs">
+      <DependentUpon>frmAnexo10.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAnexo11.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAnexo11.Designer.cs">
+      <DependentUpon>frmAnexo11.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAnexo12.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAnexo12.designer.cs">
+      <DependentUpon>frmAnexo12.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAnexo13.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAnexo13.Designer.cs">
+      <DependentUpon>frmAnexo13.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAnexo14.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAnexo14.designer.cs">
+      <DependentUpon>frmAnexo14.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAnexo15.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAnexo15.designer.cs">
+      <DependentUpon>frmAnexo15.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAnexo15BCop.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAnexo15BCop.designer.cs">
+      <DependentUpon>frmAnexo15BCop.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAnexo16.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAnexo16.designer.cs">
+      <DependentUpon>frmAnexo16.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAnexo16B.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAnexo16B.designer.cs">
+      <DependentUpon>frmAnexo16B.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAnexo16BConting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAnexo16BConting.designer.cs">
+      <DependentUpon>frmAnexo16BConting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAnexo16BSupuesto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAnexo16BSupuesto.designer.cs">
+      <DependentUpon>frmAnexo16BSupuesto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAnexoF.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAnexoF.designer.cs">
+      <DependentUpon>frmAnexoF.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmBCRAnexo01.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBCRAnexo01.Designer.cs">
+      <DependentUpon>frmBCRAnexo01.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmBCRForma05.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBCRForma05.Designer.cs">
+      <DependentUpon>frmBCRForma05.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCarExcValRaz.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCarExcValRaz.Designer.cs">
+      <DependentUpon>frmCarExcValRaz.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCargaExcel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCargaExcel.Designer.cs">
+      <DependentUpon>frmCargaExcel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmFenacrepAnexo13.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmFenacrepAnexo13.designer.cs">
+      <DependentUpon>frmFenacrepAnexo13.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmForma301.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmForma301.designer.cs">
+      <DependentUpon>frmForma301.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmForma301_2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmForma301_2.designer.cs">
+      <DependentUpon>frmForma301_2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmFormato302.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmFormato302.Designer.cs">
+      <DependentUpon>frmFormato302.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmFormatoEEFF.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmFormatoEEFF.designer.cs">
+      <DependentUpon>frmFormatoEEFF.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmInformacionFinanc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmInformacionFinanc.designer.cs">
+      <DependentUpon>frmInformacionFinanc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmRegistroOperacionesEfectivo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRegistroOperacionesEfectivo.designer.cs">
+      <DependentUpon>frmRegistroOperacionesEfectivo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmRegistroOperacionesMultiples.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRegistroOperacionesMultiples.designer.cs">
+      <DependentUpon>frmRegistroOperacionesMultiples.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmRegistroOperacionesUnicas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRegistroOperacionesUnicas.designer.cs">
+      <DependentUpon>frmRegistroOperacionesUnicas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmRegOpeUnMul.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRegOpeUnMul.Designer.cs">
+      <DependentUpon>frmRegOpeUnMul.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmRegUtiPerBasDil.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRegUtiPerBasDil.Designer.cs">
+      <DependentUpon>frmRegUtiPerBasDil.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmReporte03.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmReporte03.designer.cs">
+      <DependentUpon>frmReporte03.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmReporte03Cop.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmReporte03Cop.designer.cs">
+      <DependentUpon>frmReporte03Cop.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmReporte04.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmReporte04.Designer.cs">
+      <DependentUpon>frmReporte04.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmReporte06D.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmReporte06D.designer.cs">
+      <DependentUpon>frmReporte06D.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmReporte11.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmReporte11.designer.cs">
+      <DependentUpon>frmReporte11.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmReporte12.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmReporte12.designer.cs">
+      <DependentUpon>frmReporte12.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmReporte14.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmReporte14.designer.cs">
+      <DependentUpon>frmReporte14.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmReporte19.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmReporte19.designer.cs">
+      <DependentUpon>frmReporte19.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmReporte2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmReporte2.Designer.cs">
+      <DependentUpon>frmReporte2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmReporte20A.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmReporte20A.designer.cs">
+      <DependentUpon>frmReporte20A.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmReporte21.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmReporte21.designer.cs">
+      <DependentUpon>frmReporte21.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmReporte25.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmReporte25.Designer.cs">
+      <DependentUpon>frmReporte25.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmReporte5.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmReporte5.designer.cs">
+      <DependentUpon>frmReporte5.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmReporte6.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmReporte6.designer.cs">
+      <DependentUpon>frmReporte6.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmReporte6E.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmReporte6E.designer.cs">
+      <DependentUpon>frmReporte6E.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmReporteRR3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmReporteRR3.Designer.cs">
+      <DependentUpon>frmReporteRR3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmReporteSUNAT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmReporteSUNAT.Designer.cs">
+      <DependentUpon>frmReporteSUNAT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmRPTConsultaSegurosDesmarcados.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRPTConsultaSegurosDesmarcados.Designer.cs">
+      <DependentUpon>frmRPTConsultaSegurosDesmarcados.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmRptControlLimGloIndAnexo13.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRptControlLimGloIndAnexo13.designer.cs">
+      <DependentUpon>frmRptControlLimGloIndAnexo13.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmRptDeudoresAnx6.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRptDeudoresAnx6.designer.cs">
+      <DependentUpon>frmRptDeudoresAnx6.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmRptEncaje.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRptEncaje.designer.cs">
+      <DependentUpon>frmRptEncaje.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmRptEncaje2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRptEncaje2.designer.cs">
+      <DependentUpon>frmRptEncaje2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmRptEncaje4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRptEncaje4.designer.cs">
+      <DependentUpon>frmRptEncaje4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmRptEncaje5.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRptEncaje5.designer.cs">
+      <DependentUpon>frmRptEncaje5.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmRptFormaF.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRptFormaF.designer.cs">
+      <DependentUpon>frmRptFormaF.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmRptRecuperaAnalista.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRptRecuperaAnalista.designer.cs">
+      <DependentUpon>frmRptRecuperaAnalista.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSbsAnexo17A.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSbsAnexo17A.designer.cs">
+      <DependentUpon>frmSbsAnexo17A.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSbsAnexo17B.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSbsAnexo17B.designer.cs">
+      <DependentUpon>frmSbsAnexo17B.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSbsAnexo24.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSbsAnexo24.designer.cs">
+      <DependentUpon>frmSbsAnexo24.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="rptReporteDevengadosContable.rdlc" />
+    <EmbeddedResource Include="rptReporteSolicitudTasaNegociada.rdlc">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptReporteTasaNegociada.rdlc">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptReporteSolicitudesTasa.rdlc" />
+    <EmbeddedResource Include="frmReporteRR3.resx">
+      <DependentUpon>frmReporteRR3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRPTConsultaSegurosDesmarcados.resx">
+      <DependentUpon>frmRPTConsultaSegurosDesmarcados.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptActaAprobacionCredito.rdlc" />
+    <EmbeddedResource Include="RptCalendarioCreditoSeguros.rdlc">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptCobrosPlanPaquetesAsistencia.rdlc">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptBajasPlanPaquetesAsistencia.rdlc">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptAltasPlanPaquetesAsistencia.rdlc">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptBaseNegativa.rdlc" />
+    <EmbeddedResource Include="rptConsultaSegurosDesmarcados.rdlc" />
+    <EmbeddedResource Include="rptCreditoColaborador.rdlc" />
+    <EmbeddedResource Include="rptErroresImportacionPlantilla.rdlc" />
+    <EmbeddedResource Include="rptExcepcionLimites.rdlc">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RptHojaResumenNuevoGS.rdlc" />
+    <EmbeddedResource Include="rptObservacionesCredito.rdlc" />
+    <EmbeddedResource Include="RptReimpresionUsuario.rdlc" />
+    <EmbeddedResource Include="rptPaqueteSeguroSMS.rdlc" />
+    <EmbeddedResource Include="rptEstadosFinancierosEAI.rdlc" />
+    <EmbeddedResource Include="rptReporteConciliacionCanales.rdlc" />
+    <EmbeddedResource Include="frmBCRAnexo01.resx">
+      <DependentUpon>frmBCRAnexo01.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBCRForma05.resx">
+      <DependentUpon>frmBCRForma05.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCarExcValRaz.resx">
+      <DependentUpon>frmCarExcValRaz.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmReporteSUNAT.resx">
+      <DependentUpon>frmReporteSUNAT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptActaBajaActivos.rdlc" />
+    <EmbeddedResource Include="rptAlertasEvaluacionCre.rdlc" />
+    <EmbeddedResource Include="RptAnexo01A.rdlc" />
+    <EmbeddedResource Include="rptArqueoInopinado.rdlc" />
+    <EmbeddedResource Include="rptAsignacionProductos.rdlc" />
+    <EmbeddedResource Include="rptAvisoMinutaGarantia.rdlc" />
+    <EmbeddedResource Include="rptCambioDatosContactoCli.rdlc" />
+    <EmbeddedResource Include="rptCambioTasaDPF.rdlc" />
+    <EmbeddedResource Include="rptCastigadosMayorTresUit.rdlc" />
+    <EmbeddedResource Include="rptCastigadosMayorTresUitCarta.rdlc" />
+    <EmbeddedResource Include="rptCastigadosMayorTresUitSustento.rdlc" />
+    <EmbeddedResource Include="rptComiteCreditoDetallado.rdlc" />
+    <EmbeddedResource Include="rptConsultaMasivaReniec.rdlc" />
+    <EmbeddedResource Include="rptContactoClienteOferta.rdlc" />
+    <EmbeddedResource Include="rptContradepositosGar.rdlc" />
+    <EmbeddedResource Include="rptContratoFirmas.rdlc" />
+    <EmbeddedResource Include="rptCredAmpliadosRefiOculto.rdlc" />
+    <EmbeddedResource Include="rptCredReprogramadosRefiOculto.rdlc" />
+    <EmbeddedResource Include="rptCajListCtrlLimBov.rdlc" />
+    <EmbeddedResource Include="rptCtrllimBovRes.rdlc" />
+    <EmbeddedResource Include="rptCuadreCaja.rdlc" />
+    <EmbeddedResource Include="rptCuadreCredito.rdlc" />
+    <EmbeddedResource Include="rptCuadroComparativo.rdlc" />
+    <EmbeddedResource Include="rptDatosScoreCredito.rdlc" />
+    <EmbeddedResource Include="rptDesembolsoCampEscolar.rdlc" />
+    <EmbeddedResource Include="rptDesembolsoCampNavi.rdlc" />
+    <EmbeddedResource Include="RptDiferidoxAmpliacion.rdlc" />
+    <EmbeddedResource Include="RptDiferidoxCapNeg.rdlc" />
+    <EmbeddedResource Include="rptEnvioBoletas.rdlc" />
+    <EmbeddedResource Include="rptErrorCargaMasiva.rdlc" />
+    <EmbeddedResource Include="rptEvalFujoCaja.rdlc" />
+    <EmbeddedResource Include="rptEvalPropEEFFAgricolaRural.rdlc" />
+    <EmbeddedResource Include="rptEvalPropEEFFAgricoMEC.rdlc" />
+    <EmbeddedResource Include="rptEvalPropEEFFPecuarioRural.rdlc" />
+    <EmbeddedResource Include="rptEvalPropFacilitoEEFF.rdlc" />
+    <EmbeddedResource Include="rptEvalPropJornalEEFF.rdlc" />
+    <EmbeddedResource Include="rptEvalPropRural.rdlc" />
+    <EmbeddedResource Include="rptExcepcionReglaNegocio.rdlc" />
+    <EmbeddedResource Include="rptExportarListaCorreo.rdlc" />
+    <EmbeddedResource Include="RptExtornoOpe.rdlc" />
+    <EmbeddedResource Include="rptExtornosSPL.rdlc" />
+    <EmbeddedResource Include="rptExtractoCtaSimpleExpediente.rdlc" />
+    <EmbeddedResource Include="rptFormatoAutUsoDatos.rdlc" />
+    <EmbeddedResource Include="rptFormatoCapanaAutUsoDatos.rdlc" />
+    <EmbeddedResource Include="RptFormatoCECamioneta.rdlc" />
+    <EmbeddedResource Include="RptFormatoCEMoto.rdlc" />
+    <EmbeddedResource Include="RptFormatoCEComputador.rdlc" />
+    <EmbeddedResource Include="RptFormatoCEMovil.rdlc" />
+    <EmbeddedResource Include="rptAutUsoDatosCli.rdlc" />
+    <EmbeddedResource Include="rptFormatoAutRecepcionInformacion.rdlc" />
+    <EmbeddedResource Include="rptFormatoDesistimientoAutUsoDatos.rdlc" />
+    <EmbeddedResource Include="rptHistoricoAproAutoUsuario.rdlc" />
+    <EmbeddedResource Include="RptHojaTrabAgricolaRural.rdlc" />
+    <EmbeddedResource Include="RptHojaTrabPecuarioRural.rdlc" />
+    <EmbeddedResource Include="rptListaPlanillaMovilidadElaborado.rdlc" />
+    <EmbeddedResource Include="rptListaPlanTrabajoElaborado.rdlc" />
+    <EmbeddedResource Include="RptFormatoCondonacionLimite.rdlc" />
+    <EmbeddedResource Include="RptFormatoMetaReducSaldoVencido.rdlc" />
+    <EmbeddedResource Include="RptGrupoSolidarioBono.rdlc" />
+    <EmbeddedResource Include="rptGeneraSaldoProvision.rdlc" />
+    <EmbeddedResource Include="RptHojaResumenNuevo.rdlc">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptIndicadoresExcepciones.rdlc" />
+    <EmbeddedResource Include="rptIndicadoresProvisiones.rdlc" />
+    <EmbeddedResource Include="rptIndicadoresRefinanciados.rdlc" />
+    <EmbeddedResource Include="rptItemsObservadosSupervisionOperacion.rdlc" />
+    <EmbeddedResource Include="rptListaAccionistas.rdlc" />
+    <EmbeddedResource Include="rptIngresoEgresoSaldoCatalago.rdlc" />
+    <EmbeddedResource Include="rptListarOperacionUsuario.rdlc" />
+    <EmbeddedResource Include="rptLogBienesEntregados.rdlc" />
+    <EmbeddedResource Include="rptMetasCreditos.rdlc" />
+    <EmbeddedResource Include="rptMetasCreditosExcel.rdlc" />
+    <EmbeddedResource Include="rptMotivoHistorico.rdlc" />
+    <EmbeddedResource Include="rptMotivoIncrementoProvision.rdlc" />
+    <EmbeddedResource Include="rptNotificacionSMS.rdlc" />
+    <EmbeddedResource Include="rptPagoMasivo.rdlc" />
+    <EmbeddedResource Include="rptPlanillaMovilidadIndividual.rdlc" />
+    <EmbeddedResource Include="rptPlanTrabajoRecuperacion.rdlc" />
+    <EmbeddedResource Include="rptPoliticaPrivacidadCli.rdlc" />
+    <EmbeddedResource Include="rptPolizaSeguroDesgravamen.rdlc" />
+    <EmbeddedResource Include="RptPosIntConsol.rdlc">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RptDetConsultaPosCliente.rdlc" />
+    <EmbeddedResource Include="RptPosInterv2.rdlc" />
+    <EmbeddedResource Include="RptPosInterv1.rdlc" />
+    <EmbeddedResource Include="frmAnexo01.resx">
+      <DependentUpon>frmAnexo01.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAnexo02.resx">
+      <DependentUpon>frmAnexo02.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAnexo03.resx">
+      <DependentUpon>frmAnexo03.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAnexo05.resx">
+      <DependentUpon>frmAnexo05.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAnexo05Coop.resx">
+      <DependentUpon>frmAnexo05Coop.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAnexo06.resx">
+      <DependentUpon>frmAnexo06.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAnexo07.resx">
+      <DependentUpon>frmAnexo07.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAnexo08.resx">
+      <DependentUpon>frmAnexo08.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAnexo09.resx">
+      <DependentUpon>frmAnexo09.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAnexo10.resx">
+      <DependentUpon>frmAnexo10.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAnexo11.resx">
+      <DependentUpon>frmAnexo11.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAnexo12.resx">
+      <DependentUpon>frmAnexo12.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAnexo13.resx">
+      <DependentUpon>frmAnexo13.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAnexo14.resx">
+      <DependentUpon>frmAnexo14.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAnexo15.resx">
+      <DependentUpon>frmAnexo15.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAnexo15BCop.resx">
+      <DependentUpon>frmAnexo15BCop.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAnexo16.resx">
+      <DependentUpon>frmAnexo16.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAnexo16B.resx">
+      <DependentUpon>frmAnexo16B.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAnexo16BConting.resx">
+      <DependentUpon>frmAnexo16BConting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAnexo16BSupuesto.resx">
+      <DependentUpon>frmAnexo16BSupuesto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAnexoF.resx">
+      <DependentUpon>frmAnexoF.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCargaExcel.resx">
+      <DependentUpon>frmCargaExcel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmFenacrepAnexo13.resx">
+      <DependentUpon>frmFenacrepAnexo13.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmForma301.resx">
+      <DependentUpon>frmForma301.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmForma301_2.resx">
+      <DependentUpon>frmForma301_2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmFormato302.resx">
+      <DependentUpon>frmFormato302.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmFormatoEEFF.resx">
+      <DependentUpon>frmFormatoEEFF.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmInformacionFinanc.resx">
+      <DependentUpon>frmInformacionFinanc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRegistroOperacionesEfectivo.resx">
+      <DependentUpon>frmRegistroOperacionesEfectivo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRegistroOperacionesMultiples.resx">
+      <DependentUpon>frmRegistroOperacionesMultiples.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRegistroOperacionesUnicas.resx">
+      <DependentUpon>frmRegistroOperacionesUnicas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRegOpeUnMul.resx">
+      <DependentUpon>frmRegOpeUnMul.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRegUtiPerBasDil.resx">
+      <DependentUpon>frmRegUtiPerBasDil.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmReporte03.resx">
+      <DependentUpon>frmReporte03.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmReporte03Cop.resx">
+      <DependentUpon>frmReporte03Cop.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmReporte04.resx">
+      <DependentUpon>frmReporte04.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmReporte06D.resx">
+      <DependentUpon>frmReporte06D.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmReporte11.resx">
+      <DependentUpon>frmReporte11.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmReporte12.resx">
+      <DependentUpon>frmReporte12.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmReporte14.resx">
+      <DependentUpon>frmReporte14.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmReporte19.resx">
+      <DependentUpon>frmReporte19.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmReporte2.resx">
+      <DependentUpon>frmReporte2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmReporte20A.resx">
+      <DependentUpon>frmReporte20A.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmReporte21.resx">
+      <DependentUpon>frmReporte21.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmReporte25.resx">
+      <DependentUpon>frmReporte25.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmReporte5.resx">
+      <DependentUpon>frmReporte5.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmReporte6.resx">
+      <DependentUpon>frmReporte6.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmReporte6E.resx">
+      <DependentUpon>frmReporte6E.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRptControlLimGloIndAnexo13.resx">
+      <DependentUpon>frmRptControlLimGloIndAnexo13.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRptDeudoresAnx6.resx">
+      <DependentUpon>frmRptDeudoresAnx6.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRptEncaje.resx">
+      <DependentUpon>frmRptEncaje.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRptEncaje2.resx">
+      <DependentUpon>frmRptEncaje2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRptEncaje4.resx">
+      <DependentUpon>frmRptEncaje4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRptEncaje5.resx">
+      <DependentUpon>frmRptEncaje5.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRptFormaF.resx">
+      <DependentUpon>frmRptFormaF.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRptRecuperaAnalista.resx">
+      <DependentUpon>frmRptRecuperaAnalista.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSbsAnexo17A.resx">
+      <DependentUpon>frmSbsAnexo17A.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSbsAnexo17B.resx">
+      <DependentUpon>frmSbsAnexo17B.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSbsAnexo24.resx">
+      <DependentUpon>frmSbsAnexo24.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="rpt6UltRemuneraciones.rdlc" />
+    <EmbeddedResource Include="rptActaAprobacionCartaFianza.rdlc" />
+    <EmbeddedResource Include="rptActaComite.rdlc" />
+    <EmbeddedResource Include="rptActaComiteCred.rdlc" />
+    <EmbeddedResource Include="rptActaCredAprobadosFecha.rdlc" />
+    <EmbeddedResource Include="rptActaCrediSolidario.rdlc">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptActaReasignacionCartera.rdlc" />
+    <EmbeddedResource Include="rptActaTransRecupera.rdlc" />
+    <EmbeddedResource Include="rptActaVisitaRiesgos.rdlc" />
+    <EmbeddedResource Include="rptActEntregaOP.rdlc" />
+    <EmbeddedResource Include="rptActivarCajaBilletaje.rdlc" />
+    <EmbeddedResource Include="rptAdeudadoCredito.rdlc" />
+    <EmbeddedResource Include="rptAfectaciones.rdlc" />
+    <EmbeddedResource Include="rptAfectKardexCuotasCred.rdlc" />
+    <EmbeddedResource Include="RptAhoLinea.rdlc" />
+    <EmbeddedResource Include="rptAjustesGestion.rdlc" />
+    <EmbeddedResource Include="rptAlertaVisitaCli.rdlc" />
+    <EmbeddedResource Include="rptAmortizacionesEsperadas.rdlc" />
+    <EmbeddedResource Include="RPTAnalisisCartera.rdlc" />
+    <EmbeddedResource Include="RPTAnalisisTipCredito.rdlc" />
+    <EmbeddedResource Include="RptAnexo01B.rdlc" />
+    <EmbeddedResource Include="RptAnexo03.rdlc" />
+    <EmbeddedResource Include="RPTAnexo05.rdlc" />
+    <EmbeddedResource Include="RPTAnexo05A.rdlc" />
+    <EmbeddedResource Include="RPTAnexo05B.rdlc">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RptAnexo05D.rdlc" />
+    <EmbeddedResource Include="RptAnexo07A.rdlc" />
+    <EmbeddedResource Include="RptAnexo07B.rdlc" />
+    <EmbeddedResource Include="RptAnexo07BC.rdlc" />
+    <EmbeddedResource Include="RptAnexo07C.rdlc" />
+    <EmbeddedResource Include="RptAnexo08A.rdlc" />
+    <EmbeddedResource Include="RptAnexo08B.rdlc" />
+    <EmbeddedResource Include="RptAnexo10.rdlc" />
+    <EmbeddedResource Include="RptAnexo12I.rdlc" />
+    <EmbeddedResource Include="RptAnexo12II.rdlc" />
+    <EmbeddedResource Include="RptAnexo13.rdlc" />
+    <EmbeddedResource Include="RptAnexo14.rdlc" />
+    <EmbeddedResource Include="RptAnexo15A.rdlc" />
+    <EmbeddedResource Include="RptAnexo15B.rdlc" />
+    <EmbeddedResource Include="RptAnexo15B1.rdlc" />
+    <EmbeddedResource Include="RptAnexo15BCop.rdlc" />
+    <EmbeddedResource Include="RptAnexo15C.rdlc" />
+    <EmbeddedResource Include="rptAnexo16.rdlc" />
+    <EmbeddedResource Include="RptAnexo16A4.rdlc" />
+    <EmbeddedResource Include="RptAnexo16B.rdlc" />
+    <EmbeddedResource Include="RptAnexo16BSupuestos.rdlc" />
+    <EmbeddedResource Include="RptAnexo17A.rdlc" />
+    <EmbeddedResource Include="rptAnexo7Recuperaciones.rdlc" />
+    <EmbeddedResource Include="rptAnexoB.rdlc" />
+    <EmbeddedResource Include="rptAnexoF.rdlc" />
+    <EmbeddedResource Include="RptAnexoNro11.rdlc">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RptAperturasCta.rdlc" />
+    <EmbeddedResource Include="rptApFondoMortSociosKadex.rdlc" />
+    <EmbeddedResource Include="rptAportesFondoSegSocios.rdlc" />
+    <EmbeddedResource Include="rptAportesSocios.rdlc" />
+    <EmbeddedResource Include="rptAportesSociosKadex.rdlc" />
+    <EmbeddedResource Include="RptArchivosDep.rdlc" />
+    <EmbeddedResource Include="rptArqueoExpCliente.rdlc" />
+    <EmbeddedResource Include="RptAsientoManual.rdlc" />
+    <EmbeddedResource Include="RptAsientoTrx.rdlc" />
+    <EmbeddedResource Include="RptAsigActivo.rdlc" />
+    <EmbeddedResource Include="rptAsignacionCarteraRecuperaciones.rdlc" />
+    <EmbeddedResource Include="rptAsignacionFutCarteraRecuperaciones.rdlc" />
+    <EmbeddedResource Include="RptAtencionNotaSalida.rdlc" />
+    <EmbeddedResource Include="RptAvanceMoraTramoAsesor.rdlc" />
+    <EmbeddedResource Include="rptAvanceRecuperaciones.rdlc" />
+    <EmbeddedResource Include="rptAvisoCobranzaFiador.rdlc" />
+    <EmbeddedResource Include="rptAvisoCobranzaTitular.rdlc" />
+    <EmbeddedResource Include="RptBalanceComprobacion.rdlc" />
+    <EmbeddedResource Include="RptBalanceComprSaldo.rdlc" />
+    <EmbeddedResource Include="RptBalanceGeneral.rdlc" />
+    <EmbeddedResource Include="RptBalComEEFF.rdlc" />
+    <EmbeddedResource Include="RptBalComNumDig.rdlc" />
+    <EmbeddedResource Include="RptBalGralCoopExcel.rdlc" />
+    <EmbeddedResource Include="rptBasicoCarteraPorAnalista.rdlc" />
+    <EmbeddedResource Include="rptBasicoCarteraPorAnalistaOficina.rdlc" />
+    <EmbeddedResource Include="rptBasicosConcCarteraZona.rdlc" />
+    <EmbeddedResource Include="rptBasicosHistoConcCarteraMoraZona.rdlc" />
+    <EmbeddedResource Include="rptBasicosHistoConcCarteraPorcentajeMoraZona.rdlc" />
+    <EmbeddedResource Include="rptBasicosHistoConcCarteraZona.rdlc" />
+    <EmbeddedResource Include="rptBeneficiarios.rdlc" />
+    <EmbeddedResource Include="RptBillLibrCajBov.rdlc" />
+    <EmbeddedResource Include="RptBloqTarjetas.rdlc" />
+    <EmbeddedResource Include="RptBloqueoCtas.rdlc" />
+    <EmbeddedResource Include="rptBoletaRemuneracion.rdlc" />
+    <EmbeddedResource Include="RptBuenaPro.rdlc" />
+    <EmbeddedResource Include="RptCajaChica.rdlc" />
+    <EmbeddedResource Include="RptCalendarioCredito.rdlc">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RptCalendarioCreditoRefina.rdlc" />
+    <EmbeddedResource Include="rptCalendarioDeposito.rdlc" />
+    <EmbeddedResource Include="rptCalendarioPagos.rdlc">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptCalendarioSimulador.rdlc" />
+    <EmbeddedResource Include="rptCambiosPatrimonio.rdlc" />
+    <EmbeddedResource Include="RptCampania.rdlc" />
+    <EmbeddedResource Include="rptCancelacionesEsperadas.rdlc" />
+    <EmbeddedResource Include="rptCartaAvisoCobranza.rdlc" />
+    <EmbeddedResource Include="rptCartaAvisoVencimiento.rdlc" />
+    <EmbeddedResource Include="rptCartaFianzaConsorcio.rdlc" />
+    <EmbeddedResource Include="rptCartaFianzaPNPJ.rdlc" />
+    <EmbeddedResource Include="rptCartaNotarial.rdlc" />
+    <EmbeddedResource Include="rptCartaNotarialFiador.rdlc" />
+    <EmbeddedResource Include="rptCartaNotarialTitular.rdlc" />
+    <EmbeddedResource Include="rptCartaNotificaPreJudicial.rdlc" />
+    <EmbeddedResource Include="rptCartaNotificaProtesto.rdlc" />
+    <EmbeddedResource Include="rptCartaPaseDepLegal.rdlc" />
+    <EmbeddedResource Include="rptCartaRecordatorio.rdlc" />
+    <EmbeddedResource Include="rptCartaReqPagoCreRefinanciado.rdlc" />
+    <EmbeddedResource Include="rptCartaRequerimientoPago.rdlc" />
+    <EmbeddedResource Include="rptCartasCTS.rdlc">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptCartasFianzasPorVencer.rdlc" />
+    <EmbeddedResource Include="rptCartasFianzasVencidas.rdlc" />
+    <EmbeddedResource Include="rptCartaTrasferenciaCTS.rdlc">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptCartaUltimaNotificacion.rdlc" />
+    <EmbeddedResource Include="rptCartaUltimoAviso.rdlc" />
+    <EmbeddedResource Include="rptCartillaInfor.rdlc" />
+    <EmbeddedResource Include="rptCartillaInforCTS.rdlc" />
+    <EmbeddedResource Include="rptCartillaInforNormal.rdlc" />
+    <EmbeddedResource Include="rptCartillaInforNormalCrecer.rdlc" />
+    <EmbeddedResource Include="rptCartillaInforPlazoFijo.rdlc" />
+    <EmbeddedResource Include="rptCartillaInforPlazoFijoAM.rdlc" />
+    <EmbeddedResource Include="RptCastigo.rdlc" />
+    <EmbeddedResource Include="RptCastigoResumen.rdlc" />
+    <EmbeddedResource Include="RptCerITF.rdlc" />
+    <EmbeddedResource Include="RptCertificado.rdlc" />
+    <EmbeddedResource Include="RptCertificadoDP.rdlc" />
+    <EmbeddedResource Include="RptChequeBco.rdlc" />
+    <EmbeddedResource Include="rptCierreDiario.rdlc">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptCliCodSBSDif.rdlc" />
+    <EmbeddedResource Include="rptCliEmpeorarCali.rdlc" />
+    <EmbeddedResource Include="rptClienteFichaJuri.rdlc" />
+    <EmbeddedResource Include="rptClientesDesembolsados.rdlc" />
+    <EmbeddedResource Include="RptClientesExoneradosFSD.rdlc" />
+    <EmbeddedResource Include="rptClientesFall.rdlc" />
+    <EmbeddedResource Include="rptClientesFallecidos.rdlc" />
+    <EmbeddedResource Include="rptClientesFaltantesRegOpe.rdlc" />
+    <EmbeddedResource Include="rptClientesModificadosRegOpeUnic.rdlc" />
+    <EmbeddedResource Include="rptClientesRiesgoPotencial.rdlc" />
+    <EmbeddedResource Include="RptClientesSinCodSBS.rdlc" />
+    <EmbeddedResource Include="rptClientesXperfilRiesgo.rdlc" />
+    <EmbeddedResource Include="RptClienteTopTen.rdlc" />
+    <EmbeddedResource Include="rptCliExpuestosSobredeuda.rdlc" />
+    <EmbeddedResource Include="rptCliMejorarCalificacion.rdlc" />
+    <EmbeddedResource Include="rptCobranzaBN.rdlc" />
+    <EmbeddedResource Include="rptCobsDisponibles.rdlc" />
+    <EmbeddedResource Include="rptCobsGrupo.rdlc" />
+    <EmbeddedResource Include="rptColocPromotor.rdlc" />
+    <EmbeddedResource Include="rptComisionesDiferidasCartaFianza.rdlc" />
+    <EmbeddedResource Include="rptComposicionCarteraAhorros.rdlc" />
+    <EmbeddedResource Include="rptComposicionDifCuenta.rdlc" />
+    <EmbeddedResource Include="RptCompraVenta.rdlc" />
+    <EmbeddedResource Include="rptCompraVentaTipoCambio.rdlc" />
+    <EmbeddedResource Include="rptComprobantes.rdlc" />
+    <EmbeddedResource Include="rptComprobantesEmi.rdlc" />
+    <EmbeddedResource Include="rptComprobantesPag.rdlc" />
+    <EmbeddedResource Include="rptComproDetraccion.rdlc" />
+    <EmbeddedResource Include="rptComproProvision.rdlc" />
+    <EmbeddedResource Include="rptConcActiEcono.rdlc" />
+    <EmbeddedResource Include="rptConcAgenciaRiesgos.rdlc" />
+    <EmbeddedResource Include="rptConCarteraOfiAsesorTramosDiaMora.rdlc" />
+    <EmbeddedResource Include="rptConcAsesorOficina.rdlc" />
+    <EmbeddedResource Include="rptConcAsesorOficina2.rdlc" />
+    <EmbeddedResource Include="rptConcAsesorResumGen.rdlc" />
+    <EmbeddedResource Include="rptConcentracionAhoMonProRes.rdlc" />
+    <EmbeddedResource Include="rptConcentracionAhoOfiMonPro.rdlc" />
+    <EmbeddedResource Include="rptConcentracionAhoXMonedaAgencias.rdlc" />
+    <EmbeddedResource Include="rptConcentracionMovAhoXMonedaAgencias.rdlc" />
+    <EmbeddedResource Include="rptConcHistorialCarteraAnalista.rdlc" />
+    <EmbeddedResource Include="rptConcHistorialCarteraAnalistaMorar.rdlc" />
+    <EmbeddedResource Include="rptConcHistorialCarteraAnalistaPorcentajeMora.rdlc" />
+    <EmbeddedResource Include="RptConciliaBcos.rdlc" />
+    <EmbeddedResource Include="rptConcMonedaProd.rdlc" />
+    <EmbeddedResource Include="rptConcMonedaProdGraf.rdlc" />
+    <EmbeddedResource Include="rptConcMonedaProdTEP.rdlc" />
+    <EmbeddedResource Include="rptConcMontoCred.rdlc" />
+    <EmbeddedResource Include="rptConcOfiAseDistrito.rdlc" />
+    <EmbeddedResource Include="rptConcOficiAsesor.rdlc" />
+    <EmbeddedResource Include="rptConcOficinaProd.rdlc" />
+    <EmbeddedResource Include="rptConcPlazo.rdlc" />
+    <EmbeddedResource Include="rptConcProductoRiesgos.rdlc" />
+    <EmbeddedResource Include="rptConcPromotor.rdlc" />
+    <EmbeddedResource Include="rptConcTipCredRiesgos.rdlc" />
+    <EmbeddedResource Include="rptConcZonaDistrito.rdlc" />
+    <EmbeddedResource Include="rptConcZonaProvincia.rdlc" />
+    <EmbeddedResource Include="RptConRecibos.rdlc">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptConstanciaCancCartFianza.rdlc" />
+    <EmbeddedResource Include="RptConstanciaCancelacionCre.rdlc" />
+    <EmbeddedResource Include="rptConstanciaPlazoFijo.rdlc">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptConsultaReniec.rdlc" />
+    <EmbeddedResource Include="rptContabilidadHistorico.rdlc" />
+    <EmbeddedResource Include="rptContactoCliente.rdlc" />
+    <EmbeddedResource Include="rptContradepositos.rdlc" />
+    <EmbeddedResource Include="rptContrato.rdlc" />
+    <EmbeddedResource Include="rptContratoCertificadoPer.rdlc" />
+    <EmbeddedResource Include="rptContratoPerJuridica.rdlc" />
+    <EmbeddedResource Include="rptContratoPerNatural.rdlc" />
+    <EmbeddedResource Include="rptContratoPerVence.rdlc" />
+    <EmbeddedResource Include="rptContratosPerRegistrados.rdlc" />
+    <EmbeddedResource Include="rptControlColocacion.rdlc" />
+    <EmbeddedResource Include="rptControlGarantias.rdlc" />
+    <EmbeddedResource Include="rptControlLimGloIndAnexo13.rdlc" />
+    <EmbeddedResource Include="rptCreditosOpinionRiesgoAnalista.rdlc" />
+    <EmbeddedResource Include="rptCreditosRiesgoPotencial.rdlc" />
+    <EmbeddedResource Include="rptCronogramaPagosGrupal.rdlc" />
+    <EmbeddedResource Include="rptCorteFracc.rdlc">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptCosechaComportamiento.rdlc" />
+    <EmbeddedResource Include="RptCpgCajGenConcepto.rdlc" />
+    <EmbeddedResource Include="RptCpgCajGenConceptoEmi.rdlc" />
+    <EmbeddedResource Include="RptCpgCajGenConceptoPag.rdlc" />
+    <EmbeddedResource Include="RptCpgCajGenProovedor.rdlc" />
+    <EmbeddedResource Include="RptCpgCajGenProovedorEmi.rdlc" />
+    <EmbeddedResource Include="RptCpgCajGenProovedorPag.rdlc" />
+    <EmbeddedResource Include="RptCpgCajGenTipoCpg.rdlc" />
+    <EmbeddedResource Include="RptCpgCajGenTipoCpgEmi.rdlc" />
+    <EmbeddedResource Include="RptCpgCajGenTipoCpgPag.rdlc" />
+    <EmbeddedResource Include="RptCpgCajGenTipoDest.rdlc" />
+    <EmbeddedResource Include="RptCpgCajGenTipoDestEmi.rdlc" />
+    <EmbeddedResource Include="RptCpgCajGenTipoDestPag.rdlc" />
+    <EmbeddedResource Include="rptCpgFecEmiDetraccion.rdlc" />
+    <EmbeddedResource Include="rptCpgFecPagoDetraccion.rdlc" />
+    <EmbeddedResource Include="rptCREAnexo02.rdlc">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptCredAprobadoXNivel.rdlc" />
+    <EmbeddedResource Include="rptCreditoGarantia.rdlc">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptCreditosCanceladosAnticipadamente.rdlc" />
+    <EmbeddedResource Include="rptCreditosCastigados.rdlc">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptCreditosConGarantia.rdlc">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptCreditosConGarantiaEjecutable.rdlc" />
+    <EmbeddedResource Include="rptCreditosDctoPlanilla.rdlc" />
+    <EmbeddedResource Include="rptCreditosMora.rdlc">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptCreditosMoraN.rdlc" />
+    <EmbeddedResource Include="rptCreditosTasaCongelada.rdlc" />
+    <EmbeddedResource Include="rptCredNoPagan.rdlc" />
+    <EmbeddedResource Include="rptCredPendientesRefinanciar.rdlc" />
+    <EmbeddedResource Include="rptCredTramosGestoresRecuperaciones.rdlc" />
+    <EmbeddedResource Include="RptCronogramaDep.rdlc" />
+    <EmbeddedResource Include="rptCtasInacPorCanc.rdlc" />
+    <EmbeddedResource Include="RptCtasPlazosFijosProducto.rdlc" />
+    <EmbeddedResource Include="RptCtasPlazosFijosRangos.rdlc" />
+    <EmbeddedResource Include="rptCtasPorCliente.rdlc" />
+    <EmbeddedResource Include="RptCtasRenovadas.rdlc" />
+    <EmbeddedResource Include="rptCtasTasaEspecial.rdlc" />
+    <EmbeddedResource Include="rptCuentasCli.rdlc" />
+    <EmbeddedResource Include="rptCuentasEspeciales.rdlc" />
+    <EmbeddedResource Include="RptCuentasPlazosFijoxRenovaAuto.rdlc" />
+    <EmbeddedResource Include="RptCuentasPlazosFijoxVencer.rdlc" />
+    <EmbeddedResource Include="rptCumplimientoMetaAsesor.rdlc" />
+    <EmbeddedResource Include="rptDatosAuditoriaTabla.rdlc" />
+    <EmbeddedResource Include="rptDatoSolicitud.rdlc" />
+    <EmbeddedResource Include="rptDatoSolicitudJudi.rdlc" />
+    <EmbeddedResource Include="rptDatoSolicitudJudi_Doclinea.rdlc" />
+    <EmbeddedResource Include="rptDatoSolicitud_Doclinea.rdlc">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptDatosVinculados.rdlc" />
+    <EmbeddedResource Include="rptDecJurActividad.rdlc" />
+    <EmbeddedResource Include="rptDecJurPerNat.rdlc" />
+    <EmbeddedResource Include="rptDecJurSujetoObli.rdlc" />
+    <EmbeddedResource Include="rptDeclaracionJuradaParentesco.rdlc" />
+    <EmbeddedResource Include="rptDeclJuradaPerJur.rdlc" />
+    <EmbeddedResource Include="rptDepositoMasivo.rdlc" />
+    <EmbeddedResource Include="rptDepositosXProd.rdlc" />
+    <EmbeddedResource Include="rptDesembolso.rdlc" />
+    <EmbeddedResource Include="RptDesembolsoAgencia.rdlc" />
+    <EmbeddedResource Include="RptDesembolsoAnalista.rdlc" />
+    <EmbeddedResource Include="rptDesembolsoBN.rdlc" />
+    <EmbeddedResource Include="RptDesembolsoProducto.rdlc" />
+    <EmbeddedResource Include="rptDesembolsoResumen.rdlc" />
+    <EmbeddedResource Include="rptDesembolsoResumenAge.rdlc" />
+    <EmbeddedResource Include="RptDetAhoLinea.rdlc" />
+    <EmbeddedResource Include="rptDetalleActivos.rdlc" />
+    <EmbeddedResource Include="RptDetalleAmortiz.rdlc" />
+    <EmbeddedResource Include="RptDetalleCancSaldo.rdlc" />
+    <EmbeddedResource Include="RptDetalleCarteraAnalista.rdlc" />
+    <EmbeddedResource Include="rptDetalleClientesDEP.rdlc" />
+    <EmbeddedResource Include="RptDetalleConceptosPorPlanilla.rdlc" />
+    <EmbeddedResource Include="rptDetalleCuadreOpe.rdlc" />
+    <EmbeddedResource Include="rptDetalleOpe.rdlc" />
+    <EmbeddedResource Include="rptDetalleOpeBoveda.rdlc" />
+    <EmbeddedResource Include="RptDetalleOperaciones.rdlc" />
+    <EmbeddedResource Include="RptDetalleOperacionesAsesor.rdlc" />
+    <EmbeddedResource Include="rptDetalleOperacionesDEP.rdlc" />
+    <EmbeddedResource Include="rptDetalleOpeTrasferencia.rdlc" />
+    <EmbeddedResource Include="RptDetallePagoConvenio.rdlc" />
+    <EmbeddedResource Include="rptDetallePartidasPres.rdlc" />
+    <EmbeddedResource Include="RptDetalleSolCambioTitularesCta.rdlc" />
+    <EmbeddedResource Include="RptDetalleValGenerados.rdlc" />
+    <EmbeddedResource Include="rptDetalleVariacionPres.rdlc" />
+    <EmbeddedResource Include="RptDetSaldoAhoHis.rdlc" />
+    <EmbeddedResource Include="rptDeudorAnex6A.rdlc" />
+    <EmbeddedResource Include="RptDevengadoCredito.rdlc" />
+    <EmbeddedResource Include="RptDevengadoCreditoResumen.rdlc" />
+    <EmbeddedResource Include="rptDevengadosAhorros.rdlc" />
+    <EmbeddedResource Include="RptDiferidoInteresGracia.rdlc" />
+    <EmbeddedResource Include="RptDireccionNegocio.rdlc" />
+    <EmbeddedResource Include="RptEEFFDiarioAnual.rdlc" />
+    <EmbeddedResource Include="RptEEFFDiarioTrimestre.rdlc" />
+    <EmbeddedResource Include="rptEfectivoBCR.rdlc" />
+    <EmbeddedResource Include="RptEfectLibRecup.rdlc" />
+    <EmbeddedResource Include="RptEncaje2.rdlc" />
+    <EmbeddedResource Include="RptEncaje5.rdlc" />
+    <EmbeddedResource Include="RptEntregaProducto.rdlc" />
+    <EmbeddedResource Include="rptEPGCoop.rdlc" />
+    <EmbeddedResource Include="RptEPGOfi.rdlc" />
+    <EmbeddedResource Include="RptErrorAnexo03.rdlc" />
+    <EmbeddedResource Include="RptErrorAsientos.rdlc" />
+    <EmbeddedResource Include="RptErrorITF.rdlc" />
+    <EmbeddedResource Include="RptErrorITFAsientoTRX.rdlc" />
+    <EmbeddedResource Include="rptEstContribNJ.rdlc" />
+    <EmbeddedResource Include="rptEvalConsumo.rdlc" />
+    <EmbeddedResource Include="rptEvalCualitativa.rdlc" />
+    <EmbeddedResource Include="rptEvalCualitativaGrupoSol.rdlc" />
+    <EmbeddedResource Include="rptEvalEmpresarial.rdlc" />
+    <EmbeddedResource Include="rptEvalPropConsumo.rdlc" />
+    <EmbeddedResource Include="rptEvalPropConvenio.rdlc" />
+    <EmbeddedResource Include="rptEvalPropEEFF.rdlc" />
+    <EmbeddedResource Include="rptEvalPropEEFF2.rdlc" />
+    <EmbeddedResource Include="rptEvalPropEEFFAgrico.rdlc" />
+    <EmbeddedResource Include="rptEvalPropPyme.rdlc" />
+    <EmbeddedResource Include="rptEvalResumenAprob.rdlc" />
+    <EmbeddedResource Include="rptEvalResumenConsumo.rdlc" />
+    <EmbeddedResource Include="rptEvalResumenPreAprob.rdlc" />
+    <EmbeddedResource Include="rptEvalScoringCliJuridico2.rdlc" />
+    <EmbeddedResource Include="rptEvalScoringCliNatur2.rdlc" />
+    <EmbeddedResource Include="rptEvalScoringCliRecurJuridico.rdlc" />
+    <EmbeddedResource Include="rptEvalScoringCliRecurNatur.rdlc" />
+    <EmbeddedResource Include="RptEvolClienteAnalista.rdlc" />
+    <EmbeddedResource Include="RptEvolDesembolsoAnalista.rdlc" />
+    <EmbeddedResource Include="RptEvolIngreAnalista.rdlc" />
+    <EmbeddedResource Include="RptEvolMoraAnalista.rdlc" />
+    <EmbeddedResource Include="RptEvolRecuperaAnalista.rdlc" />
+    <EmbeddedResource Include="RptEvolSaldoAnalista.rdlc" />
+    <EmbeddedResource Include="RptEvolucionMensualSaldosAho.rdlc" />
+    <EmbeddedResource Include="RptEvolucionSaldosAho.rdlc" />
+    <EmbeddedResource Include="rptExcepcionesRiesgos.rdlc" />
+    <EmbeddedResource Include="rptExoneracionITF.rdlc" />
+    <EmbeddedResource Include="rptExpedientesVencidosParaDevolucion.rdlc" />
+    <EmbeddedResource Include="rptExportablePepErro.rdlc" />
+    <EmbeddedResource Include="rptExtCtaCorreo.rdlc" />
+    <EmbeddedResource Include="RptExtractoBcos.rdlc" />
+    <EmbeddedResource Include="RptExtractoBcosRes.rdlc" />
+    <EmbeddedResource Include="rptExtractoCtaDetallado.rdlc" />
+    <EmbeddedResource Include="rptExtractoCtaSimple.rdlc" />
+    <EmbeddedResource Include="RptFaltasTard.rdlc" />
+    <EmbeddedResource Include="rptFenacrepAnexo13.rdlc" />
+    <EmbeddedResource Include="rptFichaCli.rdlc" />
+    <EmbeddedResource Include="rptFichaCliPEP.rdlc" />
+    <EmbeddedResource Include="rptFichaOpinionRiesgo.rdlc" />
+    <EmbeddedResource Include="RptFlujoCaja.rdlc" />
+    <EmbeddedResource Include="rptFlujoCajaBco.rdlc" />
+    <EmbeddedResource Include="rptFlujoEfectivoEF.rdlc" />
+    <EmbeddedResource Include="rptFlujoMensualCajaBco.rdlc" />
+    <EmbeddedResource Include="RptFormaB2.rdlc" />
+    <EmbeddedResource Include="RptFormato301A.rdlc" />
+    <EmbeddedResource Include="RptFormato301B.rdlc" />
+    <EmbeddedResource Include="RptFormato302.rdlc" />
+    <EmbeddedResource Include="RptGarantiaResumen.rdlc" />
+    <EmbeddedResource Include="rptGarantiasCliente.rdlc">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptGarantiasPreferidas.rdlc" />
+    <EmbeddedResource Include="RptGastosSinCPG.rdlc" />
+    <EmbeddedResource Include="RptGastosSinCPG1.rdlc" />
+    <EmbeddedResource Include="RptGerenciaAmortizacion.rdlc" />
+    <EmbeddedResource Include="RptGerenciaAmortizacionAse.rdlc" />
+    <EmbeddedResource Include="RptGerenciaClientes.rdlc" />
+    <EmbeddedResource Include="RptGerenciaClientesAse.rdlc" />
+    <EmbeddedResource Include="RptGerenciaDesembolso.rdlc" />
+    <EmbeddedResource Include="RptGerenciaDesembolsoAse.rdlc" />
+    <EmbeddedResource Include="RptGerenciaMora.rdlc" />
+    <EmbeddedResource Include="RptGerenciaMoraAse.rdlc" />
+    <EmbeddedResource Include="RptGerenciaSaldo.rdlc" />
+    <EmbeddedResource Include="RptGerenciaSaldoAse.rdlc" />
+    <EmbeddedResource Include="RptGiros.rdlc" />
+    <EmbeddedResource Include="rptGraHisCapTipoCre.rdlc" />
+    <EmbeddedResource Include="rptGraHisCapVencidoTipoCre.rdlc" />
+    <EmbeddedResource Include="rptGraHisIndiceMoraTipoCre.rdlc" />
+    <EmbeddedResource Include="rptGraHistCapAgencia.rdlc" />
+    <EmbeddedResource Include="rptGraHistCapProducto.rdlc" />
+    <EmbeddedResource Include="rptGraHistCapVencidoAgencia.rdlc" />
+    <EmbeddedResource Include="rptGraHistCapVencidoProducto.rdlc" />
+    <EmbeddedResource Include="rptGraHistCapVencidoZona.rdlc" />
+    <EmbeddedResource Include="rptGraHistCapZona.rdlc" />
+    <EmbeddedResource Include="rptGraHistIndiceMoraAgencia.rdlc" />
+    <EmbeddedResource Include="rptGraHistIndiceMoraProducto.rdlc" />
+    <EmbeddedResource Include="rptGraHistIndiceMoraZona.rdlc" />
+    <EmbeddedResource Include="RptGrupoPagDetraccion.rdlc" />
+    <EmbeddedResource Include="rptGrupoSolidario.rdlc" />
+    <EmbeddedResource Include="RptHabilitaciones.rdlc" />
+    <EmbeddedResource Include="RptHabilitacionesBill.rdlc" />
+    <EmbeddedResource Include="rptHistCategorizacionAutOfi.rdlc" />
+    <EmbeddedResource Include="rptHistCategorizacionOfi.rdlc" />
+    <EmbeddedResource Include="rptHistConcAgenciaCapital.rdlc" />
+    <EmbeddedResource Include="rptHistConcAgenciaCapitalMora.rdlc" />
+    <EmbeddedResource Include="rptHistConcAgenciaMora.rdlc" />
+    <EmbeddedResource Include="rptHistConcProductoCapital.rdlc" />
+    <EmbeddedResource Include="rptHistConcProductoCapitalMora.rdlc" />
+    <EmbeddedResource Include="rptHistConcProductoMora.rdlc" />
+    <EmbeddedResource Include="rptHistConcTipCredCapital.rdlc" />
+    <EmbeddedResource Include="rptHistConcTipCredCapitalMora.rdlc" />
+    <EmbeddedResource Include="rptHistConcTipCredMora.rdlc" />
+    <EmbeddedResource Include="rptHistCredClientes0.rdlc" />
+    <EmbeddedResource Include="rptHistEEFFEval.rdlc" />
+    <EmbeddedResource Include="rptHistorialAsiManual.rdlc" />
+    <EmbeddedResource Include="rptHistorialDeExpedientes.rdlc" />
+    <EmbeddedResource Include="rptHistoricoReasignacionPromotor.rdlc" />
+    <EmbeddedResource Include="rptHistReasigPromPorPromotor.rdlc" />
+    <EmbeddedResource Include="rptHojaDeRutaMovilidad.rdlc" />
+    <EmbeddedResource Include="RptHojaResumen.rdlc" />
+    <EmbeddedResource Include="RptHojaTrabAgro.rdlc" />
+    <EmbeddedResource Include="RptHojaTrabPyme.rdlc" />
+    <EmbeddedResource Include="rptHorasExtras.rdlc" />
+    <EmbeddedResource Include="rptImpresionLomosExpedientes.rdlc" />
+    <EmbeddedResource Include="rptIncumplimientoPagoFiador.rdlc" />
+    <EmbeddedResource Include="rptIncumplimientoPagoTitular.rdlc" />
+    <EmbeddedResource Include="rptInforFinanciera.rdlc" />
+    <EmbeddedResource Include="rptInformeRiesgos.rdlc" />
+    <EmbeddedResource Include="rptInformeTransferencia.rdlc" />
+    <EmbeddedResource Include="rptIntDevBancos.rdlc" />
+    <EmbeddedResource Include="RptJustificaciones.rdlc" />
+    <EmbeddedResource Include="rptKardexBienPorAlmacen.rdlc" />
+    <EmbeddedResource Include="rptKardexPagoCre.rdlc" />
+    <EmbeddedResource Include="rptKardexPorTipOpeTipMov.rdlc" />
+    <EmbeddedResource Include="RptLibroBcos.rdlc" />
+    <EmbeddedResource Include="RptLibroCaja.rdlc" />
+    <EmbeddedResource Include="RptLibroCajaCNT.rdlc" />
+    <EmbeddedResource Include="RptLibroCapital.rdlc" />
+    <EmbeddedResource Include="RptLibroCastigos.rdlc" />
+    <EmbeddedResource Include="RptLibroCxC.rdlc" />
+    <EmbeddedResource Include="RptLibroCxCDiversas.rdlc" />
+    <EmbeddedResource Include="RptLibroDiario.rdlc">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RptLibroDiarioPDF.rdlc" />
+    <EmbeddedResource Include="RptLibroDiarioXLS.rdlc" />
+    <EmbeddedResource Include="RptLibroIntangible.rdlc" />
+    <EmbeddedResource Include="RptLibroMayor.rdlc" />
+    <EmbeddedResource Include="RptLibroProveedor.rdlc" />
+    <EmbeddedResource Include="RptLibroProvisiones.rdlc" />
+    <EmbeddedResource Include="RptLibroRemPagar.rdlc" />
+    <EmbeddedResource Include="RptLibroRetencion.rdlc" />
+    <EmbeddedResource Include="RptLibroTributoPagar.rdlc" />
+    <EmbeddedResource Include="rptLiquidacionJudiciales.rdlc" />
+    <EmbeddedResource Include="rptLisCreCliVig.rdlc" />
+    <EmbeddedResource Include="RptLisOpeCred.rdlc" />
+    <EmbeddedResource Include="rptListaCliUltEvalScoring.rdlc" />
+    <EmbeddedResource Include="RptListadoPersonal.rdlc" />
+    <EmbeddedResource Include="rptListaExtornos.rdlc" />
+    <EmbeddedResource Include="rptListaExtornosCta.rdlc" />
+    <EmbeddedResource Include="rptMEFCalendarioAdeudado.rdlc" />
+    <EmbeddedResource Include="rptMEFCreditoAdeudado.rdlc" />
+    <EmbeddedResource Include="rptMEFDesembolsoAdeudado.rdlc" />
+    <EmbeddedResource Include="rptMEFPagoAdeudado.rdlc" />
+    <EmbeddedResource Include="rptMenuPorPerfil.rdlc" />
+    <EmbeddedResource Include="rptMetasAsesores.rdlc" />
+    <EmbeddedResource Include="rptMonitorOpeAhorros.rdlc" />
+    <EmbeddedResource Include="rptMonitorOpeCreditos.rdlc" />
+    <EmbeddedResource Include="rptMonitorOtorgamientoCred.rdlc" />
+    <EmbeddedResource Include="rptMontosCuentasContabilidad.rdlc" />
+    <EmbeddedResource Include="RptMoraAgencia.rdlc" />
+    <EmbeddedResource Include="RptMoraAnalista.rdlc" />
+    <EmbeddedResource Include="RptMoraDiaria.rdlc" />
+    <EmbeddedResource Include="RptMoraMoneda.rdlc" />
+    <EmbeddedResource Include="RptMoraProducto.rdlc" />
+    <EmbeddedResource Include="rptMoraTramoAsesor.rdlc" />
+    <EmbeddedResource Include="rptMoraTramosPromotor.rdlc" />
+    <EmbeddedResource Include="rptMovCajPulBov.rdlc" />
+    <EmbeddedResource Include="rptMovilidaRecuperador.rdlc" />
+    <EmbeddedResource Include="RptMovimientoCuentaCnt.rdlc" />
+    <EmbeddedResource Include="RptMovimientoCuentaCntEspe.rdlc" />
+    <EmbeddedResource Include="RptMovimientoSaldosCNT.rdlc" />
+    <EmbeddedResource Include="RptMovimientoSaldosCNTAge.rdlc" />
+    <EmbeddedResource Include="rptNonUSPerson.rdlc" />
+    <EmbeddedResource Include="rptNotaAbono.rdlc" />
+    <EmbeddedResource Include="rptNotaEntradaAlmacen.rdlc" />
+    <EmbeddedResource Include="rptNumeroMontoOpinionAnalista.rdlc" />
+    <EmbeddedResource Include="rptOpeInusuales.rdlc" />
+    <EmbeddedResource Include="rptOperacionesRangoClientes.rdlc" />
+    <EmbeddedResource Include="rptOperacionesRangoMayores7000.rdlc" />
+    <EmbeddedResource Include="rptNotificacionPago.rdlc" />
+    <EmbeddedResource Include="RptOperacionesRemotas.rdlc" />
+    <EmbeddedResource Include="rptOpinionRefinanciacion.rdlc" />
+    <EmbeddedResource Include="rptOrdenApeAhoDisp.rdlc">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RptOrdenApeDepPla.rdlc">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptOrdenCompra.rdlc" />
+    <EmbeddedResource Include="rptOrdenPago.rdlc" />
+    <EmbeddedResource Include="rptPagareCredito_01.rdlc" />
+    <EmbeddedResource Include="rptPagareCredito_02.rdlc" />
+    <EmbeddedResource Include="rptPagaresParaArqueo.rdlc" />
+    <EmbeddedResource Include="RptPagMesAdeudado.rdlc" />
+    <EmbeddedResource Include="rptPagosPorGrupo.rdlc" />
+    <EmbeddedResource Include="rptPapeletaPermiso.rdlc" />
+    <EmbeddedResource Include="rptPerdidasGanancias.rdlc" />
+    <EmbeddedResource Include="rptPerfilesPorUsuario.rdlc" />
+    <EmbeddedResource Include="rptPerJurRepreLeg.rdlc" />
+    <EmbeddedResource Include="RptPermisoPers.rdlc" />
+    <EmbeddedResource Include="rptPlanContable.rdlc" />
+    <EmbeddedResource Include="rptPlanillaMovilidadGeneral.rdlc" />
+    <EmbeddedResource Include="rptPlanillaMovilidadxColab.rdlc" />
+    <EmbeddedResource Include="RptPlanillas.rdlc" />
+    <EmbeddedResource Include="RptPlanillasCtaContable.rdlc" />
+    <EmbeddedResource Include="rptPlanPagoPosInt.rdlc" />
+    <EmbeddedResource Include="rptPlantillaCtaCtb.rdlc" />
+    <EmbeddedResource Include="rptPolizasGarantia.rdlc" />
+    <EmbeddedResource Include="rptPonerSacarDineroElectronico.rdlc" />
+    <EmbeddedResource Include="RptPosInterv.rdlc" />
+    <EmbeddedResource Include="RptPosInterv4.rdlc" />
+    <EmbeddedResource Include="rptPpgXSolicitud.rdlc" />
+    <EmbeddedResource Include="rptPrimeraNotificacion.rdlc" />
+    <EmbeddedResource Include="RptPropuestaCredito.rdlc" />
+    <EmbeddedResource Include="RptPropuestaCreditoConsum.rdlc" />
+    <EmbeddedResource Include="rptPropuestaNegociacion.rdlc" />
+    <EmbeddedResource Include="rptProtestoPagare.rdlc" />
+    <EmbeddedResource Include="RptProvisionCreditoResumen.rdlc" />
+    <EmbeddedResource Include="RptProvisiones.rdlc" />
+    <EmbeddedResource Include="rptQVAgencia.rdlc" />
+    <EmbeddedResource Include="rptQVProducto.rdlc" />
+    <EmbeddedResource Include="rptRatioFinancieroCtb.rdlc" />
+    <EmbeddedResource Include="RptRccCap.rdlc" />
+    <EmbeddedResource Include="RptRccCapMora.rdlc" />
+    <EmbeddedResource Include="RptRccCli.rdlc" />
+    <EmbeddedResource Include="RptRccCliMora.rdlc" />
+    <EmbeddedResource Include="RptRccMora.rdlc" />
+    <EmbeddedResource Include="RptRccRiesgos.rdlc" />
+    <EmbeddedResource Include="RptRcc_Rse.rdlc" />
+    <EmbeddedResource Include="rptREAC.rdlc" />
+    <EmbeddedResource Include="rptReasignacionCaja.rdlc" />
+    <EmbeddedResource Include="rptReasignacionesCartera.rdlc" />
+    <EmbeddedResource Include="rptReasignacionPromotor.rdlc" />
+    <EmbeddedResource Include="RptRecibos.rdlc" />
+    <EmbeddedResource Include="RptRecSobFal.rdlc" />
+    <EmbeddedResource Include="rptRecuperacionComisionHistorico.rdlc" />
+    <EmbeddedResource Include="rptRecuperacionesEfectivas.rdlc" />
+    <EmbeddedResource Include="rptRecuperacionPrestamo.rdlc" />
+    <EmbeddedResource Include="rptReducciones.rdlc" />
+    <EmbeddedResource Include="rptReduccionesCob.rdlc">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptRefinanciadosOcultos.rdlc" />
+    <EmbeddedResource Include="rptRegDocumentosCTS.rdlc" />
+    <EmbeddedResource Include="rptRecuperacionEfectiva.rdlc" />
+    <EmbeddedResource Include="rptRegFirmas.rdlc" />
+    <EmbeddedResource Include="rptRegisroFirmasPN.rdlc" />
+    <EmbeddedResource Include="RptRegistroCompras.rdlc" />
+    <EmbeddedResource Include="rptRegistrodeOperacionesMultiples .rdlc" />
+    <EmbeddedResource Include="rptRegistroFirmasPJ.rdlc" />
+    <EmbeddedResource Include="rptRegistroFirmasPN.rdlc" />
+    <EmbeddedResource Include="rptRegistroOperacionesMultiples.rdlc" />
+    <EmbeddedResource Include="rptRegistrosRastreo.rdlc" />
+    <EmbeddedResource Include="RptRegistroVentas.rdlc" />
+    <EmbeddedResource Include="rptRegOpeMulti.rdlc" />
+    <EmbeddedResource Include="rptRegOpeUnico.rdlc" />
+    <EmbeddedResource Include="rptRegOpeUniMulti.rdlc" />
+    <EmbeddedResource Include="rptRegSocio.rdlc" />
+    <EmbeddedResource Include="rptRegSocioJuridico.rdlc" />
+    <EmbeddedResource Include="rptRegSocioNatural.rdlc" />
+    <EmbeddedResource Include="RptRegVentasConcepto.rdlc" />
+    <EmbeddedResource Include="RptRegVentasProveedor.rdlc" />
+    <EmbeddedResource Include="RptRegVentasTipoCpg.rdlc" />
+    <EmbeddedResource Include="RptRegVentasTipoDest.rdlc" />
+    <EmbeddedResource Include="rptRendicionesPendientes.rdlc" />
+    <EmbeddedResource Include="rptRendicionesVencidas.rdlc" />
+    <EmbeddedResource Include="rptRentabilidadOficina.rdlc" />
+    <EmbeddedResource Include="rptRentabilidadOficinaHistorico.rdlc" />
+    <EmbeddedResource Include="rptRepIniCierreOpe.rdlc" />
+    <EmbeddedResource Include="RptReporte03.rdlc" />
+    <EmbeddedResource Include="RptReporte03Cop.rdlc" />
+    <EmbeddedResource Include="RptReporte06D.rdlc" />
+    <EmbeddedResource Include="RptReporte11.rdlc" />
+    <EmbeddedResource Include="RptReporte14.rdlc" />
+    <EmbeddedResource Include="rptReporte19.rdlc" />
+    <EmbeddedResource Include="rptReporte19A.rdlc" />
+    <EmbeddedResource Include="RptReporte19_II.rdlc" />
+    <EmbeddedResource Include="RptReporte20.rdlc" />
+    <EmbeddedResource Include="rptReporte20A.rdlc" />
+    <EmbeddedResource Include="RptReporte21.rdlc" />
+    <EmbeddedResource Include="rptReporte21A.rdlc" />
+    <EmbeddedResource Include="RptReporte25.rdlc" />
+    <EmbeddedResource Include="RptReporte2A.rdlc" />
+    <EmbeddedResource Include="RptReporte2B1An3.rdlc" />
+    <EmbeddedResource Include="RptReporte2C1.rdlc" />
+    <EmbeddedResource Include="RptReporte2D.rdlc" />
+    <EmbeddedResource Include="RptReporte32A.rdlc" />
+    <EmbeddedResource Include="RptReporte32B_I.rdlc" />
+    <EmbeddedResource Include="RptReporte32B_II.rdlc" />
+    <EmbeddedResource Include="RptReporte32B_III.rdlc" />
+    <EmbeddedResource Include="RptReporte32B_IV.rdlc" />
+    <EmbeddedResource Include="RptReporte4A1.rdlc" />
+    <EmbeddedResource Include="RptReporte4B1.rdlc" />
+    <EmbeddedResource Include="RptReporte4B2.rdlc" />
+    <EmbeddedResource Include="RptReporte4B3.rdlc" />
+    <EmbeddedResource Include="RptReporte4C.rdlc" />
+    <EmbeddedResource Include="RptReporte4D.rdlc" />
+    <EmbeddedResource Include="rptReporte6A.rdlc" />
+    <EmbeddedResource Include="rptReporte6B.rdlc" />
+    <EmbeddedResource Include="RptReporte6E.rdlc" />
+    <EmbeddedResource Include="rptReporteCartaFianza.rdlc" />
+    <EmbeddedResource Include="rptReporteClientesBimVSListasLAFT.rdlc" />
+    <EmbeddedResource Include="rptReporteComisiones.rdlc" />
+    <EmbeddedResource Include="rptReporteCambiosConfComisiones.rdlc" />
+    <EmbeddedResource Include="rptReporteDatosCargadosBCP.rdlc" />
+    <EmbeddedResource Include="rptReporteDatosCargadosBIN.rdlc" />
+    <EmbeddedResource Include="rptReporteDatosCargadosBN.rdlc" />
+    <EmbeddedResource Include="rptReporteDatosCargadosKasnet.rdlc" />
+    <EmbeddedResource Include="rptReporteDatosCargadosNiubiz.rdlc" />
+    <EmbeddedResource Include="rptReporteEstProcConciliacion.rdlc" />
+    <EmbeddedResource Include="rptReporteFeeEmisores.rdlc" />
+    <EmbeddedResource Include="rptReporteFinalCastigos.rdlc" />
+    <EmbeddedResource Include="rptReporteInterOperabilidad.rdlc" />
+    <EmbeddedResource Include="rptReporteLogTransacciones.rdlc" />
+    <EmbeddedResource Include="rptReporteLogUsuarios.rdlc" />
+    <EmbeddedResource Include="rptReporteMoraTramoAsesor.rdlc" />
+    <EmbeddedResource Include="rptReporteNettingReport.rdlc" />
+    <EmbeddedResource Include="rptReportePreventivoMora.rdlc" />
+    <EmbeddedResource Include="rptReporteSaldosBilletera.rdlc" />
+    <EmbeddedResource Include="rptReporteSeguimientoSeguroAgricola.rdlc" />
+    <EmbeddedResource Include="rptReporteSeguimientoSeguroMultiriesgo.rdlc" />
+    <EmbeddedResource Include="rptReporteSeguimientoSeguroVida.rdlc" />
+    <EmbeddedResource Include="rptReporteSeguimientoSeguroOncologico.rdlc" />
+    <EmbeddedResource Include="rptDetallePagosFechaValor.rdlc" />
+    <EmbeddedResource Include="rptReporteSolicitudes.rdlc" />
+    <EmbeddedResource Include="rptReporteTransCliBimVSListasLAFT.rdlc" />
+    <EmbeddedResource Include="RptReporteVisitasSPLAFT.rdlc" />
+    <EmbeddedResource Include="rptRequerimientoNP.rdlc" />
+    <EmbeddedResource Include="rptRequerimientoNPAlmacen.rdlc" />
+    <EmbeddedResource Include="rptRequerimientoPagoFiador.rdlc" />
+    <EmbeddedResource Include="rptRequerimientoPagoTitular.rdlc" />
+    <EmbeddedResource Include="rptRequerimientoPerentorioFiador.rdlc" />
+    <EmbeddedResource Include="rptRequerimientoPerentorioTitular.rdlc" />
+    <EmbeddedResource Include="RptResMovCuentaCnt.rdlc" />
+    <EmbeddedResource Include="RptResMovCuentaCntEspe.rdlc" />
+    <EmbeddedResource Include="rptResOpeConsultaCaj.rdlc" />
+    <EmbeddedResource Include="RptResponsableCaja.rdlc" />
+    <EmbeddedResource Include="rptResuEvalGrupal.rdlc" />
+    <EmbeddedResource Include="rptResultadoVisita.rdlc" />
+    <EmbeddedResource Include="RptResumenCancelaDeudaCNT.rdlc" />
+    <EmbeddedResource Include="RptResumenCancelaDeudaCNTAge.rdlc" />
+    <EmbeddedResource Include="rptResumenCastigadoCnt.rdlc" />
+    <EmbeddedResource Include="rptResumenConciliacionWesternUnion.rdlc" />
+    <EmbeddedResource Include="RptResumenDepositosCNT.rdlc" />
+    <EmbeddedResource Include="RptResumenDepositosCNTAge.rdlc" />
+    <EmbeddedResource Include="rptResumenEjecutivoPropCastigos.rdlc" />
+    <EmbeddedResource Include="rptResumenOpe.rdlc" />
+    <EmbeddedResource Include="RptResumenOperaciones.rdlc" />
+    <EmbeddedResource Include="RptResumenOperacionesCNT.rdlc" />
+    <EmbeddedResource Include="RptResumenOperacionesCNTAge.rdlc" />
+    <EmbeddedResource Include="RptResumenRec.rdlc" />
+    <EmbeddedResource Include="rptResumenSaldIngresoCnt.rdlc">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptResumenSaldoCapitalCNT.rdlc" />
+    <EmbeddedResource Include="rptResumenSaldoProvisionCNT.rdlc" />
+    <EmbeddedResource Include="rptResumenVisitaSupervision.rdlc" />
+    <EmbeddedResource Include="RptRiesgoClientesProvisiones.rdlc" />
+    <EmbeddedResource Include="rptRiesgosBaseNegativa.rdlc" />
+    <EmbeddedResource Include="rptRiesgosGral.rdlc" />
+    <EmbeddedResource Include="rptRiesgoSobreendeud.rdlc" />
+    <EmbeddedResource Include="rptRiesgoSobreendeudCap.rdlc" />
+    <EmbeddedResource Include="rptRiesgoSobreendeudCapMora.rdlc" />
+    <EmbeddedResource Include="rptRiesgoSobreendeudCli.rdlc" />
+    <EmbeddedResource Include="rptRiesgoSobreendeudCliMora.rdlc" />
+    <EmbeddedResource Include="rptRiesgoSobreendeudEstado.rdlc" />
+    <EmbeddedResource Include="rptRiesgoSobreendeudMora.rdlc" />
+    <EmbeddedResource Include="rptSaldoAcumuladoPresupuesto.rdlc" />
+    <EmbeddedResource Include="RptSaldoAhoHis.rdlc" />
+    <EmbeddedResource Include="RptSaldoAportes.rdlc" />
+    <EmbeddedResource Include="RptSaldoCarteraAnalista.rdlc" />
+    <EmbeddedResource Include="RptSaldoCarteraOficina.rdlc" />
+    <EmbeddedResource Include="rptSaldoCatalogoBienPorAlmacen.rdlc" />
+    <EmbeddedResource Include="rptSaldoCatalogoPorAlmacen.rdlc" />
+    <EmbeddedResource Include="rptSaldoCatalogoPorAlmacenDetalle.rdlc" />
+    <EmbeddedResource Include="RptSaldoCredito.rdlc" />
+    <EmbeddedResource Include="RptSaldoCreditoResumen.rdlc" />
+    <EmbeddedResource Include="rptSaldoDeposito1.rdlc" />
+    <EmbeddedResource Include="rptSaldoEnLinea.rdlc">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptSaldoMensualPresupuesto.rdlc" />
+    <EmbeddedResource Include="RptSaldoMonto.rdlc" />
+    <EmbeddedResource Include="RptSaldoPlazo.rdlc" />
+    <EmbeddedResource Include="RptSaldoProducto.rdlc" />
+    <EmbeddedResource Include="rptSaldosAportesFondo.rdlc" />
+    <EmbeddedResource Include="rptSaldosCajaChica.rdlc" />
+    <EmbeddedResource Include="rptSaldosCartaFianza.rdlc" />
+    <EmbeddedResource Include="RptSaldosOnlineProductoAhorros.rdlc" />
+    <EmbeddedResource Include="RptSaldosProductoHistAhorros.rdlc" />
+    <EmbeddedResource Include="rptSaldosProvisionesCartaFianza.rdlc" />
+    <EmbeddedResource Include="RptSBSAnexo12II.rdlc" />
+    <EmbeddedResource Include="RptSbsAnexo17A.rdlc" />
+    <EmbeddedResource Include="RptSbsAnexo17B.rdlc" />
+    <EmbeddedResource Include="RptSbsAnexo24.rdlc" />
+    <EmbeddedResource Include="RptSBSAnexo9.rdlc" />
+    <EmbeddedResource Include="rptSBSCliente.rdlc" />
+    <EmbeddedResource Include="RptSBSEncaje1.rdlc" />
+    <EmbeddedResource Include="RptSBSEncaje1_1.rdlc" />
+    <EmbeddedResource Include="RptSBSEncaje1_2.rdlc" />
+    <EmbeddedResource Include="RptSBSEncaje4.rdlc" />
+    <EmbeddedResource Include="RptSBSEncaje4_1.rdlc" />
+    <EmbeddedResource Include="RptSBSReporte12.rdlc" />
+    <EmbeddedResource Include="RptSBSReporte5.rdlc" />
+    <EmbeddedResource Include="rptScoreJornalero.rdlc" />
+    <EmbeddedResource Include="rptScoringSplaft.rdlc" />
+    <EmbeddedResource Include="rptSegCarteraClasiRiesgo.rdlc" />
+    <EmbeddedResource Include="rptSegCartxClasiriesgoAlInterna.rdlc" />
+    <EmbeddedResource Include="rptSegRecHojRutaContCli.rdlc" />
+    <EmbeddedResource Include="rptSeguimientoCarteraCR.rdlc" />
+    <EmbeddedResource Include="rptSeguimientoCarteraCRAI.rdlc" />
+    <EmbeddedResource Include="rptSeguimientoDiarioColocaciones.rdlc" />
+    <EmbeddedResource Include="rptSeguimientoRecuperaciones.rdlc" />
+    <EmbeddedResource Include="rptSeguimientoSolicitudCred.rdlc" />
+    <EmbeddedResource Include="rptSegundaNotificacion.rdlc" />
+    <EmbeddedResource Include="rptSIGProvision.rdlc" />
+    <EmbeddedResource Include="rptSIGProvisionDetalle.rdlc" />
+    <EmbeddedResource Include="rptSIGSaldoMoraCliente.rdlc" />
+    <EmbeddedResource Include="rptSIGSaldoMoraClienteIni.rdlc" />
+    <EmbeddedResource Include="rptSIGTramosMora.rdlc" />
+    <EmbeddedResource Include="rptSimuladorAhorro.rdlc" />
+    <EmbeddedResource Include="rptSocioCumplMayorEdad.rdlc" />
+    <EmbeddedResource Include="RptSolCambioTitularesCta.rdlc" />
+    <EmbeddedResource Include="rptSolcitudRNC.rdlc" />
+    <EmbeddedResource Include="rptSolCrediSolidario.rdlc" />
+    <EmbeddedResource Include="rptSolicitud.rdlc" />
+    <EmbeddedResource Include="rptSolicitudesCreditosObservados.rdlc" />
+    <EmbeddedResource Include="rptSolicitudesOrdPago.rdlc" />
+    <EmbeddedResource Include="rptSolicitudExcepcionBiometrica.rdlc" />
+    <EmbeddedResource Include="rptSoliCreSobredeuda.rdlc" />
+    <EmbeddedResource Include="rptSolicTraslCTS.rdlc">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RptSolOrdPago.rdlc" />
+    <EmbeddedResource Include="RptSplaftAnexo04.rdlc" />
+    <EmbeddedResource Include="RptSplaftAnexo08.rdlc" />
+    <EmbeddedResource Include="rptSplaftCliente.rdlc" />
+    <EmbeddedResource Include="rptSplaftListaPEP.rdlc" />
+    <EmbeddedResource Include="rptStockBienPorAgencia.rdlc" />
+    <EmbeddedResource Include="rptSueldoYCTS.rdlc" />
+    <EmbeddedResource Include="rptSUNATCuentasPorTitular.rdlc" />
+    <EmbeddedResource Include="rptSUNATDatosCuenta.rdlc" />
+    <EmbeddedResource Include="rptSUNATDatosTitular.rdlc" />
+    <EmbeddedResource Include="RptSuspenso.rdlc" />
+    <EmbeddedResource Include="RptSuspensoResumen.rdlc" />
+    <EmbeddedResource Include="RptTarjetas.rdlc" />
+    <EmbeddedResource Include="RptTarjVincCtas.rdlc" />
+    <EmbeddedResource Include="rptTerceraNotificacion.rdlc" />
+    <EmbeddedResource Include="rptTipoCambio.rdlc" />
+    <EmbeddedResource Include="rptTransferenciaAlmacen.rdlc" />
+    <EmbeddedResource Include="rptTransferenciaCarteraRecuperaciones.rdlc" />
+    <EmbeddedResource Include="rptTrasladosCtasCTS.rdlc" />
+    <EmbeddedResource Include="rptTrasladosCTS.rdlc" />
+    <EmbeddedResource Include="RptUsoVacaciones.rdlc" />
+    <EmbeddedResource Include="rptUSPerson.rdlc" />
+    <EmbeddedResource Include="rptVacacionesPendientes.rdlc" />
+    <EmbeddedResource Include="RptValidaSaldoCajCnt.rdlc" />
+    <EmbeddedResource Include="RptValidaSaldoCre.rdlc" />
+    <EmbeddedResource Include="rptValorados.rdlc" />
+    <EmbeddedResource Include="rptValoradosAsignados.rdlc">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptValoradosGenerados.rdlc" />
+    <EmbeddedResource Include="rptValoradosGeneradosCertificadosPF.rdlc" />
+    <EmbeddedResource Include="rptValoradosGeneradosOP.rdlc" />
+    <EmbeddedResource Include="rptValoradoTalonariosCert.rdlc" />
+    <EmbeddedResource Include="rptValoradoTalonariosOP.rdlc" />
+    <EmbeddedResource Include="rptVariacionAcuMensualAmpl.rdlc" />
+    <EmbeddedResource Include="rptVariacionAcuMensualReasig.rdlc" />
+    <EmbeddedResource Include="rptVariacionMensualAmpl.rdlc" />
+    <EmbeddedResource Include="rptVariacionMensualReasig.rdlc" />
+    <EmbeddedResource Include="rptVencimientoTasaciones.rdlc" />
+    <EmbeddedResource Include="rptVoucher.rdlc" />
+    <EmbeddedResource Include="rptVoucherAdelantoCuota.rdlc" />
+    <EmbeddedResource Include="RptVoucherAporte.rdlc" />
+    <EmbeddedResource Include="rptVoucherCancelAho.rdlc" />
+    <EmbeddedResource Include="rptVoucherConstanciaCancelado1.rdlc" />
+    <EmbeddedResource Include="rptVoucherConstanciaCancelado2.rdlc" />
+    <EmbeddedResource Include="RptVoucherDev.rdlc" />
+    <EmbeddedResource Include="RptVoucherDevCajaCh.rdlc" />
+    <EmbeddedResource Include="RptVoucherEmiRec.rdlc" />
+    <EmbeddedResource Include="RptVoucherHabCajaCh.rdlc" />
+    <EmbeddedResource Include="rptVoucherHabil.rdlc" />
+    <EmbeddedResource Include="rptVoucherHabilitacion.rdlc" />
+    <EmbeddedResource Include="rptVoucherHabilitacionTicketMatEgr.rdlc" />
+    <EmbeddedResource Include="rptVoucherHabilitacionTicketMatIng.rdlc" />
+    <EmbeddedResource Include="rptVoucherIndem.rdlc" />
+    <EmbeddedResource Include="rptVoucherInicioOpe.rdlc" />
+    <EmbeddedResource Include="rptVoucherOpeDol.rdlc" />
+    <EmbeddedResource Include="rptVoucherPrePago.rdlc" />
+    <EmbeddedResource Include="RptVouchers.rdlc" />
+    <EmbeddedResource Include="rptVoucherTicketMatricial.rdlc" />
+    <EmbeddedResource Include="RptVoucherTransferencia.rdlc" />
+    <None Include="Properties\app.manifest" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="RptCreditosCancelados.rdlc" />
+    <EmbeddedResource Include="RptCobroRec.rdlc" />
+    <EmbeddedResource Include="rptArqueoExpediente.rdlc" />
+    <EmbeddedResource Include="rptSolicitudPendiente.rdlc" />
+    <EmbeddedResource Include="rptSolicitudPendienteAge.rdlc" />
+    <EmbeddedResource Include="rptLibroAuxiliarBcos.rdlc" />
+    <EmbeddedResource Include="rptHistCredClientes.rdlc" />
+    <EmbeddedResource Include="RptRegVentasSocio.rdlc" />
+    <EmbeddedResource Include="RptVoucherGen.rdlc" />
+    <EmbeddedResource Include="RptVouchersExtorno.rdlc" />
+    <EmbeddedResource Include="rptSolcitudRNCIni.rdlc" />
+    <EmbeddedResource Include="rptConsultaSeguroMultiriesgo.rdlc">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptEvalPropEEFFPymeEstacional.rdlc" />
+    <EmbeddedResource Include="rptEvalPropPymeEstacional.rdlc" />
+    <EmbeddedResource Include="rptEvalReferenciasPymeEstacional.rdlc" />
+    <EmbeddedResource Include="RptGirosEstado.rdlc" />
+    <EmbeddedResource Include="rptHistoricoSeguroOptativo.rdlc">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptSiniestros.rdlc">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptSolActCliente.rdlc" />
+    <EmbeddedResource Include="rptReportRR3.rdlc" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0,Profile=Client">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 Client Profile %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CRE.CapaNegocio\CRE.CapaNegocio.csproj">
+      <Project>{FA31C866-7477-42B2-8416-280A65A5E8E3}</Project>
+      <Name>CRE.CapaNegocio</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DEP.CapaNegocio\DEP.CapaNegocio.csproj">
+      <Project>{b15e0cfd-f117-408e-bb7d-bc1441311962}</Project>
+      <Name>DEP.CapaNegocio</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\EntityLayer\EntityLayer.csproj">
+      <Project>{b5346a13-9b09-426b-ae99-bd8e300c032a}</Project>
+      <Name>EntityLayer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GEN.BotonesBase\GEN.BotonesBase.csproj">
+      <Project>{1aad7bde-3869-4acf-8b9a-7ef08f660f80}</Project>
+      <Name>GEN.BotonesBase</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GEN.CapaNegocio\GEN.CapaNegocio.csproj">
+      <Project>{a2caf7c5-a155-4d88-bea5-e3988183f6a3}</Project>
+      <Name>GEN.CapaNegocio</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GEN.ControlesBase\GEN.ControlesBase.csproj">
+      <Project>{2bf1cd70-8b4d-4db6-a5e3-7f4d298a1c4e}</Project>
+      <Name>GEN.ControlesBase</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GEN.Funciones\GEN.Funciones.csproj">
+      <Project>{736df628-39ab-41c0-af28-b3fc7119261e}</Project>
+      <Name>GEN.Funciones</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GEN.LibreriaOffice\GEN.LibreriaOffice.csproj">
+      <Project>{7a2eb38a-c6c7-4319-9a09-2de8124c0089}</Project>
+      <Name>GEN.LibreriaOffice</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GEN.PrintHelper\GEN.PrintHelper.csproj">
+      <Project>{072a8daa-8d24-4a77-85df-2a68c04f879f}</Project>
+      <Name>GEN.PrintHelper</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\RPT.CapaNegocio\RPT.CapaNegocio.csproj">
+      <Project>{311a1ffe-c16e-4b77-9b76-0347cad855fa}</Project>
+      <Name>RPT.CapaNegocio</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Properties\DataSources\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

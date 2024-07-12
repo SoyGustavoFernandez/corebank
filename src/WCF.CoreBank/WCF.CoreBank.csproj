@@ -1,0 +1,266 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{44929EDE-61A1-461C-B6AA-D125D0532ED7}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WCF.CoreBank</RootNamespace>
+    <AssemblyName>WCF.CoreBank</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <WcfConfigValidationEnabled>True</WcfConfigValidationEnabled>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort>44302</IISExpressSSLPort>
+    <IISExpressAnonymousAuthentication>enabled</IISExpressAnonymousAuthentication>
+    <IISExpressWindowsAuthentication>disabled</IISExpressWindowsAuthentication>
+    <IISExpressUseClassicPipelineMode>false</IISExpressUseClassicPipelineMode>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.ServiceModel.Web" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="CoreBankService.svc" />
+    <Content Include="Global.asax" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="WebServices\AprobacionCreditos.svc" />
+    <Content Include="WebServices\AprobacionTasasNegociables.svc" />
+    <Content Include="WebServices\EvaluacionCreditos.svc" />
+    <Content Include="WebServices\EnvioSMS.svc" />
+    <Content Include="WebServices\ScoringBase.svc" />
+    <Content Include="WebServices\SolicitudCreditos.svc" />
+    <Content Include="WebServices\Visita.svc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AbstractConexion.cs" />
+    <Compile Include="CoreBankService.svc.cs">
+      <DependentUpon>CoreBankService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="ICoreBankService.cs" />
+    <Compile Include="Interface\IAprobacionCreditos.cs" />
+    <Compile Include="Interface\IntConexionWebService.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Utilities\Str.cs" />
+    <Compile Include="Utilities\Services.cs" />
+    <Compile Include="WebServices\AprobacionCreditos.svc.cs">
+      <DependentUpon>AprobacionCreditos.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\ISolicitudCreditos.cs" />
+    <Compile Include="WebServices\AprobacionTasasNegociables.svc.cs">
+      <DependentUpon>AprobacionTasasNegociables.svc</DependentUpon>
+    </Compile>
+    <Compile Include="WebServices\EnvioSMS.svc.cs">
+      <DependentUpon>EnvioSMS.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\IEnvioSMS.cs" />
+    <Compile Include="Interface\IAprobacionTasasNegociables.cs" />
+    <Compile Include="Interface\IScoringBase.cs" />
+    <Compile Include="Interface\IVisita.cs" />
+    <Compile Include="WebServices\ScoringBase.svc.cs">
+      <DependentUpon>ScoringBase.svc</DependentUpon>
+    </Compile>
+    <Compile Include="WebServices\SolicitudCreditos.svc.cs">
+      <DependentUpon>SolicitudCreditos.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Validaciones\clsObjetoValidar.cs" />
+    <Compile Include="Validaciones\clsValidarCliente.cs" />
+    <Compile Include="Validaciones\clsValidarDireccion.cs" />
+    <Compile Include="Validaciones\clsValidarEvaluacion.cs" />
+    <Compile Include="Validaciones\clsValidarGestionHojaRuta.cs" />
+    <Compile Include="Validaciones\clsValidarSolicitud.cs" />
+    <Compile Include="Validaciones\Interface\IConfigValidacion.cs" />
+    <Compile Include="Validaciones\clsValidacionBase.cs" />
+    <Compile Include="Validaciones\Interface\IObjetoValidado.cs" />
+    <Compile Include="WebServices\EvaluacionCreditos.svc.cs">
+      <DependentUpon>EvaluacionCreditos.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\IEvaluacionCreditos.cs" />
+    <Compile Include="WebServices\Visita.svc.cs">
+      <DependentUpon>Visita.svc</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Environment\environment" />
+    <None Include="Properties\PublishProfiles\LOCAL.pubxml" />
+    <None Include="Properties\PublishProfiles\PRODUCCION.pubxml" />
+    <None Include="Properties\PublishProfiles\PRUEBAS.pubxml" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ADM.CapaNegocio\ADM.CapaNegocio.csproj">
+      <Project>{65721033-8907-402c-8d6f-46a27793959a}</Project>
+      <Name>ADM.CapaNegocio</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CRE.AccesoDatos\CRE.AccesoDatos.csproj">
+      <Project>{e0432652-bee5-442c-b059-c0a673ed92cb}</Project>
+      <Name>CRE.AccesoDatos</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CRE.CapaNegocio\CRE.CapaNegocio.csproj">
+      <Project>{fa31c866-7477-42b2-8416-280a65a5e8e3}</Project>
+      <Name>CRE.CapaNegocio</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CRE.Servicio\CRE.Servicio.csproj">
+      <Project>{286f2c02-b385-4714-b3cc-126acbcc32f3}</Project>
+      <Name>CRE.Servicio</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\EntityLayer\EntityLayer.csproj">
+      <Project>{b5346a13-9b09-426b-ae99-bd8e300c032a}</Project>
+      <Name>EntityLayer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GEN.AccesoDatos\GEN.AccesoDatos.csproj">
+      <Project>{a7727aec-6595-40f6-9fda-12cd52005fa8}</Project>
+      <Name>GEN.AccesoDatos</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GEN.Adaptador\GEN.Adaptador.csproj">
+      <Project>{b29f70ce-0512-4eca-9226-f477d36f4074}</Project>
+      <Name>GEN.Adaptador</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GEN.AdminArchivos\GEN.AdminArchivos.csproj">
+      <Project>{c8ca12d7-ccfb-4ceb-9883-7318e01c337a}</Project>
+      <Name>GEN.AdminArchivos</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GEN.BotonesBase\GEN.BotonesBase.csproj">
+      <Project>{1aad7bde-3869-4acf-8b9a-7ef08f660f80}</Project>
+      <Name>GEN.BotonesBase</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GEN.CapaNegocio\GEN.CapaNegocio.csproj">
+      <Project>{a2caf7c5-a155-4d88-bea5-e3988183f6a3}</Project>
+      <Name>GEN.CapaNegocio</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GEN.Contratos\GEN.Contratos.csproj">
+      <Project>{c7aea8ed-6b25-442a-8a7d-8d23750d2fe4}</Project>
+      <Name>GEN.Contratos</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GEN.ControlesBaseWeb\GEN.ControlesBaseWeb.csproj">
+      <Project>{de138328-64de-4d99-ba5b-1ccf5b7ec041}</Project>
+      <Name>GEN.ControlesBaseWeb</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GEN.ControlesBase\GEN.ControlesBase.csproj">
+      <Project>{2bf1cd70-8b4d-4db6-a5e3-7f4d298a1c4e}</Project>
+      <Name>GEN.ControlesBase</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GEN.Funciones\GEN.Funciones.csproj">
+      <Project>{736df628-39ab-41c0-af28-b3fc7119261e}</Project>
+      <Name>GEN.Funciones</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GEN.LibreriaOffice\GEN.LibreriaOffice.csproj">
+      <Project>{7a2eb38a-c6c7-4319-9a09-2de8124c0089}</Project>
+      <Name>GEN.LibreriaOffice</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GEN.PrintHelper\GEN.PrintHelper.csproj">
+      <Project>{072a8daa-8d24-4a77-85df-2a68c04f879f}</Project>
+      <Name>GEN.PrintHelper</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\RCP.AccesoDatos\RCP.AccesoDatos.csproj">
+      <Project>{c1daca15-a0a4-4639-bd9d-7308fe27f9e3}</Project>
+      <Name>RCP.AccesoDatos</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\RCP.CapaNegocio\RCP.CapaNegocio.csproj">
+      <Project>{f187c4c1-3500-4061-8d35-0735747dac73}</Project>
+      <Name>RCP.CapaNegocio</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\REN.Servicio\CLI.Servicio.csproj">
+      <Project>{84dedb08-6500-4e91-b9ab-3b144f946bc7}</Project>
+      <Name>CLI.Servicio</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SolIntEls.GEN.Helper\SolIntEls.GEN.Helper.csproj">
+      <Project>{4459f866-3048-49ef-802a-318c02642fb4}</Project>
+      <Name>SolIntEls.GEN.Helper</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SolIntEls.Web\SolIntEls.Web.csproj">
+      <Project>{2e5c5a14-6248-497d-b142-89db81a94913}</Project>
+      <Name>SolIntEls.Web</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>False</AutoAssignPort>
+          <DevelopmentServerPort>6259</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:6259/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

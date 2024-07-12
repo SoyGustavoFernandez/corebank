@@ -1,0 +1,23 @@
+﻿using RCP.AccesoDatos;
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+
+namespace RCP.CapaNegocio
+{
+    public class clsCNTipoAfectaciones
+    {
+        clsADTipoAfectaciones afectaciones = new clsADTipoAfectaciones();
+
+        public DataTable ListarAfectaciones()
+        {
+            return afectaciones.ListarTipoAfectaciones();
+        }
+    }
+}

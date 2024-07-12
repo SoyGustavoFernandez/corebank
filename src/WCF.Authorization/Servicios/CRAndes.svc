@@ -1,0 +1,1 @@
+﻿<%@ ServiceHost Language="C#" Debug="true" Service="WCF.Authorization.Servicios.CRAndes" CodeBehind="CRAndes.svc.cs" %>

@@ -1,0 +1,309 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{49A217B5-94AA-4302-96CD-2424823613EC}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SER.Presentacion</RootNamespace>
+    <AssemblyName>SER.Presentacion</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
+    <Reference Include="SMS">
+      <HintPath>..\LibreriasExternas\SMS.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="frmBloqueoDesbloqueoGiro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBloqueoDesbloqueoGiro.Designer.cs">
+      <DependentUpon>frmBloqueoDesbloqueoGiro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCambioClaveEnvioGiro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCambioClaveEnvioGiro.designer.cs">
+      <DependentUpon>frmCambioClaveEnvioGiro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCambioDestino.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCambioDestino.Designer.cs">
+      <DependentUpon>frmCambioDestino.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCambioDestinoGiro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCambioDestinoGiro.Designer.cs">
+      <DependentUpon>frmCambioDestinoGiro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDevolucionGiro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDevolucionGiro.Designer.cs">
+      <DependentUpon>frmDevolucionGiro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmEnvioGiro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEnvioGiro.Designer.cs">
+      <DependentUpon>frmEnvioGiro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmEnvioGiroNuevo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEnvioGiroNuevo.Designer.cs">
+      <DependentUpon>frmEnvioGiroNuevo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmEnvioMensajesTexto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEnvioMensajesTexto.Designer.cs">
+      <DependentUpon>frmEnvioMensajesTexto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmExtornoGiro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmExtornoGiro.Designer.cs">
+      <DependentUpon>frmExtornoGiro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmGiroIngresoClave.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmGiroIngresoClave.Designer.cs">
+      <DependentUpon>frmGiroIngresoClave.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMantDeTarifarioGiro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMantDeTarifarioGiro.designer.cs">
+      <DependentUpon>frmMantDeTarifarioGiro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPagoGiro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPagoGiro.Designer.cs">
+      <DependentUpon>frmPagoGiro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPagoGiroNuevo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPagoGiroNuevo.Designer.cs">
+      <DependentUpon>frmPagoGiroNuevo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmRegistrarComisionGiro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRegistrarComisionGiro.designer.cs">
+      <DependentUpon>frmRegistrarComisionGiro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmRptReporteGiros.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRptReporteGiros.designer.cs">
+      <DependentUpon>frmRptReporteGiros.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmRptListGiros.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRptListGiros.designer.cs">
+      <DependentUpon>frmRptListGiros.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSolDesbloqGiro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSolDesbloqGiro.Designer.cs">
+      <DependentUpon>frmSolDesbloqGiro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmVisualizarVinculado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmVisualizarVinculado.Designer.cs">
+      <DependentUpon>frmVisualizarVinculado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmBloqueoDesbloqueoGiro.resx">
+      <DependentUpon>frmBloqueoDesbloqueoGiro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCambioClaveEnvioGiro.resx">
+      <DependentUpon>frmCambioClaveEnvioGiro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCambioDestino.resx">
+      <DependentUpon>frmCambioDestino.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCambioDestinoGiro.resx">
+      <DependentUpon>frmCambioDestinoGiro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDevolucionGiro.resx">
+      <DependentUpon>frmDevolucionGiro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEnvioGiro.resx">
+      <DependentUpon>frmEnvioGiro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEnvioGiroNuevo.resx">
+      <DependentUpon>frmEnvioGiroNuevo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEnvioMensajesTexto.resx">
+      <DependentUpon>frmEnvioMensajesTexto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmExtornoGiro.resx">
+      <DependentUpon>frmExtornoGiro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmGiroIngresoClave.resx">
+      <DependentUpon>frmGiroIngresoClave.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMantDeTarifarioGiro.resx">
+      <DependentUpon>frmMantDeTarifarioGiro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPagoGiro.resx">
+      <DependentUpon>frmPagoGiro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPagoGiroNuevo.resx">
+      <DependentUpon>frmPagoGiroNuevo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRegistrarComisionGiro.resx">
+      <DependentUpon>frmRegistrarComisionGiro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRptReporteGiros.resx">
+      <DependentUpon>frmRptReporteGiros.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRptListGiros.resx">
+      <DependentUpon>frmRptListGiros.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSolDesbloqGiro.resx">
+      <DependentUpon>frmSolDesbloqGiro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmVisualizarVinculado.resx">
+      <DependentUpon>frmVisualizarVinculado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CLI.CapaNegocio\CLI.CapaNegocio.csproj">
+      <Project>{3C2772BC-430D-43D4-99A2-95B85AA15A89}</Project>
+      <Name>CLI.CapaNegocio</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CLI.Presentacion\CLI.Presentacion.csproj">
+      <Project>{f009fd8b-9efd-4ca1-9c5e-86e223ba13c4}</Project>
+      <Name>CLI.Presentacion</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DEP.CapaNegocio\DEP.CapaNegocio.csproj">
+      <Project>{b15e0cfd-f117-408e-bb7d-bc1441311962}</Project>
+      <Name>DEP.CapaNegocio</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\EntityLayer\EntityLayer.csproj">
+      <Project>{B5346A13-9B09-426B-AE99-BD8E300C032A}</Project>
+      <Name>EntityLayer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GEN.BotonesBase\GEN.BotonesBase.csproj">
+      <Project>{1AAD7BDE-3869-4ACF-8B9A-7EF08F660F80}</Project>
+      <Name>GEN.BotonesBase</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GEN.CapaNegocio\GEN.CapaNegocio.csproj">
+      <Project>{A2CAF7C5-A155-4D88-BEA5-E3988183F6A3}</Project>
+      <Name>GEN.CapaNegocio</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GEN.ControlesBase\GEN.ControlesBase.csproj">
+      <Project>{2BF1CD70-8B4D-4DB6-A5E3-7F4D298A1C4E}</Project>
+      <Name>GEN.ControlesBase</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GEN.Funciones\GEN.Funciones.csproj">
+      <Project>{736df628-39ab-41c0-af28-b3fc7119261e}</Project>
+      <Name>GEN.Funciones</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GEN.LibreriaOffice\GEN.LibreriaOffice.csproj">
+      <Project>{7a2eb38a-c6c7-4319-9a09-2de8124c0089}</Project>
+      <Name>GEN.LibreriaOffice</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\REN.Servicio\CLI.Servicio.csproj">
+      <Project>{84DEDB08-6500-4E91-B9AB-3B144F946BC7}</Project>
+      <Name>CLI.Servicio</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\RPT.CapaNegocio\RPT.CapaNegocio.csproj">
+      <Project>{311a1ffe-c16e-4b77-9b76-0347cad855fa}</Project>
+      <Name>RPT.CapaNegocio</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SER.CapaNegocio\SER.CapaNegocio.csproj">
+      <Project>{542C7C4E-456B-4504-A8DD-A3D6E88CAE80}</Project>
+      <Name>SER.CapaNegocio</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SER.Funciones\SER.Funciones.csproj">
+      <Project>{FC47CFAD-D836-450D-B162-CF7384073147}</Project>
+      <Name>SER.Funciones</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

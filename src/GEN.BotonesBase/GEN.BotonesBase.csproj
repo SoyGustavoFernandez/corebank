@@ -1,0 +1,1024 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{1AAD7BDE-3869-4ACF-8B9A-7EF08F660F80}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>GEN.BotonesBase</RootNamespace>
+    <AssemblyName>GEN.BotonesBase</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Boton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Boton.Designer.cs">
+      <DependentUpon>Boton.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Boton2.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Boton2.designer.cs">
+      <DependentUpon>Boton2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BotonNormal.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="BotonNormal.designer.cs">
+      <DependentUpon>BotonNormal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="btnAbsolver.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="btnAbsolver.designer.cs">
+      <DependentUpon>btnAbsolver.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BtnAceptar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="BtnAceptar.Designer.cs">
+      <DependentUpon>BtnAceptar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="btnActualizar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="btnActualizar.Designer.cs">
+      <DependentUpon>btnActualizar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="btnAdjuntarFile.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="btnAdjuntarFile.Designer.cs">
+      <DependentUpon>btnAdjuntarFile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="btnAgregar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="btnAgregar.Designer.cs">
+      <DependentUpon>btnAgregar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="btnAnular.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="btnAnular.designer.cs">
+      <DependentUpon>btnAnular.cs</DependentUpon>
+    </Compile>
+    <Compile Include="btnAprobar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="btnAprobar.designer.cs">
+      <DependentUpon>btnAprobar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BtnAtender.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="BtnAtender.designer.cs">
+      <DependentUpon>BtnAtender.cs</DependentUpon>
+    </Compile>
+    <Compile Include="btnBalance.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="btnBalance.designer.cs">
+      <DependentUpon>btnBalance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="btnBiometrico.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="btnBiometrico.Designer.cs">
+      <DependentUpon>btnBiometrico.cs</DependentUpon>
+    </Compile>
+    <Compile Include="btnBlanco.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="btnBlanco.Designer.cs">
+      <DependentUpon>btnBlanco.cs</DependentUpon>
+    </Compile>
+    <Compile Include="btnBuenaPro.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="btnBuenaPro.designer.cs">
+      <DependentUpon>btnBuenaPro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="btnBusCliente.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="btnBusCliente.Designer.cs">
+      <DependentUpon>btnBusCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="btnBusCol.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="btnBusCol.Designer.cs">
+      <DependentUpon>btnBusCol.cs</DependentUpon>
+    </Compile>
+    <Compile Include="btnBusqueda.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="btnBusqueda.designer.cs">
+      <DependentUpon>btnBusqueda.cs</DependentUpon>
+    </Compile>
+    <Compile Include="btnBusSolicitud.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="btnBusSolicitud.designer.cs">
+      <DependentUpon>btnBusSolicitud.cs</DependentUpon>
+    </Compile>
+    <Compile Include="btnCalcular.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="btnCalcular.Designer.cs">
+      <DependentUpon>btnCalcular.cs</DependentUpon>
+    </Compile>
+    <Compile Include="btnCalendario.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="btnCalendario.designer.cs">
+      <DependentUpon>btnCalendario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="btnCambiar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="btnCambiar.Designer.cs">
+      <DependentUpon>btnCambiar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="btnCancelar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="btnCancelar.Designer.cs">
+      <DependentUpon>btnCancelar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="btnCancelarCred.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="btnCancelarCred.Designer.cs">
+      <DependentUpon>btnCancelarCred.cs</DependentUpon>
+    </Compile>
+    <Compile Include="btnCargarFile.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="btnCargarFile.designer.cs">
+      <DependentUpon>btnCargarFile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="btnCerrar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="btnCerrar.Designer.cs">
+      <DependentUpon>btnCerrar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="btnConfirmAsist.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="btnConfirmAsist.designer.cs">
+      <DependentUpon>btnConfirmAsist.cs</DependentUpon>
+    </Compile>
+    <Compile Include="btnCongelar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="btnCongelar.designer.cs">
+      <DependentUpon>btnCongelar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="btnConsultar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="btnConsultar.Designer.cs">
+      <DependentUpon>btnConsultar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="btnContinuar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="btnContinuar.designer.cs">
+      <DependentUpon>btnContinuar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="btnCortar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="btnCortar.designer.cs">
+      <DependentUpon>btnCortar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="btnDecidir.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="btnDecidir.designer.cs">
+      <DependentUpon>btnDecidir.cs</DependentUpon>
+    </Compile>
+    <Compile Include="btnDenegar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="btnDenegar.designer.cs">
+      <DependentUpon>btnDenegar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="btnDetalle.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="btnDetalle.Designer.cs">
+      <DependentUpon>btnDetalle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="btnDevolver.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="btnDevolver.designer.cs">
+      <DependentUpon>btnDevolver.cs</DependentUpon>
+    </Compile>
+    <Compile Include="btnDocumento.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="btnDocumento.designer.cs">
+      <DependentUpon>btnDocumento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="btnEditar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="btnEditar.Designer.cs">
+      <DependentUpon>btnEditar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="btnEliLista.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="btnEliLista.Designer.cs">
+      <DependentUpon>btnEliLista.cs</DependentUpon>
+    </Compile>
+    <Compile Include="btnEliminar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="btnEliminar.Designer.cs">
+      <DependentUpon>btnEliminar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="btnEmitirRecibo.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="btnEmitirRecibo.Designer.cs">
+      <DependentUpon>btnEmitirRecibo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="btnEntregado.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="btnEntregado.designer.cs">
+      <DependentUpon>btnEntregado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="btnEnviar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="btnEnviar.designer.cs">
+      <DependentUpon>btnEnviar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="btnEvaEconomica.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="btnEvaEconomica.designer.cs">
+      <DependentUpon>btnEvaEconomica.cs</DependentUpon>
+    </Compile>
+    <Compile Include="btnExporExcel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="btnExporExcel.designer.cs">
+      <DependentUpon>btnExporExcel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="btnExporPdf.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="btnExporPdf.designer.cs">
+      <DependentUpon>btnExporPdf.cs</DependentUpon>
+    </Compile>
+    <Compile Include="btnExportar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="btnExportar.designer.cs">
+      <DependentUpon>btnExportar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="btnExporTxt.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="btnExporTxt.designer.cs">
+      <DependentUpon>btnExporTxt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="btnExporWord.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="btnExporWord.designer.cs">
+      <DependentUpon>btnExporWord.cs</DependentUpon>
+    </Compile>
+    <Compile Include="btnExtorno.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="btnExtorno.Designer.cs">
+      <DependentUpon>btnExtorno.cs</DependentUpon>
+    </Compile>
+    <Compile Include="btnFactorTecnico.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="btnFactorTecnico.designer.cs">
+      <DependentUpon>btnFactorTecnico.cs</DependentUpon>
+    </Compile>
+    <Compile Include="btnFiltrar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="btnFiltrar.Designer.cs">
+      <DependentUpon>btnFiltrar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="btnFinalizar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="btnFinalizar.Designer.cs">
+      <DependentUpon>btnFinalizar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="btnGenerar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="btnGenerar.designer.cs">
+      <DependentUpon>btnGenerar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="btnGrabar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="btnGrabar.Designer.cs">
+      <DependentUpon>btnGrabar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="btnGrupo.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="btnGrupo.designer.cs">
+      <DependentUpon>btnGrupo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="btnGruSolAprobar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="btnHuellDig.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="btnHuellDig.designer.cs">
+      <DependentUpon>btnHuellDig.cs</DependentUpon>
+    </Compile>
+    <Compile Include="btnImportar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="btnImportar.designer.cs">
+      <DependentUpon>btnImportar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="btnImprimir.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="btnImprimir.Designer.cs">
+      <DependentUpon>btnImprimir.cs</DependentUpon>
+    </Compile>
+    <Compile Include="btnIniciar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="btnIniciar.designer.cs">
+      <DependentUpon>btnIniciar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="btnLeer.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="btnLeer.designer.cs">
+      <DependentUpon>btnLeer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="btnLiberar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="btnLiberar.designer.cs">
+      <DependentUpon>btnLiberar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="btnListaAprob.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="btnListaAprob.designer.cs">
+      <DependentUpon>btnListaAprob.cs</DependentUpon>
+    </Compile>
+    <Compile Include="btnMapa.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="btnMapa.designer.cs">
+      <DependentUpon>btnMapa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="btnMarcarAsistencia.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="btnMarcarAsistencia.designer.cs">
+      <DependentUpon>btnMarcarAsistencia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="btnMiniAcept.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="btnMiniAcept.designer.cs">
+      <DependentUpon>btnMiniAcept.cs</DependentUpon>
+    </Compile>
+    <Compile Include="btnMiniAceptar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="btnMiniAceptar.designer.cs">
+      <DependentUpon>btnMiniAceptar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="btnMiniActualizar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="btnMiniActualizar.designer.cs">
+      <DependentUpon>btnMiniActualizar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="btnMiniAgregar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="btnMiniAgregar.designer.cs">
+      <DependentUpon>btnMiniAgregar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="btnMiniBusq.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="btnMiniBusq.designer.cs">
+      <DependentUpon>btnMiniBusq.cs</DependentUpon>
+    </Compile>
+    <Compile Include="btnMiniBusqueda.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="btnMiniBusqueda.designer.cs">
+      <DependentUpon>btnMiniBusqueda.cs</DependentUpon>
+    </Compile>
+    <Compile Include="btnMiniCancelar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="btnMiniCancelar.designer.cs">
+      <DependentUpon>btnMiniCancelar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="btnMiniCancelEst.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="btnMiniCancelEst.Designer.cs">
+      <DependentUpon>btnMiniCancelEst.cs</DependentUpon>
+    </Compile>
+    <Compile Include="btnMiniDescargar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="btnMiniDescargar.Designer.cs">
+      <DependentUpon>btnMiniDescargar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="btnMiniDetalle.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="btnMiniDetalle.designer.cs">
+      <DependentUpon>btnMiniDetalle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="btnMiniEditar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="btnMiniEditar.designer.cs">
+      <DependentUpon>btnMiniEditar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="btnMiniExcel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="btnMiniExcel.Designer.cs">
+      <DependentUpon>btnMiniExcel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="btnMiniImportar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="btnMiniImportar.Designer.cs">
+      <DependentUpon>btnMiniImportar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="btnMiniImprimir.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="btnMiniImprimir.Designer.cs">
+      <DependentUpon>btnMiniImprimir.cs</DependentUpon>
+    </Compile>
+    <Compile Include="btnMiniLogin.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="btnMiniLogin.designer.cs">
+      <DependentUpon>btnMiniLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="btnMiniNuevo.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="btnMiniNuevo.designer.cs">
+      <DependentUpon>btnMiniNuevo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="btnMiniPasarDerecha.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="btnMiniPasarDerecha.designer.cs">
+      <DependentUpon>btnMiniPasarDerecha.cs</DependentUpon>
+    </Compile>
+    <Compile Include="btnMiniPasarIzquierda.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="btnMiniPasarIzquierda.designer.cs">
+      <DependentUpon>btnMiniPasarIzquierda.cs</DependentUpon>
+    </Compile>
+    <Compile Include="btnMiniQuitar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="btnMiniQuitar.designer.cs">
+      <DependentUpon>btnMiniQuitar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="btnNuevo.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="btnNuevo.Designer.cs">
+      <DependentUpon>btnNuevo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="btnNumerar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="btnNumerar.Designer.cs">
+      <DependentUpon>btnNumerar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="btnObservacion.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="btnObservacion.designer.cs">
+      <DependentUpon>btnObservacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="btnOpinion.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="btnOpinion.designer.cs">
+      <DependentUpon>btnOpinion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="btnPagar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="btnPagar.Designer.cs">
+      <DependentUpon>btnPagar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="btnPresideComite.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="btnPresideComite.designer.cs">
+      <DependentUpon>btnPresideComite.cs</DependentUpon>
+    </Compile>
+    <Compile Include="btnProcesar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="btnProcesar.Designer.cs">
+      <DependentUpon>btnProcesar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="btnProforma.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="btnProforma.designer.cs">
+      <DependentUpon>btnProforma.cs</DependentUpon>
+    </Compile>
+    <Compile Include="btnProveedor.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="btnProveedor.designer.cs">
+      <DependentUpon>btnProveedor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="btnProyeccion.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="btnProyeccion.Designer.cs">
+      <DependentUpon>btnProyeccion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="btnPuntaje.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="btnPuntaje.designer.cs">
+      <DependentUpon>btnPuntaje.cs</DependentUpon>
+    </Compile>
+    <Compile Include="btnQuitar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="btnQuitar.Designer.cs">
+      <DependentUpon>btnQuitar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="btnRechazar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="btnRechazar.designer.cs">
+      <DependentUpon>btnRechazar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="btnRecibido.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="btnRecibido.designer.cs">
+      <DependentUpon>btnRecibido.cs</DependentUpon>
+    </Compile>
+    <Compile Include="btnRegresar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="btnRegresar.designer.cs">
+      <DependentUpon>btnRegresar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="btnReimpresionVoucher.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="btnReimpresionVoucher.Designer.cs">
+      <DependentUpon>btnReimpresionVoucher.cs</DependentUpon>
+    </Compile>
+    <Compile Include="btnReqMinimo.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="btnReqMinimo.designer.cs">
+      <DependentUpon>btnReqMinimo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="btnResponsable.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="btnResponsable.designer.cs">
+      <DependentUpon>btnResponsable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="btnRevisar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="btnRevisar.Designer.cs">
+      <DependentUpon>btnRevisar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="btnRoundButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="btnSalir.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="btnSalir.Designer.cs">
+      <DependentUpon>btnSalir.cs</DependentUpon>
+    </Compile>
+    <Compile Include="btnSolAprobadas.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="btnSolAprobadas.designer.cs">
+      <DependentUpon>btnSolAprobadas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="btnSolicitar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="btnSolicitar.designer.cs">
+      <DependentUpon>btnSolicitar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="btnTarjeta.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="btnTarjeta.designer.cs">
+      <DependentUpon>btnTarjeta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="btnTransferir.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="btnTransferir.designer.cs">
+      <DependentUpon>btnTransferir.cs</DependentUpon>
+    </Compile>
+    <Compile Include="btnTrasladarExp.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="btnTrasladarExp.designer.cs">
+      <DependentUpon>btnTrasladarExp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="btnValidar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="btnValidar.Designer.cs">
+      <DependentUpon>btnValidar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BtnVincularSol.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="BtnVincularSol.designer.cs">
+      <DependentUpon>BtnVincularSol.cs</DependentUpon>
+    </Compile>
+    <Compile Include="btnTeleCredito.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="btnTeleCredito.Designer.cs">
+      <DependentUpon>btnTeleCredito.cs</DependentUpon>
+    </Compile>
+    <Compile Include="btnReporte.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="btnReporte.Designer.cs">
+      <DependentUpon>btnReporte.cs</DependentUpon>
+    </Compile>
+    <Compile Include="btnDescargar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="btnDescargar.Designer.cs">
+      <DependentUpon>btnDescargar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="btnEjecutar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="btnEjecutar.designer.cs">
+      <DependentUpon>btnEjecutar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="btnTiempo.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="btnTiempo.designer.cs">
+      <DependentUpon>btnTiempo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="btnMiniVer.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="btnMiniVer.Designer.cs">
+      <DependentUpon>btnMiniVer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="btnVincular.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="btnVincular.Designer.cs">
+      <DependentUpon>btnVincular.cs</DependentUpon>
+    </Compile>
+    <Compile Include="btnDepositar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="btnDepositar.Designer.cs">
+      <DependentUpon>btnDepositar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="btnBloquear.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="btnBloquear.Designer.cs">
+      <DependentUpon>btnBloquear.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CustomProgressBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="BotonNormal.resx">
+      <DependentUpon>BotonNormal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="btnActualizar.resx">
+      <DependentUpon>btnActualizar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BtnAtender.resx">
+      <DependentUpon>BtnAtender.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="btnBiometrico.resx">
+      <DependentUpon>btnBiometrico.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="btnBusSolicitud.resx">
+      <DependentUpon>btnBusSolicitud.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="btnCalendario.resx">
+      <DependentUpon>btnCalendario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="btnConfirmAsist.resx">
+      <DependentUpon>btnConfirmAsist.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="btnCortar.resx">
+      <DependentUpon>btnCortar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="btnDecidir.resx">
+      <DependentUpon>btnDecidir.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="btnDenegar.resx">
+      <DependentUpon>btnDenegar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="btnDevolver.resx">
+      <DependentUpon>btnDevolver.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="btnDocumento.resx">
+      <DependentUpon>btnDocumento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="btnEvaEconomica.resx">
+      <DependentUpon>btnEvaEconomica.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="btnFactorTecnico.resx">
+      <DependentUpon>btnFactorTecnico.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="btnGrupo.resx">
+      <DependentUpon>btnGrupo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="btnImprimir.resx">
+      <DependentUpon>btnImprimir.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="btnIniciar.resx">
+      <DependentUpon>btnIniciar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="btnOpinion.resx">
+      <DependentUpon>btnOpinion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="btnPresideComite.resx">
+      <DependentUpon>btnPresideComite.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="btnProyeccion.resx">
+      <DependentUpon>btnProyeccion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="btnPuntaje.resx">
+      <DependentUpon>btnPuntaje.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="btnReqMinimo.resx">
+      <DependentUpon>btnReqMinimo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="btnResponsable.resx">
+      <DependentUpon>btnResponsable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="btnTarjeta.resx">
+      <DependentUpon>btnTarjeta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="btnTransferir.resx">
+      <DependentUpon>btnTransferir.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="btnTrasladarExp.resx">
+      <DependentUpon>btnTrasladarExp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BtnVincularSol.resx">
+      <DependentUpon>BtnVincularSol.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="btnTeleCredito.resx">
+      <DependentUpon>btnTeleCredito.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_agregar.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_agregar1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_quitar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnAceptar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnCancelar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnConsultar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnEditar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnGrabar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnImprimir.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnNuevo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnSalir.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Lock_24x24.png" />
+    <None Include="Resources\Deposit_24x24.png" />
+    <None Include="Resources\Exchange_24x24.png" />
+    <None Include="Resources\Next_24x24.png" />
+    <None Include="Resources\Deny_24x24.png" />
+    <None Include="Resources\Review_24x24.png" />
+    <None Include="Resources\Review_32x32.png" />
+    <Content Include="Resources\btnNumerar.png" />
+    <None Include="Resources\btnProyeccion.png" />
+    <Content Include="Resources\btn_pagar.png" />
+    <None Include="Resources\imagenVisible.png" />
+    <None Include="Resources\imagenInvisible.png" />
+    <None Include="Resources\SandClock_24x24.png" />
+    <None Include="Resources\Exchange_24x24.png" />
+    <None Include="Resources\CancelarCred_.png" />
+    <Content Include="Resources\huella-digital.png" />
+    <None Include="Resources\Download_24x24.png" />
+    <None Include="Resources\btnReporte.png" />
+    <None Include="Resources\miniImprimir.png" />
+    <None Include="Resources\btnResponsable.png" />
+    <None Include="Resources\miniDownload.png" />
+    <None Include="Resources\mapa.png" />
+    <None Include="Resources\btnSolicitar.png" />
+    <None Include="Resources\MiniUpdate.png" />
+    <None Include="Resources\btnTeleCred.png" />
+    <None Include="Resources\word24.jpg" />
+    <None Include="Resources\pdf.png" />
+    <None Include="Resources\exportexcel.png" />
+    <None Include="Resources\BuenaPro.png" />
+    <None Include="Resources\SolAprobado.png" />
+    <None Include="Resources\btnReqMinimo.jpg" />
+    <None Include="Resources\btnPuntaje1.png" />
+    <None Include="Resources\btnTarjeta.png" />
+    <None Include="Resources\btnTarjetas.jpg" />
+    <None Include="Resources\btnTrasladar.png" />
+    <None Include="Resources\btnRecibido.png" />
+    <None Include="Resources\btnRechazar.png" />
+    <None Include="Resources\btn_PasarIzq.png" />
+    <None Include="Resources\btn_PasarDer.png" />
+    <None Include="Resources\Folder.png" />
+    <None Include="Resources\Switch1.png" />
+    <None Include="Resources\btn_Anular.png" />
+    <None Include="Resources\Btn_Vinculo.png" />
+    <None Include="Resources\Valida.png" />
+    <None Include="Resources\btn_detalle.png" />
+    <None Include="Resources\update.png" />
+    <None Include="Resources\btnTransferir.png" />
+    <None Include="Resources\btnCliente.png" />
+    <None Include="Resources\balance.png" />
+    <None Include="Resources\btnAprobar.png" />
+    <None Include="Resources\BtnAlmacen.png" />
+    <None Include="Resources\Approve_24x24.png" />
+    <None Include="Resources\Attach_24x24.png" />
+    <Content Include="Resources\btnAtras.png" />
+    <None Include="Resources\btnBusSolicitud.png" />
+    <None Include="Resources\btncalendar.png" />
+    <None Include="Resources\btnCerrar.png" />
+    <None Include="Resources\btnCalcular.png" />
+    <None Include="Resources\btnConfAsist.png" />
+    <None Include="Resources\btnCongelar.png" />
+    <Content Include="Resources\btnContinuar.png" />
+    <None Include="Resources\btnExportar.png" />
+    <None Include="Resources\btnImportar.png" />
+    <None Include="Resources\btnGenerar.png" />
+    <None Include="Resources\btnEnviar.png" />
+    <None Include="Resources\btnMiniCancelar.png" />
+    <None Include="Resources\btnMiniAceptar.png" />
+    <None Include="Resources\btnDenegar.png" />
+    <None Include="Resources\btnEntregado.png" />
+    <None Include="Resources\btnListaAprob.png" />
+    <None Include="Resources\btnLeer.png" />
+    <None Include="Resources\btnDocumentos.png" />
+    <None Include="Resources\btnEconomica.png" />
+    <None Include="Resources\btnEconomica1.png" />
+    <None Include="Resources\btnEconomica2.png" />
+    <None Include="Resources\btnFacTecnico.png" />
+    <None Include="Resources\btnGrupo.png" />
+    <None Include="Resources\btnMiniEditar.png" />
+    <None Include="Resources\btnEliminar.png" />
+    <None Include="Resources\btnMarcarAsistencia.png" />
+    <None Include="Resources\btnCortar.png" />
+    <None Include="Resources\btnExporTxt.png" />
+    <None Include="Resources\btnMiniNuevo.png" />
+    <None Include="Resources\btnDevolver.png" />
+    <None Include="Resources\btnFinalizar.jpg" />
+    <None Include="Resources\btnDecidir.png" />
+    <None Include="Resources\btnHuella.png" />
+    <None Include="Resources\btnIniciar.png" />
+    <None Include="Resources\btnLider.png" />
+    <None Include="Resources\btnMiniLogin.png" />
+    <None Include="Resources\btnOpinion.png" />
+    <None Include="Resources\btnFiltrar.png" />
+    <None Include="Resources\btnObservacion.png" />
+    <Content Include="Resources\btnProcesar.png" />
+    <None Include="Resources\btnProforma.png" />
+    <None Include="Resources\btnProveedor.png" />
+    <Content Include="Resources\btnPtoces.png" />
+    <None Include="Resources\Switch.png" />
+    <None Include="Resources\buscar.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\EntityLayer\EntityLayer.csproj">
+      <Project>{b5346a13-9b09-426b-ae99-bd8e300c032a}</Project>
+      <Name>EntityLayer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SolIntEls.GEN.Helper\SolIntEls.GEN.Helper.csproj">
+      <Project>{4459f866-3048-49ef-802a-318c02642fb4}</Project>
+      <Name>SolIntEls.GEN.Helper</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

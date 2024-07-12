@@ -1,0 +1,528 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{B5346A13-9B09-426B-AE99-BD8E300C032A}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>EntityLayer</RootNamespace>
+    <AssemblyName>EntityLayer</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Bus\Reniec\clsDatosReniecBus.cs" />
+    <Compile Include="Bus\Reniec\clsDatosSunatBus.cs" />
+    <Compile Include="Bus\Response\clsBusConsultaCliente.cs" />
+    <Compile Include="Bus\Response\clsBusLogin.cs" />
+    <Compile Include="Bus\Response\clsResponseBus.cs" />
+    <Compile Include="clsActividadEconomicaConfig.cs" />
+    <Compile Include="clsAlertasDisCredEvalRural.cs" />
+    <Compile Include="clsAlertaVariable.cs" />
+    <Compile Include="clsAprobacionAutonomiaUsuario.cs" />
+    <Compile Include="clsAprobacionCanal.cs" />
+    <Compile Include="clsAprobacionGestion.cs" />
+    <Compile Include="clsAprobacionNivel.cs" />
+    <Compile Include="clsAprobacionSolicitud.cs" />
+    <Compile Include="clsAprobacionSolicitudTipo.cs" />
+    <Compile Include="clsAprobaSolici.cs" />
+    <Compile Include="clsArchivoCargadoFechaValor.cs" />
+    <Compile Include="clsBiometriaExcep.cs" />
+    <Compile Include="clsCalculoDisenioCred.cs" />
+    <Compile Include="clsCanalAprobacionCred.cs" />
+    <Compile Include="clsClienteExcluidoFSD.cs" />
+    <Compile Include="clsClienteNotificacionSMS.cs" />
+    <Compile Include="clsClienteOfertas.cs" />
+    <Compile Include="clsComiteAmpRiesgo.cs" />
+    <Compile Include="clsComiteCreditoConfig.cs" />
+    <Compile Include="clsComiteCreditoHorario.cs" />
+    <Compile Include="clsComiteCreditoSesion.cs" />
+    <Compile Include="clsComiteVirtual.cs" />
+    <Compile Include="clsConceptos.cs" />
+    <Compile Include="clsConfigAprobaLimiteExcepc.cs" />
+    <Compile Include="clsConfigBiometricoAutorizacion.cs" />
+    <Compile Include="clsConfigBioPerfilAutorizacion.cs" />
+    <Compile Include="clsConfigComisiones.cs" />
+    <Compile Include="clsConfigDataGridView.cs" />
+    <Compile Include="clsConfigDestinoCredito.cs" />
+    <Compile Include="clsConfigRangoMonto.cs" />
+    <Compile Include="clsConfigSolicitudCred.cs" />
+    <Compile Include="clsConfigTipoOperacion.cs" />
+    <Compile Include="clsConfigTipoPersona.cs" />
+    <Compile Include="clsConfiguracionDocumento.cs" />
+    <Compile Include="clsConfiguracionLimite.cs" />
+    <Compile Include="clsConfiguracionTipoArchivoEscaneado.cs" />
+    <Compile Include="clsCreditoGrupoSolInt.cs" />
+    <Compile Include="clsDesactivacionPaqueteSeguro.cs" />
+    <Compile Include="clsDesafiliarPaqueteSeguro.cs" />
+    <Compile Include="clsDatosCalculoComision.cs" />
+    <Compile Include="clsDesafiliarSeguroMultiriesgo.cs" />
+    <Compile Include="clsDEstResPymeEst.cs" />
+    <Compile Include="clsDetalleConfigComisiones.cs" />
+    <Compile Include="clsConfigSubProArcEscaneado.cs" />
+    <Compile Include="clsDetalleOpinionRiesgo.cs" />
+    <Compile Include="clsDetalleSaldoInterviniente.cs" />
+    <Compile Include="clsDisenioCredito.cs" />
+    <Compile Include="clsEgresosEstacionales.cs" />
+    <Compile Include="clsEstadoVigencia.cs" />
+    <Compile Include="clsEnvioGiro.cs" />
+    <Compile Include="clsEvalCredAlertaBuzon.cs" />
+    <Compile Include="clsEvalCredAlertaVariable.cs" />
+    <Compile Include="clsEvalCredAlertaVarResumen.cs" />
+    <Compile Include="clsEvalSimpCicloDiario.cs" />
+    <Compile Include="clsEvalSimpCicloDiarioDetalle.cs" />
+    <Compile Include="clsEvalSimpCicloMensual.cs" />
+    <Compile Include="clsEvalSimpCicloMensualDetalle.cs" />
+    <Compile Include="clsExcepcionReglaNeg.cs" />
+    <Compile Include="clsExcepReglaNegResum.cs" />
+    <Compile Include="clsFechaPagoProcesados.cs" />
+    <Compile Include="clsFechasIngresoVentaInv.cs" />
+    <Compile Include="clsFlujoCajaRural.cs" />
+    <Compile Include="clsGestDatObservacion.cs" />
+    <Compile Include="clsGiroParticipante.cs" />
+    <Compile Include="clsGrupoSolAmpliacionDetalle.cs" />
+    <Compile Include="clsGrupoSolidarioAmpliacion.cs" />
+    <Compile Include="clsHistoricoSegurosOptativos.cs" />
+    <Compile Include="clsImpresionFechaValor.cs" />
+    <Compile Include="clsIngresoVentaActivoRural.cs" />
+    <Compile Include="clsInversionInsumo.cs" />
+    <Compile Include="clsJornalDetalleIng.cs" />
+    <Compile Include="clsJornalResumenIng.cs" />
+    <Compile Include="clsListaEECC.cs" />
+    <Compile Include="clsPlanPagoFechaValor.cs" />
+    <Compile Include="clsPlantillaFechaValor.cs" />
+    <Compile Include="clsPlantillaFechaValorCompara.cs" />
+    <Compile Include="clsPolizaSeguro.cs" />
+    <Compile Include="clsRPTCabecereFechaValor.cs" />
+    <Compile Include="clsSegurosNoPermitidos.cs" />
+    <Compile Include="clsLogCargaDatosConci.cs" />
+    <Compile Include="clsMantenimientoPaqueteSeguro.cs" />
+    <Compile Include="clsMantenimientoSeguroOptativo.cs" />
+    <Compile Include="clsMatrizAgricola.cs" />
+    <Compile Include="clsMEstResPymeEst.cs" />
+    <Compile Include="clsMontoRemesa.cs" />
+    <Compile Include="clsNivelAprobacion.cs" />
+    <Compile Include="clsNoCliente.cs" />
+    <Compile Include="clsNotificacionSMS.cs" />
+    <Compile Include="ClsOfertaClienteExclusivo.cs" />
+    <Compile Include="clsOfertaCredirap.cs" />
+    <Compile Include="clsOtrosEgresosEvalRuralD.cs" />
+    <Compile Include="clsOtrosEgresosEvalRuralM.cs" />
+    <Compile Include="clsOtrosGastos.cs" />
+    <Compile Include="clsOtrosIngresosEvalRuralD.cs" />
+    <Compile Include="clsOtrosIngresosEvalRuralM.cs" />
+    <Compile Include="clsPaqueteSeguro.cs" />
+    <Compile Include="clsPagoGiro.cs" />
+    <Compile Include="clsParametroAprobTasaNegociable.cs" />
+    <Compile Include="clsPeriodoCredito.cs" />
+    <Compile Include="clsPeriodoCuotas.cs" />
+    <Compile Include="clsPlanPagoSeguro.cs" />
+    <Compile Include="clsPlantillaSMS.cs" />
+    <Compile Include="clsPopUp.cs" />
+    <Compile Include="clsProductoCredSimp.cs" />
+    <Compile Include="ClsProductoExclusivo.cs" />
+    <Compile Include="ClsPropCreditoJornal.cs" />
+    <Compile Include="ClsPropSimpleCred.cs" />
+    <Compile Include="clsProyeccionIngresos.cs" />
+    <Compile Include="clsRastreoTasaNegociable.cs" />
+    <Compile Include="clsRegistroTelefono.cs" />
+    <Compile Include="clsCreditoReprogExcel.cs" />
+    <Compile Include="clsReglaNegocio.cs" />
+    <Compile Include="clsReglaNegocioEvaluada.cs" />
+    <Compile Include="clsRemesa.cs" />
+    <Compile Include="clsResolucionExcepcionReglaNeg.cs" />
+    <Compile Include="clsSegurosDesmarcados.cs" />
+    <Compile Include="clsSiniestros.cs" />
+    <Compile Include="clsSeguroComplementario.cs" />
+    <Compile Include="clsSmsGenerico.cs" />
+    <Compile Include="clsSolicitudAsignada.cs" />
+    <Compile Include="clsSolicitudCredSimp.cs" />
+    <Compile Include="clsSolReproEspecial.cs" />
+    <Compile Include="clsTarifarioGiros.cs" />
+    <Compile Include="clsTasaCredSimp.cs" />
+    <Compile Include="clsTasaNegociadaPerfil.cs" />
+    <Compile Include="clsTipoArchivoEscaneado.cs" />
+    <Compile Include="clsTipoCicloMensual.cs" />
+    <Compile Include="clsTipoSeguro.cs" />
+    <Compile Include="clsTipoComision.cs" />
+    <Compile Include="clsUlrWeb.cs" />
+    <Compile Include="clsUnidadMedida.cs" />
+    <Compile Include="clsUsuAprobBiometrico.cs" />
+    <Compile Include="clsMotivoVinculacionArchivo.cs" />
+    <Compile Include="clsSustentoArchivoPagare.cs" />
+    <Compile Include="Class1.cs" />
+    <Compile Include="clsActividadAgricola.cs" />
+    <Compile Include="clsActividadPecuaria.cs" />
+    <Compile Include="clsAgenciaEstablecimiento.cs" />
+    <Compile Include="clsAprobacionRecuperacionComision.cs" />
+    <Compile Include="clsAproSolicitudRecComision.cs" />
+    <Compile Include="clsAWModelos.cs" />
+    <Compile Include="clsBloqueoCuenta.cs" />
+    <Compile Include="clsClienteCampanaVigente.cs" />
+    <Compile Include="clsCliParamEnvioReniec.cs" />
+    <Compile Include="clsConexionWcf.cs" />
+    <Compile Include="clsConfiguracionReporteSeguro.cs" />
+    <Compile Include="clsConfReniec.cs" />
+    <Compile Include="clsCreditoDesembolsoCuentaParametro.cs" />
+    <Compile Include="clsDatosCreditoCliente.cs" />
+    <Compile Include="clsDatosCreditoClientePlanTrabajo.cs" />
+    <Compile Include="clsCreditoSeguro.cs" />
+    <Compile Include="clsCreJorReferencia.cs" />
+    <Compile Include="clsCreJorScoreCliente.cs" />
+    <Compile Include="clsCreJorScoreJornalero.cs" />
+    <Compile Include="clsDepositoCuentaParametro.cs" />
+    <Compile Include="clsDetProcesoAdquisicion.cs" />
+    <Compile Include="clsDatosCampana.cs" />
+    <Compile Include="clsEstablecimiento.cs" />
+    <Compile Include="clsDireccionCliente.cs" />
+    <Compile Include="clsEstablecimientoGestorRecuperacion.cs" />
+    <Compile Include="clsExpedienteOnline.cs" />
+    <Compile Include="clsFlujoPlanillaMovilidad.cs" />
+    <Compile Include="clsFlujoPlanTrabajoRecuperacion.cs" />
+    <Compile Include="clsGestorRecuperacion.cs" />
+    <Compile Include="clsGrabadoRecupComision.cs" />
+    <Compile Include="clsGrupoSolidarioAhorro.cs" />
+    <Compile Include="clsGrupoSolidarioVoucher.cs" />
+    <Compile Include="clsGrupoSolIntegranteCtaAhorro.cs" />
+    <Compile Include="clsIntervinienteCuenta.cs" />
+    <Compile Include="clsInventarioPecuario.cs" />
+    <Compile Include="clsGrupoSolidarioBono.cs" />
+    <Compile Include="clsMetaCreditoCarga.cs" />
+    <Compile Include="clsMetaReduccionSaldoVencido.cs" />
+    <Compile Include="clsParamScore.cs" />
+    <Compile Include="clsPlanillaMovilidad.cs" />
+    <Compile Include="clsPlanillaMovilidadResumen.cs" />
+    <Compile Include="clsPlanTrabajoDetalleAccion.cs" />
+    <Compile Include="clsPlanTrabajoObjetivo.cs" />
+    <Compile Include="clsPlanTrabajoRecuperacion.cs" />
+    <Compile Include="clsPlanTrabajoZonaVisita.cs" />
+    <Compile Include="clsRespuestaServidor.cs" />
+    <Compile Include="clsUsuarioComiteAmpRsg.cs" />
+    <Compile Include="clsWCFConsultaAdmisionInterna.cs" />
+    <Compile Include="clsProcesaDatosRen.cs" />
+    <Compile Include="clsProducto.cs" />
+    <Compile Include="clsResponseSMS.cs" />
+    <Compile Include="clsResumenObjetivoSemana.cs" />
+    <Compile Include="clsScoreDetalleVarCond.cs" />
+    <Compile Include="clsScoreEnt.cs" />
+    <Compile Include="clsScoreVarCond.cs" />
+    <Compile Include="clsScoreVariable.cs" />
+    <Compile Include="clsDesembolsoSolicitud.cs" />
+    <Compile Include="clsRecuperacionComision.cs" />
+    <Compile Include="clsRecuperacionCondonacionLimite.cs" />
+    <Compile Include="clsSolicitudCreditoCargaSeguro.cs" />
+    <Compile Include="clsSolicitudCreditoDetalle.cs" />
+    <Compile Include="clsSolicitudCreditos.cs" />
+    <Compile Include="clsSolicitudCreditoSeguro.cs" />
+    <Compile Include="clsSolicitudProcesoAdquisicion.cs" />
+    <Compile Include="clsSolicitudReprogramacion.cs" />
+    <Compile Include="clsTasa.cs" />
+    <Compile Include="clsTipoTasa.cs" />
+    <Compile Include="clsWCFAprobaciones.cs" />
+    <Compile Include="clsWCFCreditosRecuperaciones.cs" />
+    <Compile Include="clsWCFFichaVisita.cs" />
+    <Compile Include="clsWCFReciboProvicional.cs" />
+    <Compile Include="clsWCFRegistroGeoPos.cs" />
+    <Compile Include="clsWCFTipoDocumento.cs" />
+    <Compile Include="clsWCFCarteraAsesor.cs" />
+    <Compile Include="clsActividadEconomica.cs" />
+    <Compile Include="clsActivo.cs" />
+    <Compile Include="clsAgenByUsu.cs" />
+    <Compile Include="clsAgencia.cs" />
+    <Compile Include="clsAnalistaRsgZona.cs" />
+    <Compile Include="clsAportes.cs" />
+    <Compile Include="clsAprobacionCredito.cs" />
+    <Compile Include="clsAprobacionEvalCred.cs" />
+    <Compile Include="clsAproEvalCredGrupoSol.cs" />
+    <Compile Include="clsApruebaComprobante.cs" />
+    <Compile Include="clsAssembly.cs" />
+    <Compile Include="clsBalance.cs" />
+    <Compile Include="clsBalGenEval.cs" />
+    <Compile Include="clsBaseNegaSocio.cs" />
+    <Compile Include="clsBeneficiarios.cs" />
+    <Compile Include="clsCalendarioAdjudicacion.cs" />
+    <Compile Include="clsCaracteristicaNA.cs" />
+    <Compile Include="clsCondiNivelAprobaBase.cs" />
+    <Compile Include="clsDetSolicitudAproba.cs" />
+    <Compile Include="clsEstadoAproba.cs" />
+    <Compile Include="clsFinVoBoCondonaciones.cs" />
+    <Compile Include="clsNivelAprobacionPerfil.cs" />
+    <Compile Include="clsNivelAprobaSol.cs" />
+    <Compile Include="clsSolicitudAprobacion.cs" />
+    <Compile Include="clsVarNivelAproBase.cs" />
+    <Compile Include="clsCatalogo.cs" />
+    <Compile Include="clsCentroCosto.cs" />
+    <Compile Include="clsCliente.cs" />
+    <Compile Include="clsCobertura.cs" />
+    <Compile Include="clsComiteCred.cs" />
+    <Compile Include="clsCompaniaSeguro.cs" />
+    <Compile Include="clsCondicionInmueble.cs" />
+    <Compile Include="clsCosteo.cs" />
+    <Compile Include="clsCostos.cs" />
+    <Compile Include="clsCredito.cs" />
+    <Compile Include="clsCreditoProp.cs" />
+    <Compile Include="clsCtaContable.cs" />
+    <Compile Include="clsCuotaPago.cs" />
+    <Compile Include="clsDatosToken.cs" />
+    <Compile Include="clsDBResp.cs" />
+    <Compile Include="clsDecisComite.cs" />
+    <Compile Include="clsDeclaracionJurada.cs" />
+    <Compile Include="clsDescripcionEval.cs" />
+    <Compile Include="clsDescripEval.cs" />
+    <Compile Include="clsDestCredProp.cs" />
+    <Compile Include="clsDetalleInformeRiesgo.cs" />
+    <Compile Include="clsDetalleNotaEntrada.cs" />
+    <Compile Include="clsDetalleNotaPedido.cs" />
+    <Compile Include="clsDetalleOrdenCompra.cs" />
+    <Compile Include="clsDetalleProcesoAdj.cs" />
+    <Compile Include="clsDetBalGenEval.cs" />
+    <Compile Include="clsDetEstResEval.cs" />
+    <Compile Include="clsDetNotaSalida.cs" />
+    <Compile Include="clsDetTranfAlmacen.cs" />
+    <Compile Include="clsDetTransferenciasActivo.cs" />
+    <Compile Include="clsDeudasEval.cs" />
+    <Compile Include="clsDocumentoPorCalendario.cs" />
+    <Compile Include="clsElemEvalCred.cs" />
+    <Compile Include="clsEstadoConservacion.cs" />
+    <Compile Include="clsEstResEval.cs" />
+    <Compile Include="clsEstResGrupoSol.cs" />
+    <Compile Include="clsEvalCred.cs" />
+    <Compile Include="clsEvalCredComite.cs" />
+    <Compile Include="clsEvalCredGrupoSol.cs" />
+    <Compile Include="clsEvalCredIDs.cs" />
+    <Compile Include="clsEvalCredIntegGrupoSol.cs" />
+    <Compile Include="clsEvalCredito.cs" />
+    <Compile Include="clsEvalCualitativa.cs" />
+    <Compile Include="clsEvalCualitativaGrupoSol.cs" />
+    <Compile Include="clsEvaRequisitosMinimos.cs" />
+    <Compile Include="clsFactoresTecnicos.cs" />
+    <Compile Include="clsFamiliar.cs" />
+    <Compile Include="clsFeriado.cs" />
+    <Compile Include="clsFirma.cs" />
+    <Compile Include="clsFlujoCaja.cs" />
+    <Compile Include="clsFondoMortuorio.cs" />
+    <Compile Include="clsFormulario.cs" />
+    <Compile Include="clsFuenteIngreso.cs" />
+    <Compile Include="clsGarantia.cs" />
+    <Compile Include="clsGasto.cs" />
+    <Compile Include="clsGrupoActivo.cs" />
+    <Compile Include="clsGrupoEconomico.cs" />
+    <Compile Include="clsGrupoSolidarioIntegrante.cs" />
+    <Compile Include="clsIndicadorEval.cs" />
+    <Compile Include="clsIndicadorEvalGrupoSol.cs" />
+    <Compile Include="clsLimCobertura.cs" />
+    <Compile Include="clsMaterial.cs" />
+    <Compile Include="clsMenu.cs" />
+    <Compile Include="clsMesFechasEval.cs" />
+    <Compile Include="clsModPagoOperacion.cs" />
+    <Compile Include="clsModulo.cs" />
+    <Compile Include="clsMsjError.cs" />
+    <Compile Include="clsNivelAprobaBase.cs" />
+    <Compile Include="clsNotaEntrada.cs" />
+    <Compile Include="clsNotaPedido.cs" />
+    <Compile Include="clsNotaSalida.cs" />
+    <Compile Include="clsObsAprobadorGrupoSol.cs" />
+    <Compile Include="clsObservacion.cs" />
+    <Compile Include="clsObservacionAprobador.cs" />
+    <Compile Include="clsOrdenCompra.cs" />
+    <Compile Include="clsPassword.cs" />
+    <Compile Include="clsPep.cs" />
+    <Compile Include="clsPerfilUsu.cs" />
+    <Compile Include="clsPersonaCargoPublico.cs" />
+    <Compile Include="clsPersonaNegativa.cs" />
+    <Compile Include="clsPersonaScoring.cs" />
+    <Compile Include="clsPersonaSencible.cs" />
+    <Compile Include="clsPersonaSplaft.cs" />
+    <Compile Include="clsPlanPago.cs" />
+    <Compile Include="clsPolizaGarantia.cs" />
+    <Compile Include="clsPrelacion.cs" />
+    <Compile Include="clsProcesoAdjudicacion.cs" />
+    <Compile Include="clsProductoTipEval.cs" />
+    <Compile Include="clsPropCredito.cs" />
+    <Compile Include="clsPropDesembolso.cs" />
+    <Compile Include="clsProveedores.cs" />
+    <Compile Include="clsPuntajeProcesoAdj.cs" />
+    <Compile Include="clsRangoPedidoProceso.cs" />
+    <Compile Include="clsRastreo.cs" />
+    <Compile Include="clsRefCliEval.cs" />
+    <Compile Include="clsReferenciaEval.cs" />
+    <Compile Include="clsReglasTipCondonacion.cs" />
+    <Compile Include="clsRegPubGarantia.cs" />
+    <Compile Include="clsRelacLaboral.cs" />
+    <Compile Include="clsReporte.cs" />
+    <Compile Include="clsResumOtorgamientosEtapa.cs" />
+    <Compile Include="clsResumOtorgamientosNivel.cs" />
+    <Compile Include="clsRevisionDocCred.cs" />
+    <Compile Include="clsRevisionEvalCred.cs" />
+    <Compile Include="clsSocios.cs" />
+    <Compile Include="clsSolCred.cs" />
+    <Compile Include="clsSolCredGSIntegrante.cs" />
+    <Compile Include="clsSolicitudAmortiza.cs" />
+    <Compile Include="clsSolicitudCredGrupoSol.cs" />
+    <Compile Include="clsSolicitudGrupoSol.cs" />
+    <Compile Include="clsTablasXml.cs" />
+    <Compile Include="clsTasador.cs" />
+    <Compile Include="clsTasaNegociable.cs" />
+    <Compile Include="clsTipDestCred.cs" />
+    <Compile Include="clsTipEvalCred.cs" />
+    <Compile Include="clsTipoComisionesComprobante.cs" />
+    <Compile Include="clsTipoFacPonderacion.cs" />
+    <Compile Include="clsTipoRiesgo.cs" />
+    <Compile Include="clsTipReqMin.cs" />
+    <Compile Include="clsTransferenciaAlmacen.cs" />
+    <Compile Include="clsUsuario.cs" />
+    <Compile Include="clsUsuComite.cs" />
+    <Compile Include="clsValorizacionGar.cs" />
+    <Compile Include="clsVarApl.cs" />
+    <Compile Include="clsVarFlujoCajaEval.cs" />
+    <Compile Include="clsVarGen.cs" />
+    <Compile Include="clsVarGlobal.cs" />
+    <Compile Include="clsVariableScoring.cs" />
+    <Compile Include="clsVentas.cs" />
+    <Compile Include="clsVentasCostos.cs" />
+    <Compile Include="clsVinculado.cs" />
+    <Compile Include="clsVinculoNotaPedido.cs" />
+    <Compile Include="clsVinculoProveedor.cs" />
+    <Compile Include="clsWCFBusquedaCliente.cs" />
+    <Compile Include="clsWCFClienteBasico.cs" />
+    <Compile Include="clsWCFClienteHojaRuta.cs" />
+    <Compile Include="clsWCFDetalleHojaRuta.cs" />
+    <Compile Include="clsWCFEnvSegundoFiltro.cs" />
+    <Compile Include="clsWCFHojaRuta.cs" />
+    <Compile Include="clsWCFParametroInt.cs" />
+    <Compile Include="clsWCFParametroString.cs" />
+    <Compile Include="clsWCFPromesaPago.cs" />
+    <Compile Include="clsWCFRespuesta.cs" />
+    <Compile Include="clsWCFResScoringSegundoFiltro.cs" />
+    <Compile Include="clsWCFResSegundoFiltro.cs" />
+    <Compile Include="clsWCFResultadoGestion.cs" />
+    <Compile Include="clsWCFResultadoHojaRuta.cs" />
+    <Compile Include="clsWCFScoringPrimerFiltro.cs" />
+    <Compile Include="clsWCFUsuario.cs" />
+    <Compile Include="clsWCFVisita.cs" />
+    <Compile Include="clsWFCClienteVinculo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="clsWFCDireccionCliente.cs" />
+    <Compile Include="Codigo.cs" />
+    <Compile Include="clsWCFMonitorVisita.cs" />
+    <Compile Include="clsEscaner.cs" />
+    <Compile Include="clsConfigDocxMonto.cs" />
+    <Compile Include="CPE\ArchivoCPE.cs" />
+    <Compile Include="CPE\ComprobanteCPE.cs" />
+    <Compile Include="CPE\EstadoEnvioCPE.cs" />
+    <Compile Include="CPE\EstadoProcesoCPE.cs" />
+    <Compile Include="CPE\OperacionCPE.cs" />
+    <Compile Include="CPE\ProcesoCPE.cs" />
+    <Compile Include="CPE\UtilsCPE.cs" />
+    <Compile Include="Entity.Enum.cs" />
+    <Compile Include="Error.cs" />
+    <Compile Include="InExtension.cs" />
+    <Compile Include="MotorDecisionWebService\clsCalcularModeloDiarioRequest.cs" />
+    <Compile Include="MotorDecisionWebService\clsCalcularModeloDiarioResponse.cs" />
+    <Compile Include="MotorDecisionWebService\clsConfiguracionMotorDecision.cs" />
+    <Compile Include="MotorDecisionWebService\clsControladorMotorDecision.cs" />
+    <Compile Include="MotorDecisionWebService\clsObtenerExcepcionRequest.cs" />
+    <Compile Include="MotorDecisionWebService\clsObtenerExcepcionResponse.cs" />
+    <Compile Include="MotorDecisionWebService\clsReporteHistoricoMotorDecision.cs" />
+    <Compile Include="MotorDecisionWebService\clsTokenRequest.cs" />
+    <Compile Include="MotorDecisionWebService\clsTokenResponse.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Puntuacion.cs" />
+    <Compile Include="SentinelData\DataAutenticador.cs" />
+    <Compile Include="SentinelData\DataAvalCod.cs" />
+    <Compile Include="SentinelData\DataCentralRiesgoCliente.cs" />
+    <Compile Include="SentinelData\DataCentralRiesgosInput.cs" />
+    <Compile Include="SentinelData\DataCentralRiesgosOuput.cs" />
+    <Compile Include="SentinelData\DataCentralRiesgosPost.cs" />
+    <Compile Include="SentinelData\DataConRap.cs" />
+    <Compile Include="SentinelData\DataConsultaUsuario.cs" />
+    <Compile Include="SentinelData\DataDocumentos.cs" />
+    <Compile Include="SentinelData\DataEncrySentinelInput.cs" />
+    <Compile Include="SentinelData\DataEncrySentinelOutput.cs" />
+    <Compile Include="SentinelData\DataErrorApiSentinel.cs" />
+    <Compile Include="SentinelData\DataInfGen.cs" />
+    <Compile Include="SentinelData\DataResponseEstadoConsulta.cs" />
+    <Compile Include="SentinelData\DataResponseMasivaSentinel.cs" />
+    <Compile Include="SentinelData\DataResultCentralRiesgo.cs" />
+    <Compile Include="SentinelData\DataSenAvalCodDeu.cs" />
+    <Compile Include="SentinelData\DataSenAvalDe.cs" />
+    <Compile Include="SentinelData\DataSenAvalDetCodDeu.cs" />
+    <Compile Include="SentinelData\DataSenAvalDetDe.cs" />
+    <Compile Include="SentinelData\DataSenAvalDetPor.cs" />
+    <Compile Include="SentinelData\DataSenAvalPor.cs" />
+    <Compile Include="SentinelData\DataSenConBasDetSBSMicr.cs" />
+    <Compile Include="SentinelData\DataSenConBasDetVen.cs" />
+    <Compile Include="SentinelData\DataSenConBasInd.cs" />
+    <Compile Include="SentinelData\DataSenConBasResumenConRap.cs" />
+    <Compile Include="SentinelData\DataSenConBasSBSMicr.cs" />
+    <Compile Include="SentinelData\DataSenConBasUtiLinCre.cs" />
+    <Compile Include="SentinelData\DataSenConBasVen.cs" />
+    <Compile Include="SentinelData\DataSenEvalSabio.cs" />
+    <Compile Include="SentinelData\DataSenEvalSabioMotivo.cs" />
+    <Compile Include="SentinelData\DataSenInfBasica.cs" />
+    <Compile Include="SentinelData\DataSenInfGenDirecc.cs" />
+    <Compile Include="SentinelData\DataSenInfGenEsRepLeg.cs" />
+    <Compile Include="SentinelData\DataSenInfGenRepLeg.cs" />
+    <Compile Include="SentinelData\DataTocken.cs" />
+    <Compile Include="SentinelData\DataUsuarioSentinel.cs" />
+    <Compile Include="SentinelData\DataUsuariosUltimaConsulta.cs" />
+    <Compile Include="SentinelData\Response.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\GEN.Funciones\GEN.Funciones.csproj">
+      <Project>{736df628-39ab-41c0-af28-b3fc7119261e}</Project>
+      <Name>GEN.Funciones</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,135 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>JavaScript Cliente Test</title>
+    <meta charset="utf-8" />
+    <script type="text/javascript" src="/Scripts/jquery-2.1.4.js"></script>
+    <script type="text/javascript" src="/Scripts/knockout-3.4.0.debug.js"></script>
+    <script type="text/javascript">
+        var ViewModel = function () {
+            var _vm = this;
+            var base = "https://dev.cajalosandes.pe";
+            //var base = "https://10.4.12.6:443";
+            //var base = "https://localhost:44300";
+            
+            _vm.myObj = ko.observable();
+
+            _vm.user = ko.observable();
+            _vm.password = ko.observable();
+            _vm.user("calvaro");
+            _vm.password("calvaro");
+
+            _vm.basicAuth = ko.computed(function () {
+                return "Basic " + btoa(_vm.user() + ":" + _vm.password());
+            });
+            
+            _vm.token = ko.observable();
+            _vm.getResponse = ko.observable();
+            _vm.postResponse1 = ko.observable();
+            _vm.postResponse2 = ko.observable();
+            _vm.MethodResponse = ko.observable();
+
+            _vm.cNroPago = ko.observable();
+            _vm.nMonto = ko.observable();
+
+            _vm.onAuthClick = function () {
+                $.ajax({
+                    headers: {
+                        'Access-Control-Allow-Origin': 'http://10.4.12.15:8081',
+                        'Access-Control-Request-Headers': 'User-Agent,Content-Type,Authorization,X-RequestDigest,X-ClientService-ClientTag',
+                        'X-Powered-By': 'ASP.NET'
+                    },
+                    method: "POST",
+                    url: base + "/Servicios/AuthenticationTokenService.svc/Authenticate",
+                    contentType: "application/json",
+                    context: document.body,
+                    data: JSON.stringify({
+                        cUsuario: _vm.user(),
+                        cPassword: _vm.password()
+                    }),
+                    success: function (data) {
+                        _vm.token(data);
+                    },
+                    failure: function (err) { alert(err.responseText); },
+                    error: function (err) { alert(err.responseText); }
+                });
+            };
+
+            _vm.onListaMotivos = function () {
+                var param = '';                
+                var data = JSON.stringify(param);                
+
+                $.ajax({
+                    method: "POST",
+                    url: base + "/Servicios/CallCenter.svc/ObtenerListMotivos",
+                    contentType: "application/json",
+                    dataType: "json",
+                    data: data,
+                    context: document.body,
+                    beforeSend: function (request) { request.setRequestHeader("Authorization", _vm.basicAuth()); },
+                    success: function (data) {
+                        console.log(data);
+                        _vm.postResponse1(data);
+                    },
+                    failure: function (err) { alert(err.responseText); },
+                    error: function (err) { alert(err.responseText); }
+                });
+            };
+
+            _vm.onListaCreditos = function () {
+                var param = '{ "idCli": 66802 }';
+                var data = JSON.stringify(param);                
+
+                $.ajax({
+                    method: "POST",
+                    url: base + "/Servicios/CallCenter.svc/ObtenerListCreditos",
+                    contentType: "application/json",
+                    dataType: "json",
+                    data: data,
+                    context: document.body,
+                    beforeSend: function (request) { request.setRequestHeader("Authorization", _vm.basicAuth()); },
+                    success: function (data) {
+                        console.log(data);
+                        _vm.postResponse2(data);
+                    },
+                    failure: function (err) { alert(err.responseText); },
+                    error: function (err) { alert(err.responseText); }
+                });
+            };           
+        };
+        $(function () {
+            ko.applyBindings(new ViewModel());
+        });
+    </script>
+</head>
+<body>
+    <div>
+        <input type="text" data-bind="value: user" placeholder="Usuario" />
+        <input type="password" data-bind="value: password" placeholder="Contraseña" />
+        <input type="button" value="Authenticate" data-bind="click: onAuthClick" />
+    </div>
+    <p>Token: <span data-bind="text: token"></span></p>
+        
+    <div style="display:block;">
+        <div>
+            <h2>Test Lista Motivos</h2>
+            <div>            
+                <label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                <input type="button" value="Consultar" data-bind="click: onListaMotivos" />
+            </div>
+
+            <p>Test Post Response: <span data-bind="text: postResponse1"></span></p>
+        </div>
+
+        <div>
+            <h2>Test Lista Creditos</h2>
+            <div>            
+                <label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                <input type="button" value="Consultar" data-bind="click: onListaCreditos" />
+            </div>
+
+            <p>Test Post Response: <span data-bind="text: postResponse2"></span></p>
+        </div>        
+    </div>
+</body>
+</html>

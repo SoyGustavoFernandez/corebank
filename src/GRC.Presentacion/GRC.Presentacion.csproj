@@ -1,0 +1,180 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B854CD0C-EF5B-495C-A2E3-228818803A3F}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>GRC.Presentacion</RootNamespace>
+    <AssemblyName>GRC.Presentacion</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="GEN.Funciones, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="GEN.PrintHelper, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="frmConsultaSesion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmConsultaSesion.Designer.cs">
+      <DependentUpon>frmConsultaSesion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMantTipoConsejo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMantTipoConsejo.Designer.cs">
+      <DependentUpon>frmMantTipoConsejo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMantTipoIntegrante.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMantTipoIntegrante.Designer.cs">
+      <DependentUpon>frmMantTipoIntegrante.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMantTipoSesion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMantTipoSesion.Designer.cs">
+      <DependentUpon>frmMantTipoSesion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmRegistroConsejo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRegistroConsejo.Designer.cs">
+      <DependentUpon>frmRegistroConsejo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmRegistroSesion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRegistroSesion.Designer.cs">
+      <DependentUpon>frmRegistroSesion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmRptSesiones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRptSesiones.Designer.cs">
+      <DependentUpon>frmRptSesiones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmConsultaSesion.resx">
+      <DependentUpon>frmConsultaSesion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMantTipoConsejo.resx">
+      <DependentUpon>frmMantTipoConsejo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMantTipoIntegrante.resx">
+      <DependentUpon>frmMantTipoIntegrante.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMantTipoSesion.resx">
+      <DependentUpon>frmMantTipoSesion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRegistroConsejo.resx">
+      <DependentUpon>frmRegistroConsejo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRegistroSesion.resx">
+      <DependentUpon>frmRegistroSesion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRptSesiones.resx">
+      <DependentUpon>frmRptSesiones.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CLI.CapaNegocio\CLI.CapaNegocio.csproj">
+      <Project>{3c2772bc-430d-43d4-99a2-95b85aa15a89}</Project>
+      <Name>CLI.CapaNegocio</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\EntityLayer\EntityLayer.csproj">
+      <Project>{b5346a13-9b09-426b-ae99-bd8e300c032a}</Project>
+      <Name>EntityLayer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GEN.BotonesBase\GEN.BotonesBase.csproj">
+      <Project>{1aad7bde-3869-4acf-8b9a-7ef08f660f80}</Project>
+      <Name>GEN.BotonesBase</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GEN.CapaNegocio\GEN.CapaNegocio.csproj">
+      <Project>{a2caf7c5-a155-4d88-bea5-e3988183f6a3}</Project>
+      <Name>GEN.CapaNegocio</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GEN.ControlesBase\GEN.ControlesBase.csproj">
+      <Project>{2bf1cd70-8b4d-4db6-a5e3-7f4d298a1c4e}</Project>
+      <Name>GEN.ControlesBase</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GEN.LibreriaOffice\GEN.LibreriaOffice.csproj">
+      <Project>{7a2eb38a-c6c7-4319-9a09-2de8124c0089}</Project>
+      <Name>GEN.LibreriaOffice</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GRC.CapaNegocio\GRC.CapaNegocio.csproj">
+      <Project>{13b81341-ce5d-42d5-9d00-42cc3ebc69fb}</Project>
+      <Name>GRC.CapaNegocio</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

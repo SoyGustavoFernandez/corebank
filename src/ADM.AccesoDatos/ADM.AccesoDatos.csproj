@@ -1,0 +1,105 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E9C01F45-9E4E-47FD-BF96-E82DE9A10BF8}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ADM.AccesoDatos</RootNamespace>
+    <AssemblyName>ADM.AccesoDatos</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="clsADAprobacionParametrizacion.cs" />
+    <Compile Include="clsADAsigAgenByUsu.cs" />
+    <Compile Include="clsADAuditoriaTablas.cs" />
+    <Compile Include="clsADAuthObjetoForm.cs" />
+    <Compile Include="clsADBiometriaExcepcion.cs" />
+    <Compile Include="clsADConfigGastComiSeg.cs" />
+    <Compile Include="clsADConfigPlantillaImp.cs" />
+    <Compile Include="clsADConfiguracionImpresionContratos.cs" />
+    <Compile Include="clsADConfiguracionLimite.cs" />
+    <Compile Include="clsADConfiguracionLimiteAprobacionExcepcion.cs" />
+    <Compile Include="clsADConfigurarSeguroOptativo.cs" />
+    <Compile Include="clsADEstadoSupervision.cs" />
+    <Compile Include="clsADExperienciaCliente.cs" />
+    <Compile Include="clsADHistoricoSegurosOptativos.cs" />
+    <Compile Include="clsADMantAssemblies.cs" />
+    <Compile Include="clsADMantConcepRec.cs" />
+    <Compile Include="clsADMantConceptos.cs" />
+    <Compile Include="clsADMantenimientos.cs" />
+    <Compile Include="clsADMantLimiteCoberFSD.cs" />
+    <Compile Include="clsADMantmtoAprobacionGen.cs" />
+    <Compile Include="clsADMantOperaciones.cs" />
+    <Compile Include="clsADMontosXModulo.cs" />
+    <Compile Include="clsADMotivoOpeBanco.cs" />
+    <Compile Include="clsADNivelesAprobacion.cs" />
+    <Compile Include="clsADPlanPagoSeguro.cs" />
+    <Compile Include="clsADPlantillaCuentaAsiento.cs" />
+    <Compile Include="clsADPlazosXModulo.cs" />
+    <Compile Include="clsADProvisionesProc.cs" />
+    <Compile Include="clsADAprobacion.cs" />
+    <Compile Include="clsADRegAprobaSolicitud.cs" />
+    <Compile Include="clsADSupervisorOperacion.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\EntityLayer\EntityLayer.csproj">
+      <Project>{b5346a13-9b09-426b-ae99-bd8e300c032a}</Project>
+      <Name>EntityLayer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GEN.AccesoDatos\GEN.AccesoDatos.csproj">
+      <Project>{a7727aec-6595-40f6-9fda-12cd52005fa8}</Project>
+      <Name>GEN.AccesoDatos</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GEN.Funciones\GEN.Funciones.csproj">
+      <Project>{736df628-39ab-41c0-af28-b3fc7119261e}</Project>
+      <Name>GEN.Funciones</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SolIntEls.GEN.Helper\SolIntEls.GEN.Helper.csproj">
+      <Project>{4459f866-3048-49ef-802a-318c02642fb4}</Project>
+      <Name>SolIntEls.GEN.Helper</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

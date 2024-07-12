@@ -1,0 +1,438 @@
+﻿body {
+}
+
+
+.btnBase_Grabar
+{
+   width: 120px;
+   height: 40px; 
+   border: 1px solid #0072bc;
+   background:#0072bc url('save.png') no-repeat 4px 4px;
+   padding:4px 4px 4px 30px;
+   font-family: 'Segoe UI Semilight', 'Open Sans', Verdana, Arial, Helvetica, sans-serif;
+   font-size: 13px;
+   color: #ffffff;   
+   border-radius:4px;
+}
+
+.btnBase_Aceptar
+{
+   width: 120px;
+   height: 40px; 
+   border: 1px solid #0072bc;
+   background:#0072bc url('check.png') no-repeat 4px 4px;
+   padding:4px 4px 4px 30px;
+   font-family: 'Segoe UI Semilight', 'Open Sans', Verdana, Arial, Helvetica, sans-serif;
+   font-size: 13px;
+   color: #ffffff;
+   border-radius:4px;
+}
+
+.btnBase_Atras
+{
+   width: 120px;
+   height: 40px; 
+   border: 1px solid #0072bc;
+   background:#0072bc url('back.png') no-repeat 4px 4px;
+   padding:4px 4px 4px 30px;
+   font-family: 'Segoe UI Semilight', 'Open Sans', Verdana, Arial, Helvetica, sans-serif;
+   font-size: 13px;
+   color: #ffffff;
+   border-radius:4px;
+}
+
+.btnBase_Cancelar
+{
+   width: 120px;
+   height: 40px; 
+   border: 1px solid #0072bc;
+   background:#0072bc url('cancel.png') no-repeat 4px 4px;
+   padding:4px 4px 4px 30px;
+   font-family: 'Segoe UI Semilight', 'Open Sans', Verdana, Arial, Helvetica, sans-serif;
+   font-size: 13px;
+   color: #ffffff;   
+   border-radius:4px;
+}
+
+.btnBase_Cliente
+{
+   width: 120px;
+   height: 40px; 
+   border: 1px solid #0072bc;
+   background:#0072bc url('client.png') no-repeat 4px 4px;
+   padding:4px 4px 4px 30px;
+   font-family: 'Segoe UI Semilight', 'Open Sans', Verdana, Arial, Helvetica, sans-serif;
+   font-size: 13px;
+   color: #ffffff;
+   border-radius:4px;
+}
+
+.btnBase_Consultar
+{
+   width: 120px;
+   height: 40px; 
+   border: 1px solid #0072bc;
+   background:#0072bc url('search.png') no-repeat 4px 4px;
+   padding:4px 4px 4px 30px;
+   font-family: 'Segoe UI Semilight', 'Open Sans', Verdana, Arial, Helvetica, sans-serif;
+   font-size: 13px;
+   color: #ffffff;
+   border-radius:4px;
+   }
+
+.btnBase_Continuar
+{
+   width: 120px;
+   height: 40px; 
+   border: 1px solid #0072bc;
+   background:#0072bc url('next.png') no-repeat 4px 4px;
+   padding:4px 4px 4px 30px;
+   font-family: 'Segoe UI Semilight', 'Open Sans', Verdana, Arial, Helvetica, sans-serif;
+   font-size: 13px;
+   color: #ffffff;
+   border-radius:4px;
+}
+
+.btnBase_Editar
+{
+   width: 120px;
+   height: 40px; 
+   border: 1px solid #0072bc;
+   background:#0072bc url('edit.png') no-repeat 4px 4px;
+   padding:4px 4px 4px 30px;
+   font-family: 'Segoe UI Semilight', 'Open Sans', Verdana, Arial, Helvetica, sans-serif;
+   font-size: 13px;
+   color: #ffffff;
+   border-radius:4px;
+}
+
+.btnBase_Imprimir
+{
+   width: 170px;
+   border: 1px solid #0072bc;
+   background:#0072bc url('print.png') no-repeat 4px 4px;
+   padding:4px 4px 4px 30px;
+   font-family: 'Segoe UI Semilight', 'Open Sans', Verdana, Arial, Helvetica, sans-serif;
+   font-size: 13px;
+   color: #000000;
+   border-radius:4px;
+}
+
+.btnBase_Nuevo
+{
+    width: 120px;
+   height: 40px; 
+   border: 1px solid #0072bc;
+   background:#0072bc url('new.png') no-repeat 4px 4px;
+   padding:4px 4px 4px 30px;
+   font-family: 'Segoe UI Semilight', 'Open Sans', Verdana, Arial, Helvetica, sans-serif;
+   font-size: 13px;
+   color: #ffffff;
+   border-radius:4px;
+}
+
+.btnBase_Procesar
+{
+   width: 120px;
+   height: 40px; 
+   border: 1px solid #0072bc;
+   background:#0072bc url('calcular.png') no-repeat 4px 4px;
+   padding:4px 4px 4px 30px;
+   font-family: 'Segoe UI Semilight', 'Open Sans', Verdana, Arial, Helvetica, sans-serif;
+   font-size: 13px;
+   color: #ffffff;
+   border-radius:4px;
+}
+
+.btnBase_Agregar
+{
+   width: 120px;
+   height: 40px;
+   border: 1px solid #0072bc;
+   background:#0072bc url('add.png') no-repeat 4px 4px;
+   padding:4px 4px 4px 30px;
+   font-family: 'Segoe UI Semilight', 'Open Sans', Verdana, Arial, Helvetica, sans-serif;
+   font-size: 13px;
+   color: #ffffff;
+   border-radius:4px;
+}
+
+.btnBase_Quitar
+{
+   width: 120px;
+   height: 40px; 
+   border: 1px solid #0072bc;
+   background:#0072bc url('delete.png') no-repeat 4px 4px;
+   padding:4px 4px 4px 30px;
+   font-family: 'Segoe UI Semilight', 'Open Sans', Verdana, Arial, Helvetica, sans-serif;
+   font-size: 13px;
+   color: #ffffff;
+   border-radius:4px;
+}
+
+.btnBase_Enviar
+{
+   width: 120px;
+   height: 40px; 
+   border: 1px solid #0072bc;
+   background:#ababab url('nodeA.png') no-repeat 4px 4px;
+   padding:4px 4px 4px 30px;
+   font-family: 'Segoe UI Semilight', 'Open Sans', Verdana, Arial, Helvetica, sans-serif;
+   font-size: 13px;
+   color: #000000;
+   border-radius:4px;
+}
+
+.cmbBase
+{
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 12px;
+ 	height:20px; 	
+	border: 1.5px solid #d4d4d4; 
+    border-radius:4px;
+}
+
+
+.cmbBase:hover
+{
+    border: 1.5px solid #0072bc; 
+    outline: none;
+}
+
+
+.cmbBase:focus
+{
+    border: 1.5px solid #0072bc; 
+    outline: none;
+}
+
+
+.chkBase:hover
+{
+    border: 1.5px solid #0072bc; 
+    outline: none;    
+}
+
+.chkBase:focus
+{
+    border: 1.5px solid #0072bc; 
+    outline: none;
+}
+
+
+.dtgBase 
+{
+    padding-left:4px;
+}
+
+.rowStyle /*estilo de filas gridview*/
+{
+    background-color : White;
+    font-family: 'Segoe UI Semilight', 'Open Sans', Verdana, Arial, Helvetica, sans-serif;
+    font-size: 12px;
+}
+
+.headerStyle /*estilo de cabecera gridview*/
+{
+    background-color : White;
+    font-family: 'Segoe UI Light', 'Open Sans', Verdana, Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    text-align:center;
+    
+}
+
+.pagerStyle /*estilo de paginado gridview*/
+{
+    background-color : #0072bc;
+    font-size: 12px;
+    color:#ffffff;
+     text-align:center;
+    }
+
+.pagerStyle a /*estilo de paginado gridview*/
+{
+    background-color : #0072bc;
+    font-size: 12px;
+    color:#ffffff;
+     text-align:center;
+    }
+
+
+.alternateStyle /*estilo de columnas alternativas gridview*/
+{
+    font-family: 'Segoe UI Light', 'Open Sans', Verdana, Arial, Helvetica, sans-serif;
+    background-color : #E4F1F5;
+    font-size: 12px;
+}
+
+.txtBase
+{
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 12px;
+ 	height:20px;
+ 	border: 1px solid #d4d4d4;
+}
+.txtBase_error
+{
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 12px;
+ 	height:16px;
+ 	border: 1px solid #d4d4d4;
+ 	outline:1px;
+ 	
+ 	background:#FFFFFF url(error1.png) no-repeat 4px 4px;
+	padding:4px 4px 4px 27px;
+}
+.txtBase:hover
+{
+    border: 1.5px solid #0072bc;    
+}
+.txtBase:focus
+{
+    border: 1.5px solid #0072bc; 
+    outline: none;
+}
+.txtBase:active
+{
+    border: 1.5px solid #0072bc; 
+    outline: none;
+}
+
+.IconoCalendario
+{
+      background:#FFFFFF url(calendar3.png) no-repeat 2px 2px;
+      width: 20px;
+      height: 20px;
+      border: 0px ;
+}
+
+.CalendarioBase {
+    background-color: #ffffff;
+    width: 150px;
+    border:  1px solid #949494;
+    padding: 2px 2px 2px 2px;
+    font-size: 10px;
+    font-family: 'Segoe UI Semilight', 'Open Sans', Verdana, Arial, Helvetica, sans-serif;
+    font-weight:normal;
+    outline: 0px;
+
+    position: fixed; 
+    float: right; 
+    margin-top: 0; 
+    margin-right: -10x; 
+    margin-bottom: 5px; 
+    margin-left: 0px;     
+}
+.CalendarioBase a {
+    text-decoration: none;
+}
+.CalendarioBase .TituloCalendarioBase 
+{
+    font-weight: bold; 
+    font-size: 12px;
+    background-color: #0072bc;
+    font-family: 'Segoe UI Semilight', 'Open Sans', Verdana, Arial, Helvetica, sans-serif;
+    color:#ffffff;    
+    border:1px solid #0072bc;
+}
+.CalendarioBase td.OtrosDiaCalendarioBase
+{
+    background-color: #FCFEFF;
+    font-size: 12px;
+}
+.CalendarioBase td.DiaCalendarioBase 
+{    
+    background-color: #E4F1F5;
+    font-size: 12px;
+}
+.CalendarioBase .NextPrevCalendarioBase 
+{
+    text-align: center;
+}
+.CalendarioBase td.SelectorDiaCalendarioBase 
+{
+    background-color: #5FB2F5;
+}
+.CalendarioBase .DiaCalendarioBase a, 
+.CalendarioBase .SelectorDiaCalendarioBase a,
+.CalendarioBase .NextPrevCalendarioBase a {
+    display: block;
+    line-height: 15px;
+}
+.CalendarioBase .DiaCalendarioBase a:hover, 
+.CalendarioBase .SelectorDiaCalendarioBase a:hover
+{
+    background-color: #5FB2F5;
+}
+.CalendarioBase .NextPrevCalendarioBase a:hover 
+{
+    background-color: #02101C;
+}
+
+
+
+.lblBase
+{
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 12px;
+    width: 150px
+}
+
+
+.pnlBase
+{
+    border: 1px solid gray;
+    border-color:#d4d4d4;
+    border-radius:4px;
+    padding-bottom:8px;
+    padding-top:8px;
+}
+   
+
+.treeViewBase
+{   
+    font-family: 'Segoe UI Semilight', 'Open Sans', Verdana, Arial, Helvetica, sans-serif;
+    color: #000000;
+}
+.treeNodeBase
+ {
+     background-color: #ffffff;
+     color: #000000;
+     font-family: 'Segoe UI Semilight', 'Open Sans', Verdana, Arial, Helvetica, sans-serif;
+     font-size:10px;
+}
+.treeNodeSeleccionado
+{
+    background-color: #0072bc;   
+}
+
+
+.validator 
+{
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    color: #f00;
+}
+
+.margin-row{
+    margin-top : 5px;
+    margin-bottom : 15px;
+}
+
+.txtMultiline
+{
+    min-height:100px;
+}
+
+span.radio {
+    padding: 0px;
+}
+
+span.radio > input[type="radio"] {
+    margin: 4px 0px;
+}
+
+span.radio > label {
+    float: left;
+    margin-right: 5px;
+    padding: 0px 15px;
+}

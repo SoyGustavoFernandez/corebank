@@ -1,0 +1,79 @@
+﻿<header>
+    <div class="content-wrapper">
+        <div class="float-left">
+            <p class="site-title">
+                <a href="~/">Tipo Autorización</a></p>
+        </div>
+    </div>
+        <meta charset="utf-8" />
+    <script type="text/javascript" src="/Scripts/jquery-2.1.4.js"></script>
+    <script type="text/javascript" src="/Scripts/knockout-3.4.0.debug.js"></script>
+     <script type="text/javascript">
+         var ViewModel = function () {
+             var _vm = this;
+             var base = "http://localhost:4810/";
+
+             _vm.myObj = ko.observable();
+
+             _vm.user = ko.observable();
+             _vm.password = ko.observable();
+             _vm.user("fquispe");
+             _vm.password("fquispe");
+
+             _vm.basicAuth = ko.computed(function () {
+                 return "Basic " + btoa(_vm.user() + ":" + _vm.password());
+             });
+
+             _vm.token = ko.observable();
+             _vm.getResponse = ko.observable();
+             _vm.postResponse1 = ko.observable(); 
+             _vm.MethodResponse = ko.observable(); 
+
+ 
+             _vm.onListaMotivos = function () {
+                 var param = '';
+                 var data = JSON.stringify(param);
+
+                 $.ajax({
+                     method: "GET",
+                     url: base + "/api/TipoAutorizacion",
+                     contentType: "application/json",
+                     dataType: "json",
+                     data: data,
+                     context: document.body, 
+                     success: function (data) {
+                         console.log(data);
+                         _vm.postResponse1(data);
+                     },
+                     failure: function (err) { alert(err.responseText); },
+                     error: function (err) { alert(err.responseText); }
+                 });
+             };
+              
+         };
+         $(function () {
+             ko.applyBindings(new ViewModel());
+         });
+    </script>
+</header>
+ 
+<div id="body">
+    <ul id="contacts"></ul>
+        <div style="display:block;">
+        <div>
+            <h2>Test Lista Tipo Autorizacion</h2>
+            <div>            
+                <label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                <input type="button" value="Consultar" data-bind="click: onListaMotivos" />
+            </div>
+
+             <ul data-bind="foreach: postResponse1">
+                <li>The value is <span data-bind="text: $data.cTipo"></span></li>
+            </ul>
+        
+        </div>
+
+          
+    </div>
+</div>
+ 

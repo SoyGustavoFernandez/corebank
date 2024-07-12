@@ -1,0 +1,407 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2008/01/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+  <Body>
+    <ReportItems>
+      <Textbox Name="Textbox4">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>=TRIM(Parameters!cTextoCliente.Value)</Value>
+                <Style>
+                  <FontFamily>Consolas</FontFamily>
+                  <FontSize>9pt</FontSize>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <SpaceBefore>0pt</SpaceBefore>
+            <SpaceAfter>0pt</SpaceAfter>
+            <Style>
+              <TextAlign>Left</TextAlign>
+            </Style>
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox1</rd:DefaultName>
+        <Top>0.02205cm</Top>
+        <Left>0.66cm</Left>
+        <Height>0.5cm</Height>
+        <Width>6.7cm</Width>
+        <Style>
+          <Border>
+            <Style>None</Style>
+            <Width>0.25pt</Width>
+          </Border>
+        </Style>
+      </Textbox>
+      <Rectangle Name="Rectangle2">
+        <ReportItems>
+          <Image Name="imgFirmaName">
+            <Source>Database</Source>
+            <Value>=First(Fields!cFirmaRepresentanteJO.Value, "dtVariables")</Value>
+            <MIMEType>image/png</MIMEType>
+            <Sizing>Fit</Sizing>
+            <Left>0.42085cm</Left>
+            <Height>1.55923cm</Height>
+            <Width>5.53949cm</Width>
+            <ToolTip>imgFirmaName</ToolTip>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+            </Style>
+          </Image>
+        </ReportItems>
+        <KeepTogether>true</KeepTogether>
+        <Top>0.55283cm</Top>
+        <Left>0.61309cm</Left>
+        <Height>1.66506cm</Height>
+        <Width>6.33818cm</Width>
+        <ZIndex>1</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <BottomBorder>
+            <Style>Solid</Style>
+          </BottomBorder>
+        </Style>
+      </Rectangle>
+      <Textbox Name="Textbox23">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>FIRMA DEL REPRESENTANTE DE CAJA LOS ANDES</Value>
+                <Style>
+                  <FontSize>8pt</FontSize>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style>
+              <TextAlign>Center</TextAlign>
+            </Style>
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox23</rd:DefaultName>
+        <Top>2.25317cm</Top>
+        <Height>0.6cm</Height>
+        <Width>7.58cm</Width>
+        <ZIndex>2</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+    </ReportItems>
+    <Height>2.85317cm</Height>
+    <Style>
+      <Border>
+        <Style>None</Style>
+        <Width>0.25pt</Width>
+      </Border>
+    </Style>
+  </Body>
+  <Width>7.58cm</Width>
+  <Page>
+    <PageHeader>
+      <Height>1.02255cm</Height>
+      <PrintOnFirstPage>true</PrintOnFirstPage>
+      <PrintOnLastPage>true</PrintOnLastPage>
+      <ReportItems>
+        <Textbox Name="Textbox5">
+          <KeepTogether>true</KeepTogether>
+          <Paragraphs>
+            <Paragraph>
+              <TextRuns>
+                <TextRun>
+                  <Value>=Parameters!cNombreEmpresa.Value</Value>
+                  <Style>
+                    <FontFamily>Consolas</FontFamily>
+                    <FontSize>9pt</FontSize>
+                  </Style>
+                </TextRun>
+              </TextRuns>
+              <SpaceBefore>0pt</SpaceBefore>
+              <SpaceAfter>0pt</SpaceAfter>
+              <Style>
+                <TextAlign>Left</TextAlign>
+              </Style>
+            </Paragraph>
+          </Paragraphs>
+          <rd:DefaultName>Textbox1</rd:DefaultName>
+          <Left>0.66cm</Left>
+          <Height>0.5cm</Height>
+          <Width>3.8175cm</Width>
+          <Style>
+            <Border>
+              <Style>None</Style>
+              <Width>0.25pt</Width>
+            </Border>
+          </Style>
+        </Textbox>
+        <Textbox Name="Textbox8">
+          <CanGrow>true</CanGrow>
+          <KeepTogether>true</KeepTogether>
+          <Paragraphs>
+            <Paragraph>
+              <TextRuns>
+                <TextRun>
+                  <Value>=Parameters!cTipoImpresion.Value</Value>
+                  <Style>
+                    <FontFamily>Consolas</FontFamily>
+                    <FontSize>9pt</FontSize>
+                  </Style>
+                </TextRun>
+              </TextRuns>
+              <SpaceBefore>0pt</SpaceBefore>
+              <SpaceAfter>0pt</SpaceAfter>
+              <Style>
+                <TextAlign>Left</TextAlign>
+              </Style>
+            </Paragraph>
+          </Paragraphs>
+          <rd:DefaultName>Textbox7</rd:DefaultName>
+          <Left>4.4775cm</Left>
+          <Height>0.5cm</Height>
+          <Width>2.6825cm</Width>
+          <ZIndex>1</ZIndex>
+          <Style>
+            <Border>
+              <Style>None</Style>
+              <Width>0.25pt</Width>
+            </Border>
+          </Style>
+        </Textbox>
+        <Textbox Name="Textbox6">
+          <KeepTogether>true</KeepTogether>
+          <Paragraphs>
+            <Paragraph>
+              <TextRuns>
+                <TextRun>
+                  <Value>="RUC: "+Parameters!cRUC.Value</Value>
+                  <Style>
+                    <FontFamily>Consolas</FontFamily>
+                    <FontSize>9pt</FontSize>
+                  </Style>
+                </TextRun>
+              </TextRuns>
+              <SpaceBefore>0pt</SpaceBefore>
+              <SpaceAfter>0pt</SpaceAfter>
+              <Style>
+                <TextAlign>Left</TextAlign>
+              </Style>
+            </Paragraph>
+          </Paragraphs>
+          <rd:DefaultName>Textbox1</rd:DefaultName>
+          <Top>0.50932cm</Top>
+          <Left>0.66cm</Left>
+          <Height>0.5cm</Height>
+          <Width>3cm</Width>
+          <ZIndex>2</ZIndex>
+          <Style>
+            <Border>
+              <Style>None</Style>
+              <Width>0.25pt</Width>
+            </Border>
+          </Style>
+        </Textbox>
+        <Textbox Name="Textbox10">
+          <CanGrow>true</CanGrow>
+          <KeepTogether>true</KeepTogether>
+          <Paragraphs>
+            <Paragraph>
+              <TextRuns>
+                <TextRun>
+                  <Value>="OPE.Nº: " + Parameters!nIdKardex.Value</Value>
+                  <Style>
+                    <FontFamily>Consolas</FontFamily>
+                    <FontSize>9pt</FontSize>
+                  </Style>
+                </TextRun>
+              </TextRuns>
+              <SpaceBefore>0pt</SpaceBefore>
+              <SpaceAfter>0pt</SpaceAfter>
+              <Style>
+                <TextAlign>Right</TextAlign>
+              </Style>
+            </Paragraph>
+          </Paragraphs>
+          <rd:DefaultName>Textbox1</rd:DefaultName>
+          <Top>0.50932cm</Top>
+          <Left>3.66cm</Left>
+          <Height>0.5cm</Height>
+          <Width>3.4cm</Width>
+          <ZIndex>3</ZIndex>
+          <Visibility>
+            <Hidden>=iif(Parameters!nIdKardex.Value=0,true,false)</Hidden>
+          </Visibility>
+          <Style>
+            <Border>
+              <Style>None</Style>
+              <Width>0.25pt</Width>
+            </Border>
+          </Style>
+        </Textbox>
+      </ReportItems>
+      <Style>
+        <Border>
+          <Style>None</Style>
+          <Width>0.25pt</Width>
+        </Border>
+      </Style>
+    </PageHeader>
+    <PageHeight>25cm</PageHeight>
+    <PageWidth>7.6cm</PageWidth>
+    <InteractiveHeight>10cm</InteractiveHeight>
+    <InteractiveWidth>7.6cm</InteractiveWidth>
+    <LeftMargin>0cm</LeftMargin>
+    <RightMargin>0cm</RightMargin>
+    <TopMargin>0cm</TopMargin>
+    <BottomMargin>0cm</BottomMargin>
+    <ColumnSpacing>0cm</ColumnSpacing>
+    <Style>
+      <Border>
+        <Style>None</Style>
+        <Width>0.25pt</Width>
+      </Border>
+    </Style>
+  </Page>
+  <AutoRefresh>0</AutoRefresh>
+  <DataSources>
+    <DataSource Name="dsProduccion">
+      <ConnectionProperties>
+        <DataProvider>SQL</DataProvider>
+        <ConnectString>Data Source=10.5.81.142\DESARROLLO;Initial Catalog=SI_BDDesarrollo</ConnectString>
+      </ConnectionProperties>
+      <rd:SecurityType>DataBase</rd:SecurityType>
+      <rd:DataSourceID>761e2bf3-7207-47b3-8ca1-e8c30f5ee7c0</rd:DataSourceID>
+    </DataSource>
+  </DataSources>
+  <DataSets>
+    <DataSet Name="dtVariables">
+      <Query>
+        <DataSourceName>dsProduccion</DataSourceName>
+        <CommandType>StoredProcedure</CommandType>
+        <CommandText>ADM_ObtenerVariableImpresionContratos_SP</CommandText>
+      </Query>
+      <Fields>
+        <Field Name="cFirmaRepresentante">
+          <DataField>cFirmaRepresentante</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="nNumPaginaAhorros">
+          <DataField>nNumPaginaAhorros</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="nNumPaginaCreditos">
+          <DataField>nNumPaginaCreditos</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="nNumPaginaGrupoSolidario">
+          <DataField>nNumPaginaGrupoSolidario</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="cLogoImg">
+          <DataField>cLogoImg</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="nFilasDefualtAhorros">
+          <DataField>nFilasDefualtAhorros</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="nFilasDefualtCredito">
+          <DataField>nFilasDefualtCredito</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="nFilasDefualtGrupoSolidario">
+          <DataField>nFilasDefualtGrupoSolidario</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="cFirmaRepresentanteJO">
+          <DataField>cFirmaRepresentanteJO</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+      </Fields>
+    </DataSet>
+  </DataSets>
+  <ReportParameters>
+    <ReportParameter Name="cTextoEmpresa">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value xml:space="preserve"> </Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>cTexto</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="cNombreEmpresa">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>CRAC LOS ANDES S.A.</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>cNombreEmpresa</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="cRUC">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>20322445564</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>cRUC</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="cTextoCliente">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>– – –   INICIO DE OPERACIONES  – – –
+RESPONSABLE DE VENTANILLA
+------------------------------------
+OFICINA      : OF. AZANGARO   
+CAJERO       : ROXANA.MAMANI
+FECHA INICIO : 27-04-2017
+------------------------------------
+SALDO INICIO SOLES   :100,999,381.90
+SALDO INICIO DOLARES :**********0.00
+
+------------------------------------
+FECHA IMP.: 27-04-2017
+HORA      : 11:59:18</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>cTextoCliente</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="cTipoImpresion">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value xml:space="preserve"> </Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>cTipoImpresion</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="nIdKardex">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>88888888</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>nIdKardex</Prompt>
+    </ReportParameter>
+  </ReportParameters>
+  <Language>ES-PE</Language>
+  <rd:ReportUnitType>Cm</rd:ReportUnitType>
+  <rd:ReportID>8e0d8f3b-414c-4da6-9e3b-c14b078a1e8c</rd:ReportID>
+</Report>

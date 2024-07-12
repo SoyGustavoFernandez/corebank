@@ -1,0 +1,247 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{1A803347-2D2B-4D43-9A9B-45C172117476}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>PRE.Presentacion</RootNamespace>
+    <AssemblyName>PRE.Presentacion</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="frmAjustesGestion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAjustesGestion.designer.cs">
+      <DependentUpon>frmAjustesGestion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmBuscarPartidaPre.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBuscarPartidaPre.designer.cs">
+      <DependentUpon>frmBuscarPartidaPre.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCargarDeExcel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCargarDeExcel.designer.cs">
+      <DependentUpon>frmCargarDeExcel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDialogoQueValorPartid.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDialogoQueValorPartid.designer.cs">
+      <DependentUpon>frmDialogoQueValorPartid.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMantenimientoEstPeriodo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMantenimientoEstPeriodo.designer.cs">
+      <DependentUpon>frmMantenimientoEstPeriodo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMantenimientoTipoAfec.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMantenimientoTipoAfec.designer.cs">
+      <DependentUpon>frmMantenimientoTipoAfec.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMantenimientoTipoMod.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMantenimientoTipoMod.designer.cs">
+      <DependentUpon>frmMantenimientoTipoMod.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPartidaAmpliacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPartidaAmpliacion.designer.cs">
+      <DependentUpon>frmPartidaAmpliacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPartidaPresupuesto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPartidaPresupuesto.designer.cs">
+      <DependentUpon>frmPartidaPresupuesto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPartidaReasignacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPartidaReasignacion.designer.cs">
+      <DependentUpon>frmPartidaReasignacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPeriodoPresupuesto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPeriodoPresupuesto.designer.cs">
+      <DependentUpon>frmPeriodoPresupuesto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmRegistroValorPartida.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRegistroValorPartida.designer.cs">
+      <DependentUpon>frmRegistroValorPartida.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmRptSaldos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRptSaldos.designer.cs">
+      <DependentUpon>frmRptSaldos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmRptVarAcuMensualPresupuesto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRptVarAcuMensualPresupuesto.designer.cs">
+      <DependentUpon>frmRptVarAcuMensualPresupuesto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmRptVariacionDetalle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRptVariacionDetalle.designer.cs">
+      <DependentUpon>frmRptVariacionDetalle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmRptVarMensualPresupuesto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRptVarMensualPresupuesto.designer.cs">
+      <DependentUpon>frmRptVarMensualPresupuesto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="frmAjustesGestion.resx">
+      <DependentUpon>frmAjustesGestion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBuscarPartidaPre.resx">
+      <DependentUpon>frmBuscarPartidaPre.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCargarDeExcel.resx">
+      <DependentUpon>frmCargarDeExcel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDialogoQueValorPartid.resx">
+      <DependentUpon>frmDialogoQueValorPartid.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMantenimientoEstPeriodo.resx">
+      <DependentUpon>frmMantenimientoEstPeriodo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMantenimientoTipoAfec.resx">
+      <DependentUpon>frmMantenimientoTipoAfec.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMantenimientoTipoMod.resx">
+      <DependentUpon>frmMantenimientoTipoMod.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPartidaAmpliacion.resx">
+      <DependentUpon>frmPartidaAmpliacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPartidaPresupuesto.resx">
+      <DependentUpon>frmPartidaPresupuesto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPartidaReasignacion.resx">
+      <DependentUpon>frmPartidaReasignacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPeriodoPresupuesto.resx">
+      <DependentUpon>frmPeriodoPresupuesto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRegistroValorPartida.resx">
+      <DependentUpon>frmRegistroValorPartida.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRptSaldos.resx">
+      <DependentUpon>frmRptSaldos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRptVarAcuMensualPresupuesto.resx">
+      <DependentUpon>frmRptVarAcuMensualPresupuesto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRptVariacionDetalle.resx">
+      <DependentUpon>frmRptVariacionDetalle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRptVarMensualPresupuesto.resx">
+      <DependentUpon>frmRptVarMensualPresupuesto.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CNT.CapaNegocio\CNT.CapaNegocio.csproj">
+      <Project>{ea4b5acb-be46-4c43-9ba7-063c61fb9d0e}</Project>
+      <Name>CNT.CapaNegocio</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\EntityLayer\EntityLayer.csproj">
+      <Project>{b5346a13-9b09-426b-ae99-bd8e300c032a}</Project>
+      <Name>EntityLayer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GEN.BotonesBase\GEN.BotonesBase.csproj">
+      <Project>{1aad7bde-3869-4acf-8b9a-7ef08f660f80}</Project>
+      <Name>GEN.BotonesBase</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GEN.CapaNegocio\GEN.CapaNegocio.csproj">
+      <Project>{a2caf7c5-a155-4d88-bea5-e3988183f6a3}</Project>
+      <Name>GEN.CapaNegocio</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GEN.ControlesBase\GEN.ControlesBase.csproj">
+      <Project>{2bf1cd70-8b4d-4db6-a5e3-7f4d298a1c4e}</Project>
+      <Name>GEN.ControlesBase</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GEN.Funciones\GEN.Funciones.csproj">
+      <Project>{736df628-39ab-41c0-af28-b3fc7119261e}</Project>
+      <Name>GEN.Funciones</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GEN.LibreriaOffice\GEN.LibreriaOffice.csproj">
+      <Project>{7a2eb38a-c6c7-4319-9a09-2de8124c0089}</Project>
+      <Name>GEN.LibreriaOffice</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PRE.CapaNegocio\PRE.CapaNegocio.csproj">
+      <Project>{673a631f-bc80-468a-8418-182ffe26386a}</Project>
+      <Name>PRE.CapaNegocio</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\RPT.CapaNegocio\RPT.CapaNegocio.csproj">
+      <Project>{311a1ffe-c16e-4b77-9b76-0347cad855fa}</Project>
+      <Name>RPT.CapaNegocio</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SolIntEls.GEN.Helper\SolIntEls.GEN.Helper.csproj">
+      <Project>{4459f866-3048-49ef-802a-318c02642fb4}</Project>
+      <Name>SolIntEls.GEN.Helper</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,1 @@
+﻿<%@ ServiceHost Language="C#" Debug="true" Service="WCF.CoreBank.WebServices.EvaluacionCreditos" CodeBehind="EvaluacionCreditos.svc.cs" %>

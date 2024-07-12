@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<conexion>
+	<datos>
+		<server>10.5.81.142\desarrollo,49392</server>
+		<database>SI_BDDesarrollo_MN06</database>
+		<agencia>1</agencia>
+		<autenticacion>2</autenticacion>
+	</datos>
+</conexion>

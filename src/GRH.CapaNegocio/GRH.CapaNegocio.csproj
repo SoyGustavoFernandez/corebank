@@ -1,0 +1,100 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{8D2FC685-BDB8-453A-B6DB-F0F4E18A9E14}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>GRH.CapaNegocio</RootNamespace>
+    <AssemblyName>GRH.CapaNegocio</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="clsCNAdelantoSueldo.cs" />
+    <Compile Include="clsCNAsignacionHorario.cs" />
+    <Compile Include="clsCNConceptoRemunerativo.cs" />
+    <Compile Include="clsCNControlAsistencia.cs" />
+    <Compile Include="clsCNDatosVinculados.cs" />
+    <Compile Include="clsCNDeclaracionJurada.cs" />
+    <Compile Include="clsCNEsquemaAFP.cs" />
+    <Compile Include="clsCNEstablecimeinto.cs" />
+    <Compile Include="clsCNEstadoPeriodo.cs" />
+    <Compile Include="clsCNHorasExtrasCompens.cs" />
+    <Compile Include="clsCNJustificaciones.cs" />
+    <Compile Include="clsCNListaNivelPersonal.cs" />
+    <Compile Include="clsCNMantAreas.cs" />
+    <Compile Include="clsCNMantCargos.cs" />
+    <Compile Include="clsCNMantConceptosRem.cs" />
+    <Compile Include="clsCNMantenimientoHorario.cs" />
+    <Compile Include="clsCNMantEstablec.cs" />
+    <Compile Include="clsCNMantRegimen.cs" />
+    <Compile Include="clsCNModalidadPlanilla.cs" />
+    <Compile Include="clsCNMotivoInasistencia.cs" />
+    <Compile Include="clsCNPeriodoDeclaracion.cs" />
+    <Compile Include="clsCNPeriodoPlanilla.cs" />
+    <Compile Include="clsCNPermisoJustificacion.cs" />
+    <Compile Include="clsCNPLAME.cs" />
+    <Compile Include="clsCNPlanilla.cs" />
+    <Compile Include="clsCNPlantillaCuentaAsientoPlanilla.cs" />
+    <Compile Include="clsCNProcesosGenerales.cs" />
+    <Compile Include="clsCNTipoPermiso.cs" />
+    <Compile Include="clsCNTipoPlanilla.cs" />
+    <Compile Include="clsCNTipoRegimen.cs" />
+    <Compile Include="clsCNTipoRelacionLaboral.cs" />
+    <Compile Include="clsCNVacaciones.cs" />
+    <Compile Include="clsRPTCNRecurHum.cs" />
+    <Compile Include="clsCNEnvioBoletas.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\GEN.CapaNegocio\GEN.CapaNegocio.csproj">
+      <Project>{a2caf7c5-a155-4d88-bea5-e3988183f6a3}</Project>
+      <Name>GEN.CapaNegocio</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GRH.AccesoDatos\GRH.AccesoDatos.csproj">
+      <Project>{9a6546ff-36e1-44ff-ab84-85e98df581b3}</Project>
+      <Name>GRH.AccesoDatos</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

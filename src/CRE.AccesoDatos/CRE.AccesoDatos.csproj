@@ -1,0 +1,165 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{E0432652-BEE5-442C-B059-C0A673ED92CB}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CRE.AccesoDatos</RootNamespace>
+    <AssemblyName>CRE.AccesoDatos</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="clsADActividadInternaConfig.cs" />
+    <Compile Include="clsADAdministracionFiles.cs" />
+    <Compile Include="clsADAlertaVariable.cs" />
+    <Compile Include="clsADAPIKasNet.cs" />
+    <Compile Include="clsADAPIPdp.cs" />
+    <Compile Include="clsADAprobacionCredito.cs" />
+    <Compile Include="clsADBalance.cs" />
+    <Compile Include="clsADCalificacion.cs" />
+    <Compile Include="clsADCalifInt.cs" />
+    <Compile Include="clsADCargaArchivo.cs" />
+    <Compile Include="clsADCargaGastosCred.cs" />
+    <Compile Include="clsADCartaFianza.cs" />
+    <Compile Include="clsADCategoriaOficina.cs" />
+    <Compile Include="clsADCierreCredito.cs" />
+    <Compile Include="ClsADClienteExclusivo.cs" />
+    <Compile Include="clsADCobertura.cs" />
+    <Compile Include="clsADComite.cs" />
+    <Compile Include="clsADComiteCreditos.cs" />
+    <Compile Include="clsADCondonacion.cs" />
+    <Compile Include="clsADConSol.cs" />
+    <Compile Include="clsADControlExp.cs" />
+    <Compile Include="clsADCredito.cs" />
+    <Compile Include="clsADCreditoCargaSeguro.cs" />
+    <Compile Include="clsADCreditoJornalero.cs" />
+    <Compile Include="clsADDestinoCredito.cs" />
+    <Compile Include="clsADEmpresasConvenio.cs" />
+    <Compile Include="clsADEstadoCartaFianza.cs" />
+    <Compile Include="clsADEvalAgrico.cs" />
+    <Compile Include="clsADEvalAgrop.cs" />
+    <Compile Include="clsADEvalConsumo.cs" />
+    <Compile Include="clsADEvalCrediJornal.cs" />
+    <Compile Include="clsADEvalCrediRural.cs" />
+    <Compile Include="clsADEvalCredSimp.cs" />
+    <Compile Include="clsADEvalEmp.cs" />
+    <Compile Include="clsADEvalPyme.cs" />
+    <Compile Include="clsADEvalPymeEstacional.cs" />
+    <Compile Include="clsADEvaluacion.cs" />
+    <Compile Include="clsADExcepcionesCreditos.cs" />
+    <Compile Include="clsADExpedienteLinea.cs" />
+    <Compile Include="clsADFechaValor.cs" />
+    <Compile Include="clsADGarantia.cs" />
+    <Compile Include="clsADGarantiaRural.cs" />
+    <Compile Include="clsADGastosCuenta.cs" />
+    <Compile Include="clsADGastosJudiciales.cs" />
+    <Compile Include="clsADGestionObservaciones.cs" />
+    <Compile Include="clsADGrupoEconomico.cs" />
+    <Compile Include="clsADGrupoSolidario.cs" />
+    <Compile Include="clsADGrupoSolidarioCargo.cs" />
+    <Compile Include="clsADGrupoSolidarioCiclo.cs" />
+    <Compile Include="clsADIntervCre.cs" />
+    <Compile Include="clsADLimiteOperativCred.cs" />
+    <Compile Include="clsADMantenimientoCanales.cs" />
+    <Compile Include="clsADMeta.cs" />
+    <Compile Include="clsADModDesembolso.cs" />
+    <Compile Include="clsADMonitorOtorgamientoCred.cs" />
+    <Compile Include="clsADMotivoExtorno.cs" />
+    <Compile Include="clsADMotorDecision.cs" />
+    <Compile Include="clsADNivelAprobacion.cs" />
+    <Compile Include="clsADObservacionAprobador.cs" />
+    <Compile Include="clsAdOperacion.cs" />
+    <Compile Include="clsADPagare.cs" />
+    <Compile Include="clsADPaqueteSeguro.cs" />
+    <Compile Include="clsADPolizaGarantia.cs" />
+    <Compile Include="clsADPrelacion.cs" />
+    <Compile Include="clsADPreSolicitud.cs" />
+    <Compile Include="clsADProcJud.cs" />
+    <Compile Include="clsADProvision.cs" />
+    <Compile Include="clsADReaprobSol.cs" />
+    <Compile Include="clsADRegPubGarantia.cs" />
+    <Compile Include="clsADReprogramacion.cs" />
+    <Compile Include="clsADRevisionDocCred.cs" />
+    <Compile Include="clsADScoring.cs" />
+    <Compile Include="clsADSeguros.cs" />
+    <Compile Include="clsADSiniestros.cs" />
+    <Compile Include="clsADSeleccionarDocEvalAnterior.cs" />
+    <Compile Include="clsADSolCre.cs" />
+    <Compile Include="clsADSolicitudAmortiza.cs" />
+    <Compile Include="clsADTasador.cs" />
+    <Compile Include="clsADTipoActoProcesal.cs" />
+    <Compile Include="clsADTipoGasto.cs" />
+    <Compile Include="clsADTipoParticipacion.cs" />
+    <Compile Include="clsADTipoPeriodo.cs" />
+    <Compile Include="clsADTipoPersonaEjeActProc.cs" />
+    <Compile Include="clsADValorizacionGar.cs" />
+    <Compile Include="clsADVincAseProm.cs" />
+    <Compile Include="clsADVincCredAdeudado.cs" />
+    <Compile Include="clsPlanPagos.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\EntityLayer\EntityLayer.csproj">
+      <Project>{b5346a13-9b09-426b-ae99-bd8e300c032a}</Project>
+      <Name>EntityLayer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GEN.AccesoDatos\GEN.AccesoDatos.csproj">
+      <Project>{a7727aec-6595-40f6-9fda-12cd52005fa8}</Project>
+      <Name>GEN.AccesoDatos</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GEN.Funciones\GEN.Funciones.csproj">
+      <Project>{736df628-39ab-41c0-af28-b3fc7119261e}</Project>
+      <Name>GEN.Funciones</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SolIntEls.GEN.Helper\SolIntEls.GEN.Helper.csproj">
+      <Project>{4459F866-3048-49EF-802A-318C02642FB4}</Project>
+      <Name>SolIntEls.GEN.Helper</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

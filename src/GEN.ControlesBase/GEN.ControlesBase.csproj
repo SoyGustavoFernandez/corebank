@@ -1,0 +1,4781 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{2BF1CD70-8B4D-4DB6-A5E3-7F4D298A1C4E}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>GEN.ControlesBase</RootNamespace>
+    <AssemblyName>GEN.ControlesBase</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="amqmdnet, Version=9.0.0.0, Culture=neutral, PublicKeyToken=dd3cb1c9aae9ec97, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\LibreriasExternas\amqmdnet.dll</HintPath>
+    </Reference>
+    <Reference Include="AxInterop.AcroPDFLib, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\LibreriasExternas\AxInterop.AcroPDFLib.dll</HintPath>
+    </Reference>
+    <Reference Include="CircularProgressBar">
+      <HintPath>..\LibreriasExternas\CircularProgressBar.dll</HintPath>
+    </Reference>
+    <Reference Include="Interop.AcroPDFLib, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>..\LibreriasExternas\Interop.AcroPDFLib.dll</HintPath>
+    </Reference>
+    <Reference Include="itextsharp">
+      <HintPath>..\LibreriasExternas\itextsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.Office.Interop.Word, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="Microsoft.VisualBasic.PowerPacks.Vs, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\LibreriasExternas\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="SMS">
+      <HintPath>..\LibreriasExternas\SMS.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WinFormAnimation">
+      <HintPath>..\LibreriasExternas\WinFormAnimation.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="cboCanalRegistro.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cboCanalRegistro.designer.cs">
+      <DependentUpon>cboCanalRegistro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cboEstablecimientoGiro.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cboEstablecimientoGiro.designer.cs">
+      <DependentUpon>cboEstablecimientoGiro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cboEstadoAutUsoDatos.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cboEstadoAutUsoDatos.designer.cs">
+      <DependentUpon>cboEstadoAutUsoDatos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cboEstadoSeguroMultiriesgo.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cboEstadoSeguroMultiriesgo.Designer.cs">
+      <DependentUpon>cboEstadoSeguroMultiriesgo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cboEstadoVigencia.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cboEstadoVigencia.Designer.cs">
+      <DependentUpon>cboEstadoVigencia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cboEstSolCred.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cboEstSolCred.Designer.cs">
+      <DependentUpon>cboEstSolCred.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cboMotivoFechaValor.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cboMotivoFechaValor.Designer.cs">
+      <DependentUpon>cboMotivoFechaValor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cboPaqueteSeguro.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cboPaqueteSeguro.Designer.cs">
+      <DependentUpon>cboPaqueteSeguro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cboLimitesExcep.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cboLimitesExcep.Designer.cs">
+      <DependentUpon>cboLimitesExcep.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CboModalidadesPagoGiro.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CboModalidadesPagoGiro.Designer.cs">
+      <DependentUpon>CboModalidadesPagoGiro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cboMotivoAutUsoDatos.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cboMotivoAutUsoDatos.designer.cs">
+      <DependentUpon>cboMotivoAutUsoDatos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cboMotivoDesistimiento.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cboMotivoDesistimiento.designer.cs">
+      <DependentUpon>cboMotivoDesistimiento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cboTipoAutorizacion.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cboTipoAutorizacion.designer.cs">
+      <DependentUpon>cboTipoAutorizacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cboTipoComisionGiro.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cboTipoComisionGiro.designer.cs">
+      <DependentUpon>cboTipoComisionGiro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cboTipoGiroTarifario.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cboTipoGiroTarifario.Designer.cs">
+      <DependentUpon>cboTipoGiroTarifario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cboTipoOperacionGiro.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cboTipoOperacionGiro.Designer.cs">
+      <DependentUpon>cboTipoOperacionGiro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cboTipoPersonaBusqueda.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cboTipoPersonaBusqueda.Designer.cs">
+      <DependentUpon>cboTipoPersonaBusqueda.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cboTipoEstructuraPredominante.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cboTipoEstructuraPredominante.designer.cs">
+      <DependentUpon>cboTipoEstructuraPredominante.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cboTipoOpeEOB.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cboTipoOpeEOB.designer.cs">
+      <DependentUpon>cboTipoOpeEOB.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cboTipoPolizaSeguro.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cboTipoPolizaSeguro.Designer.cs">
+      <DependentUpon>cboTipoPolizaSeguro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cboTiposDeSeguro.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cboTiposDeSeguro.Designer.cs">
+      <DependentUpon>cboTiposDeSeguro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cboTipoUsoDelPredio.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cboTipoUsoDelPredio.designer.cs">
+      <DependentUpon>cboTipoUsoDelPredio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BotonPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="BotonPanel.Designer.cs">
+      <DependentUpon>BotonPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="btnAdministradorFiles.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="btnAdministradorFiles.Designer.cs">
+      <DependentUpon>btnAdministradorFiles.cs</DependentUpon>
+    </Compile>
+    <Compile Include="btnExpandCollapse.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="btnExpandCollapse.designer.cs">
+      <DependentUpon>btnExpandCollapse.cs</DependentUpon>
+    </Compile>
+    <Compile Include="btnVincularVisita.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="btnVincularVisita.Designer.cs">
+      <DependentUpon>btnVincularVisita.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CalendarColumn.cs" />
+    <Compile Include="cboAbogado.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cboAbogado.designer.cs">
+      <DependentUpon>cboAbogado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cboAccion.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cboAccion.designer.cs">
+      <DependentUpon>cboAccion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cboAccionCuota.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cboAccionCuota.designer.cs">
+      <DependentUpon>cboAccionCuota.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cboActividadEco.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cboActividadEco.designer.cs">
+      <DependentUpon>cboActividadEco.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cboActividadInterna.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cboActividadInterna.designer.cs">
+      <DependentUpon>cboActividadInterna.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cboActividadLog.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cboActividadLog.designer.cs">
+      <DependentUpon>cboActividadLog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cboActividadPorEtapaCultivoEval.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cboActividadPorEtapaCultivoEval.Designer.cs">
+      <DependentUpon>cboActividadPorEtapaCultivoEval.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cboAgencias.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cboAgencias.designer.cs">
+      <DependentUpon>cboAgencias.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cboAlmacen.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cboAlmacen.designer.cs">
+      <DependentUpon>cboAlmacen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cboAlmacenes.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cboAlmacenes.designer.cs">
+      <DependentUpon>cboAlmacenes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cboAplicaConcepto.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cboAplicaConcepto.designer.cs">
+      <DependentUpon>cboAplicaConcepto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cboArea.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cboArea.designer.cs">
+      <DependentUpon>cboArea.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cboAsesorNegociosGrupoSolidario.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cboAsesorNegociosGrupoSolidario.Designer.cs">
+      <DependentUpon>cboAsesorNegociosGrupoSolidario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cboBase.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cboBase.Designer.cs">
+      <DependentUpon>cboBase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cboCalificacion.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cboCalificacion.designer.cs">
+      <DependentUpon>cboCalificacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cboCalifInt.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cboCalifInt.designer.cs">
+      <DependentUpon>cboCalifInt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cboCalifScoring.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cboCalifScoring.designer.cs">
+      <DependentUpon>cboCalifScoring.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cboCanal.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cboCanal.designer.cs">
+      <DependentUpon>cboCanal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cboCanalAproCred.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cboCanalAproCred.Designer.cs">
+      <DependentUpon>cboCanalAproCred.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cboCanalVendedor.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cboCanalVendedor.Designer.cs">
+      <DependentUpon>cboCanalVendedor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cboCaracteristicaCta.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cboCaracteristicaCta.designer.cs">
+      <DependentUpon>cboCaracteristicaCta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cboCargoPersonalcs.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cboCargoPersonalcs.designer.cs">
+      <DependentUpon>cboCargoPersonalcs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cboCategoriaAsesor.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cboCategoriaAsesor.designer.cs">
+      <DependentUpon>cboCategoriaAsesor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cboCategoriaOficina.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cboCategoriaOficina.Designer.cs">
+      <DependentUpon>cboCategoriaOficina.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cboCategoriaPersonal.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cboCategoriaPersonal.designer.cs">
+      <DependentUpon>cboCategoriaPersonal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cboCatLaboral.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cboCatLaboral.designer.cs">
+      <DependentUpon>cboCatLaboral.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cboClaseGarantia.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cboClaseGarantia.Designer.cs">
+      <DependentUpon>cboClaseGarantia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cboClasificacionInterna.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cboClasificacionInterna.Designer.cs">
+      <DependentUpon>cboClasificacionInterna.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cboClasifProdDepos.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cboClasifProdDepos.designer.cs">
+      <DependentUpon>cboClasifProdDepos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cboClienteCargo.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cboClienteCargo.designer.cs">
+      <DependentUpon>cboClienteCargo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cboClienteJuridico.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cboClienteJuridico.designer.cs">
+      <DependentUpon>cboClienteJuridico.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cboCoberturas.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cboCoberturas.designer.cs">
+      <DependentUpon>cboCoberturas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cboCompaniasSeguro.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cboCompaniasSeguro.designer.cs">
+      <DependentUpon>cboCompaniasSeguro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cboConcepto.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cboConcepto.designer.cs">
+      <DependentUpon>cboConcepto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cboConceptoRemunerativo.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cboConceptoRemunerativo.designer.cs">
+      <DependentUpon>cboConceptoRemunerativo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cboCondDomicilio.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cboCondDomicilio.designer.cs">
+      <DependentUpon>cboCondDomicilio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cboCondicionContable.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cboCondicionContable.designer.cs">
+      <DependentUpon>cboCondicionContable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cboCondicionExp.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cboCondicionExp.designer.cs">
+      <DependentUpon>cboCondicionExp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cboCondicionInmueble.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cboCondicionInmueble.designer.cs">
+      <DependentUpon>cboCondicionInmueble.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cboContactoRecupera.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cboContactoRecupera.designer.cs">
+      <DependentUpon>cboContactoRecupera.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cboConvenio.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cboConvenio.designer.cs">
+      <DependentUpon>cboConvenio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cboCriBusCli.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cboCriBusCli.designer.cs">
+      <DependentUpon>cboCriBusCli.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cboCriBusGar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cboCriBusGar.Designer.cs">
+      <DependentUpon>cboCriBusGar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cboCultivoEval.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cboCultivoEval.Designer.cs">
+      <DependentUpon>cboCultivoEval.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cboCultivoMatriz.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cboCultivoMatriz.Designer.cs">
+      <DependentUpon>cboCultivoMatriz.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cboDecisionRevisor.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cboDecisionRevisor.Designer.cs">
+      <DependentUpon>cboDecisionRevisor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cboDestinoCredito.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cboDestinoCredito.Designer.cs">
+      <DependentUpon>cboDestinoCredito.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cboDestinoPedido.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cboDestinoPedido.designer.cs">
+      <DependentUpon>cboDestinoPedido.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cboDetalleOrdenPago.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cboDetalleOrdenPago.Designer.cs">
+      <DependentUpon>cboDetalleOrdenPago.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cboDiasSemana.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cboDiasSemana.designer.cs">
+      <DependentUpon>cboDiasSemana.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cboDocumentoDesembolso.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cboDocumentoDesembolso.designer.cs">
+      <DependentUpon>cboDocumentoDesembolso.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cboEmpresasConvenio.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cboEmpresasConvenio.Designer.cs">
+      <DependentUpon>cboEmpresasConvenio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cboEntidad.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cboEntidad.designer.cs">
+      <DependentUpon>cboEntidad.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cboEnvioEstCta.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cboEnvioEstCta.Designer.cs">
+      <DependentUpon>cboEnvioEstCta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cboEsqComAFP.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cboEsqComAFP.designer.cs">
+      <DependentUpon>cboEsqComAFP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cboEstablecimiento.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cboEstablecimiento.designer.cs">
+      <DependentUpon>cboEstablecimiento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cboEstadoActual.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cboEstadoActual.Designer.cs">
+      <DependentUpon>cboEstadoActual.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cboEstadoCivil.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cboEstadoCivil.designer.cs">
+      <DependentUpon>cboEstadoCivil.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cboEstadoCli.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cboEstadoCli.designer.cs">
+      <DependentUpon>cboEstadoCli.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cboEstadoComprobante.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cboEstadoComprobante.designer.cs">
+      <DependentUpon>cboEstadoComprobante.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cboEstadoContrato.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cboEstadoContrato.designer.cs">
+      <DependentUpon>cboEstadoContrato.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cboEstadoContribuyente.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cboEstadoContribuyente.Designer.cs">
+      <DependentUpon>cboEstadoContribuyente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cboEstadoCredito.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cboEstadoCredito.designer.cs">
+      <DependentUpon>cboEstadoCredito.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cboEstadoCtaDeposito.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cboEstadoCtaDeposito.designer.cs">
+      <DependentUpon>cboEstadoCtaDeposito.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cboEstadoCuentaBco.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cboEstadoCuentaBco.designer.cs">
+      <DependentUpon>cboEstadoCuentaBco.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cboEstadoCuentaCli.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cboEstadoCuentaCli.designer.cs">
+      <DependentUpon>cboEstadoCuentaCli.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cboEstadoEnvioCPE.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cboEstadoEnvioCPE.Designer.cs">
+      <DependentUpon>cboEstadoEnvioCPE.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cboEstadoExpediente.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cboEstadoExpediente.designer.cs">
+      <DependentUpon>cboEstadoExpediente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cboEstadoPeriodo.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cboEstadoPeriodo.designer.cs">
+      <DependentUpon>cboEstadoPeriodo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cboEstadoPeriodoPresupuesto.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cboEstadoPeriodoPresupuesto.Designer.cs">
+      <DependentUpon>cboEstadoPeriodoPresupuesto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cboEstadoProcesoCPE.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cboEstadoProcesoCPE.Designer.cs">
+      <DependentUpon>cboEstadoProcesoCPE.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cboEstadoProcLog.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cboEstadoProcLog.designer.cs">
+      <DependentUpon>cboEstadoProcLog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cboEstadoRecupera.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cboEstadoRecupera.designer.cs">
+      <DependentUpon>cboEstadoRecupera.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cboEstadoRemesa.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cboEstadoRemesa.Designer.cs">
+      <DependentUpon>cboEstadoRemesa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cboEstadosAprobacion.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cboEstadosAprobacion.Designer.cs">
+      <DependentUpon>cboEstadosAprobacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cboEstadosConservacion.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cboEstadosConservacion.designer.cs">
+      <DependentUpon>cboEstadosConservacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cboEstadosGarantia.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cboEstadosGarantia.designer.cs">
+      <DependentUpon>cboEstadosGarantia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cboEstadoSolic.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cboEstadoSolic.designer.cs">
+      <DependentUpon>cboEstadoSolic.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cboEstadoSolRecupera.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cboEstadoSolRecupera.designer.cs">
+      <DependentUpon>cboEstadoSolRecupera.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cboEstadoSupervision.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cboEstadoSupervision.Designer.cs">
+      <DependentUpon>cboEstadoSupervision.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cboEstadoTarjeta.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cboEstadoTarjeta.designer.cs">
+      <DependentUpon>cboEstadoTarjeta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cboEstComite.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cboEstComite.designer.cs">
+      <DependentUpon>cboEstComite.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cboEstPersonal.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cboEstPersonal.Designer.cs">
+      <DependentUpon>cboEstPersonal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cboEstProcJud.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cboEstProcJud.designer.cs">
+      <DependentUpon>cboEstProcJud.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cboEstructuraPresupuesto.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cboEstructuraPresupuesto.designer.cs">
+      <DependentUpon>cboEstructuraPresupuesto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cboEstValorado.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cboEstValorado.designer.cs">
+      <DependentUpon>cboEstValorado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cboEtapaCultivoEval.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cboEtapaCultivoEval.Designer.cs">
+      <DependentUpon>cboEtapaCultivoEval.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cboFinalidadVia.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cboFinalidadVia.designer.cs">
+      <DependentUpon>cboFinalidadVia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cboFrecTiempo.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cboFrecTiempo.designer.cs">
+      <DependentUpon>cboFrecTiempo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cboFuenteCalcMora.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cboFuenteCalcMora.designer.cs">
+      <DependentUpon>cboFuenteCalcMora.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cboFuenteRecurso.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cboFuenteRecurso.designer.cs">
+      <DependentUpon>cboFuenteRecurso.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cboGrupoAsesor.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cboGrupoAsesor.designer.cs">
+      <DependentUpon>cboGrupoAsesor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cboGrupoCargaArchivo.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cboGrupoCargaArchivo.Designer.cs">
+      <DependentUpon>cboGrupoCargaArchivo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cboGrupoCatalogo.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cboGrupoCatalogo.designer.cs">
+      <DependentUpon>cboGrupoCatalogo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cboGrupoEconomico.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cboGrupoEconomico.designer.cs">
+      <DependentUpon>cboGrupoEconomico.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cboGrupoFactoresScoring.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cboGrupoFactoresScoring.designer.cs">
+      <DependentUpon>cboGrupoFactoresScoring.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cboGrupoGarantia.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cboGrupoGarantia.designer.cs">
+      <DependentUpon>cboGrupoGarantia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cboGrupoGasto.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cboGrupoGasto.designer.cs">
+      <DependentUpon>cboGrupoGasto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cboGrupoObs.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cboGrupoObs.Designer.cs">
+      <DependentUpon>cboGrupoObs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cboGrupoOficina.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cboGrupoOficina.Designer.cs">
+      <DependentUpon>cboGrupoOficina.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cboGrupoSanguineo.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cboGrupoSanguineo.designer.cs">
+      <DependentUpon>cboGrupoSanguineo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CboGrupoSolidarioCargo.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CboGrupoSolidarioCargo.Designer.cs">
+      <DependentUpon>CboGrupoSolidarioCargo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CboGrupoSolidarioCiclo.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CboGrupoSolidarioCiclo.Designer.cs">
+      <DependentUpon>CboGrupoSolidarioCiclo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CboGrupoSolidarioTipo.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CboGrupoSolidarioTipo.Designer.cs">
+      <DependentUpon>CboGrupoSolidarioTipo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cboIGV.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cboIGV.Designer.cs">
+      <DependentUpon>cboIGV.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cboInterviniente.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cboInterviniente.designer.cs">
+      <DependentUpon>cboInterviniente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cboJuez.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cboJuez.designer.cs">
+      <DependentUpon>cboJuez.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cboJuzgado.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cboJuzgado.designer.cs">
+      <DependentUpon>cboJuzgado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cboLimAplicaSaldo.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cboLimAplicaSaldo.designer.cs">
+      <DependentUpon>cboLimAplicaSaldo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cboLimitesVal.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cboLimitesVal.designer.cs">
+      <DependentUpon>cboLimitesVal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cboListaPerfil.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cboListaPerfil.designer.cs">
+      <DependentUpon>cboListaPerfil.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cboLogTransac.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cboLogTransac.Designer.cs">
+      <DependentUpon>cboLogTransac.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cboMagnitudEmpresarial.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cboMagnitudEmpresarial.designer.cs">
+      <DependentUpon>cboMagnitudEmpresarial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cboMateriales.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cboMateriales.Designer.cs">
+      <DependentUpon>cboMateriales.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cboMedioPagoSunat.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cboMedioPagoSunat.designer.cs">
+      <DependentUpon>cboMedioPagoSunat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cboMenu.cs" />
+    <Compile Include="cboMenu.Designer.cs">
+      <DependentUpon>cboMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cboMes.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cboMes.Designer.cs">
+      <DependentUpon>cboMes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cboMeses.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cboMeses.designer.cs">
+      <DependentUpon>cboMeses.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cboModalidadContrato.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cboModalidadContrato.designer.cs">
+      <DependentUpon>cboModalidadContrato.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cboModalidadCredito.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cboModalidadCredito.designer.cs">
+      <DependentUpon>cboModalidadCredito.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cboModalidadOperac.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cboModalidadOperac.designer.cs">
+      <DependentUpon>cboModalidadOperac.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cboModalidadPlanilla.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cboModalidadPlanilla.designer.cs">
+      <DependentUpon>cboModalidadPlanilla.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cboModDesemb.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cboModDesemb.designer.cs">
+      <DependentUpon>cboModDesemb.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cboModulo.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cboModulo.designer.cs">
+      <DependentUpon>cboModulo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cboMonedas.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cboMonedas.designer.cs">
+      <DependentUpon>cboMonedas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cboMontos.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cboMontos.designer.cs">
+      <DependentUpon>cboMontos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cboMotAnulCpg.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cboMotAnulCpg.designer.cs">
+      <DependentUpon>cboMotAnulCpg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cboMotBajaActivo.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cboMotBajaActivo.designer.cs">
+      <DependentUpon>cboMotBajaActivo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cboMotivoAnuTarjeta.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cboMotivoAnuTarjeta.designer.cs">
+      <DependentUpon>cboMotivoAnuTarjeta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cboMotivoBloqTarjeta.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cboMotivoBloqTarjeta.designer.cs">
+      <DependentUpon>cboMotivoBloqTarjeta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cboMotivoBloqueo.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cboMotivoBloqueo.Designer.cs">
+      <DependentUpon>cboMotivoBloqueo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cboMotivoCancelacion.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cboMotivoCancelacion.designer.cs">
+      <DependentUpon>cboMotivoCancelacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cboMotivoExtorno.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cboMotivoExtorno.designer.cs">
+      <DependentUpon>cboMotivoExtorno.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cboMotivoInasistencia.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cboMotivoInasistencia.designer.cs">
+      <DependentUpon>cboMotivoInasistencia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cboMotivoMora.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cboMotivoMora.designer.cs">
+      <DependentUpon>cboMotivoMora.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cboMotivoMoraRiesgos.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cboMotivoMoraRiesgos.Designer.cs">
+      <DependentUpon>cboMotivoMoraRiesgos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cboMotivoOperacion.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cboMotivoOperacion.designer.cs">
+      <DependentUpon>cboMotivoOperacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cboMotivoRecupera.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cboMotivoRecupera.designer.cs">
+      <DependentUpon>cboMotivoRecupera.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cboMotivos.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cboMotivos.designer.cs">
+      <DependentUpon>cboMotivos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cboMotOperacionBco.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cboMotOperacionBco.designer.cs">
+      <DependentUpon>cboMotOperacionBco.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cboMotRechazoSolCreEval.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cboMotRechazoSolCreEval.Designer.cs">
+      <DependentUpon>cboMotRechazoSolCreEval.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cboMotReclasifCli.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cboMotReclasifCli.designer.cs">
+      <DependentUpon>cboMotReclasifCli.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cboMotReparoCpg.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cboMotReparoCpg.designer.cs">
+      <DependentUpon>cboMotReparoCpg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cboNaturalezaCnt.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cboNaturalezaCnt.designer.cs">
+      <DependentUpon>cboNaturalezaCnt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cboNivelAprobacion.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cboNivelAprobacion.Designer.cs">
+      <DependentUpon>cboNivelAprobacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cboNivelAprobPartidaPres.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cboNivelAprobPartidaPres.designer.cs">
+      <DependentUpon>cboNivelAprobPartidaPres.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cboNivelMenu.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cboNivelMenu.designer.cs">
+      <DependentUpon>cboNivelMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cboNivelPersonal.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cboNivelPersonal.designer.cs">
+      <DependentUpon>cboNivelPersonal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cboNivelProducto.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cboNivelProducto.designer.cs">
+      <DependentUpon>cboNivelProducto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cboObjetoAhorro.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cboObjetoAhorro.designer.cs">
+      <DependentUpon>cboObjetoAhorro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cboOperacionCre.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cboOperacionCre.designer.cs">
+      <DependentUpon>cboOperacionCre.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cboOperacionCredito.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cboOperacionCredito.Designer.cs">
+      <DependentUpon>cboOperacionCredito.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cboOrigenFondos.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cboOrigenFondos.designer.cs">
+      <DependentUpon>cboOrigenFondos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cboPDPEmisor.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cboPDPEmisor.Designer.cs">
+      <DependentUpon>cboPDPEmisor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cboPDPEstado.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cboPDPEstado.Designer.cs">
+      <DependentUpon>cboPDPEstado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cboPeriodo.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cboPeriodo.designer.cs">
+      <DependentUpon>cboPeriodo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cboPeriodoCateOfi.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cboPeriodoCateOfi.Designer.cs">
+      <DependentUpon>cboPeriodoCateOfi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cboPeriodoCredito.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cboPeriodoCredito.designer.cs">
+      <DependentUpon>cboPeriodoCredito.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cboPeriodoCTS.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cboPeriodoCTS.designer.cs">
+      <DependentUpon>cboPeriodoCTS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cboPeriodoDeclaracion.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cboPeriodoDeclaracion.designer.cs">
+      <DependentUpon>cboPeriodoDeclaracion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cboPeriodoPlanilla.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cboPeriodoPlanilla.designer.cs">
+      <DependentUpon>cboPeriodoPlanilla.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cboPeriodoPresupuestal.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cboPeriodoPresupuestal.designer.cs">
+      <DependentUpon>cboPeriodoPresupuestal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cboPeriodoRiegos.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cboPeriodoRiegos.designer.cs">
+      <DependentUpon>cboPeriodoRiegos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cboPersonal.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cboPersonal.designer.cs">
+      <DependentUpon>cboPersonal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cboPersonalCargo.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cboPersonalCargo.designer.cs">
+      <DependentUpon>cboPersonalCargo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cboPersonalCreditos.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cboPersonalCreditos.designer.cs">
+      <DependentUpon>cboPersonalCreditos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cboPersonalGen.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cboPersonalGen.designer.cs">
+      <DependentUpon>cboPersonalGen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cboPlazoDep.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cboPlazoDep.designer.cs">
+      <DependentUpon>cboPlazoDep.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cboPlazos.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cboPlazos.designer.cs">
+      <DependentUpon>cboPlazos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cboPorcenIngReal.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cboPorcenIngReal.designer.cs">
+      <DependentUpon>cboPorcenIngReal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cboGrupoExpediente.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cboGrupoExpediente.Designer.cs">
+      <DependentUpon>cboGrupoExpediente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cboProcesoRecupera.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cboProcesoRecupera.designer.cs">
+      <DependentUpon>cboProcesoRecupera.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cboProdCatalogo.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cboProdCatalogo.designer.cs">
+      <DependentUpon>cboProdCatalogo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cboProducto.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cboProducto.Designer.cs">
+      <DependentUpon>cboProducto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cboPromotores.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cboPromotores.designer.cs">
+      <DependentUpon>cboPromotores.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cboProveedorProcesoAdq.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cboProveedorProcesoAdq.Designer.cs">
+      <DependentUpon>cboProveedorProcesoAdq.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cboRangoAtraso.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cboRangoAtraso.designer.cs">
+      <DependentUpon>cboRangoAtraso.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cboRecuperacionComisionTipo.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cboRecuperacionComisionTipo.designer.cs">
+      <DependentUpon>cboRecuperacionComisionTipo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cboRegimenPens.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cboRegimenPens.designer.cs">
+      <DependentUpon>cboRegimenPens.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cboRegimenScoring.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cboRegimenScoring.designer.cs">
+      <DependentUpon>cboRegimenScoring.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cboRelacionLabInst.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cboRelacionLabInst.designer.cs">
+      <DependentUpon>cboRelacionLabInst.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cboResultadoVisitaRiesgos.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cboResultadoVisitaRiesgos.Designer.cs">
+      <DependentUpon>cboResultadoVisitaRiesgos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cboResultComite.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cboResultComite.designer.cs">
+      <DependentUpon>cboResultComite.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cboResultNivelSuperior.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cboResultNivelSuperior.designer.cs">
+      <DependentUpon>cboResultNivelSuperior.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cboSecretario.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cboSecretario.designer.cs">
+      <DependentUpon>cboSecretario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cboSector.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cboSector.designer.cs">
+      <DependentUpon>cboSector.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cboSegmentoSocio.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cboSegmentoSocio.Designer.cs">
+      <DependentUpon>cboSegmentoSocio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cboSeguros.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cboSeguros.Designer.cs">
+      <DependentUpon>cboSeguros.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cboSexo.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cboSexo.designer.cs">
+      <DependentUpon>cboSexo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cboSubProcJudicial.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cboSubProcJudicial.designer.cs">
+      <DependentUpon>cboSubProcJudicial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cboSubTipoCorrespondencia.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cboSubTipoCorrespondencia.Designer.cs">
+      <DependentUpon>cboSubTipoCorrespondencia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cboSupervisorOperacion.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cboSupervisorOperacion.Designer.cs">
+      <DependentUpon>cboSupervisorOperacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cboTasaCompensatoria.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cboTasaCompensatoria.designer.cs">
+      <DependentUpon>cboTasaCompensatoria.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cboTasadores.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cboTasadores.designer.cs">
+      <DependentUpon>cboTasadores.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cboTipClasif.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cboTipClasif.designer.cs">
+      <DependentUpon>cboTipClasif.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cboTipConceptoRemuner.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cboTipConceptoRemuner.designer.cs">
+      <DependentUpon>cboTipConceptoRemuner.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cboTipContratoPersonal.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cboTipContratoPersonal.designer.cs">
+      <DependentUpon>cboTipContratoPersonal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cboTipDocGasto.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cboTipDocGasto.designer.cs">
+      <DependentUpon>cboTipDocGasto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cboTipDocRevCred.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cboTipDocRevCred.designer.cs">
+      <DependentUpon>cboTipDocRevCred.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cboTipDocumento.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cboTipDocumento.designer.cs">
+      <DependentUpon>cboTipDocumento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cboTipEvalCred.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cboTipEvalCred.Designer.cs">
+      <DependentUpon>cboTipEvalCred.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cboTipGarRDS.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cboTipGarRDS.designer.cs">
+      <DependentUpon>cboTipGarRDS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cboTipGasto.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cboTipGasto.designer.cs">
+      <DependentUpon>cboTipGasto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cboTipMedJud.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cboTipMedJud.designer.cs">
+      <DependentUpon>cboTipMedJud.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cboTipoAccionEmp.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cboTipoAccionEmp.designer.cs">
+      <DependentUpon>cboTipoAccionEmp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cboTipoAccionesEmp.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cboTipoAccionesEmp.designer.cs">
+      <DependentUpon>cboTipoAccionesEmp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cboTipoActoProcesal.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cboTipoActoProcesal.Designer.cs">
+      <DependentUpon>cboTipoActoProcesal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cboTipoAfectaciones.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cboTipoAfectaciones.Designer.cs">
+      <DependentUpon>cboTipoAfectaciones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cboTipoAmbito.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cboTipoAmbito.designer.cs">
+      <DependentUpon>cboTipoAmbito.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cboTipoAporte.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cboTipoAporte.designer.cs">
+      <DependentUpon>cboTipoAporte.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cboTipoAsiento.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cboTipoAsiento.designer.cs">
+      <DependentUpon>cboTipoAsiento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cboTipoBien.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cboTipoBien.designer.cs">
+      <DependentUpon>cboTipoBien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cboTipoBloqueo.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cboTipoBloqueo.Designer.cs">
+      <DependentUpon>cboTipoBloqueo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cboTipObs.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cboTipObs.designer.cs">
+      <DependentUpon>cboTipObs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cboTipObsSol.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cboTipObsSol.designer.cs">
+      <DependentUpon>cboTipObsSol.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cboTipoCalculado.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cboTipoCalculado.designer.cs">
+      <DependentUpon>cboTipoCalculado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cboTipoCaptacion.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cboTipoCaptacion.designer.cs">
+      <DependentUpon>cboTipoCaptacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cboTipoCargaMasivaAho.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cboTipoCargaMasivaAho.designer.cs">
+      <DependentUpon>cboTipoCargaMasivaAho.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cboTipoCartaFianza.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cboTipoCartaFianza.Designer.cs">
+      <DependentUpon>cboTipoCartaFianza.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cboTipoCategoria.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cboTipoCategoria.Designer.cs">
+      <DependentUpon>cboTipoCategoria.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cboTipoCliente.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cboTipoCliente.designer.cs">
+      <DependentUpon>cboTipoCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cboTipoComiteCred.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cboTipoComiteCred.Designer.cs">
+      <DependentUpon>cboTipoComiteCred.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cboTipoComprobanteLog.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cboTipoComprobanteLog.Designer.cs">
+      <DependentUpon>cboTipoComprobanteLog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cboTipoComprobantePago.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cboTipoComprobantePago.designer.cs">
+      <DependentUpon>cboTipoComprobantePago.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cboTipoCondicionTenencia.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cboTipoCondicionTenencia.designer.cs">
+      <DependentUpon>cboTipoCondicionTenencia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cboTipoCondicionTerreno.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cboTipoCondicionTerreno.designer.cs">
+      <DependentUpon>cboTipoCondicionTerreno.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cboTipoCondonacion.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cboTipoCondonacion.Designer.cs">
+      <DependentUpon>cboTipoCondonacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cboTipoConsejo.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cboTipoConsejo.designer.cs">
+      <DependentUpon>cboTipoConsejo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cboTipoConst.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cboTipoConst.designer.cs">
+      <DependentUpon>cboTipoConst.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cboTipoControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cboTipoControl.designer.cs">
+      <DependentUpon>cboTipoControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cboTipoCorrespondencia.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cboTipoCorrespondencia.Designer.cs">
+      <DependentUpon>cboTipoCorrespondencia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cboTipoCredito.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cboTipoCredito.designer.cs">
+      <DependentUpon>cboTipoCredito.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cboTipoCriterioAsigCartera.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cboTipoCriterioAsigCartera.designer.cs">
+      <DependentUpon>cboTipoCriterioAsigCartera.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cboTipoCuenta.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cboTipoCuenta.designer.cs">
+      <DependentUpon>cboTipoCuenta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cboTipoCuentaBco.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cboTipoCuentaBco.designer.cs">
+      <DependentUpon>cboTipoCuentaBco.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cboTipoCuentasCobrar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cboTipoCuentasCobrar.designer.cs">
+      <DependentUpon>cboTipoCuentasCobrar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cboTipoCultivo.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cboTipoCultivo.Designer.cs">
+      <DependentUpon>cboTipoCultivo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cboTipoDestino.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cboTipoDestino.designer.cs">
+      <DependentUpon>cboTipoDestino.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cboTipoDeudaEval.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cboTipoDeudaEval.designer.cs">
+      <DependentUpon>cboTipoDeudaEval.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cboTipoDocumento.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cboTipoDocumento.Designer.cs">
+      <DependentUpon>cboTipoDocumento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cboTipoDocumentoSustento.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cboTipoDocumentoSustento.Designer.cs">
+      <DependentUpon>cboTipoDocumentoSustento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cboTipoEfecto.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cboTipoEfecto.designer.cs">
+      <DependentUpon>cboTipoEfecto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cboTipoEntidad.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cboTipoEntidad.designer.cs">
+      <DependentUpon>cboTipoEntidad.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cboTipoEntrega.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cboTipoEntrega.Designer.cs">
+      <DependentUpon>cboTipoEntrega.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cboTipoEstablecimiento.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cboTipoEstablecimiento.Designer.cs">
+      <DependentUpon>cboTipoEstablecimiento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cboTipoEvalAdjudicacion.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cboTipoEvalAdjudicacion.designer.cs">
+      <DependentUpon>cboTipoEvalAdjudicacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cboTipoEvalScoring.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cboTipoEvalScoring.designer.cs">
+      <DependentUpon>cboTipoEvalScoring.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cboTipoEvaluacion.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cboTipoEvaluacion.Designer.cs">
+      <DependentUpon>cboTipoEvaluacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cboTipoEventoRecupera.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cboTipoEventoRecupera.designer.cs">
+      <DependentUpon>cboTipoEventoRecupera.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cboTipoExpediente.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cboTipoExpediente.designer.cs">
+      <DependentUpon>cboTipoExpediente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cboTipoFamiliar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cboTipoFamiliar.Designer.cs">
+      <DependentUpon>cboTipoFamiliar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cboTipoFinanciamientoCultivo.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cboTipoFinanciamientoCultivo.Designer.cs">
+      <DependentUpon>cboTipoFinanciamientoCultivo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cboTipoFolioExpediente.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cboTipoFolioExpediente.designer.cs">
+      <DependentUpon>cboTipoFolioExpediente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cboTipoGarantia.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cboTipoGarantia.Designer.cs">
+      <DependentUpon>cboTipoGarantia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cboTipoGasto.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cboTipoGasto.Designer.cs">
+      <DependentUpon>cboTipoGasto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cboTipoGrupoEco.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cboTipoGrupoEco.Designer.cs">
+      <DependentUpon>cboTipoGrupoEco.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cboTipoGrupoSolidario.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cboTipoGrupoSolidario.Designer.cs">
+      <DependentUpon>cboTipoGrupoSolidario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cboTipoHorario.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cboTipoHorario.designer.cs">
+      <DependentUpon>cboTipoHorario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cboTipoIdentificacionPerJur.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cboTipoIdentificacionPerJur.Designer.cs">
+      <DependentUpon>cboTipoIdentificacionPerJur.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cboTipoIncentivo.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cboTipoIncentivo.designer.cs">
+      <DependentUpon>cboTipoIncentivo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cboTipoIngresoNotEnt.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cboTipoIngresoNotEnt.designer.cs">
+      <DependentUpon>cboTipoIngresoNotEnt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cboTipoIntangible.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cboTipoIntangible.designer.cs">
+      <DependentUpon>cboTipoIntangible.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cboTipoIntegranteConsejo.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cboTipoIntegranteConsejo.designer.cs">
+      <DependentUpon>cboTipoIntegranteConsejo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cboTipoIntervCre.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cboTipoIntervCre.designer.cs">
+      <DependentUpon>cboTipoIntervCre.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cboTipoLocalActividad.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cboTipoLocalActividad.designer.cs">
+      <DependentUpon>cboTipoLocalActividad.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cboTipoMapeoSPLAFT.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cboTipoMapeoSPLAFT.designer.cs">
+      <DependentUpon>cboTipoMapeoSPLAFT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cboTipoMedTiempo.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cboTipoMedTiempo.designer.cs">
+      <DependentUpon>cboTipoMedTiempo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cboTipoMensaje.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cboTipoMensaje.Designer.cs">
+      <DependentUpon>cboTipoMensaje.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cboTipoMenu.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cboTipoMenu.designer.cs">
+      <DependentUpon>cboTipoMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cboTipoMeta.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cboTipoMeta.designer.cs">
+      <DependentUpon>cboTipoMeta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cboTipoMovOficina.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cboTipoMovOficina.designer.cs">
+      <DependentUpon>cboTipoMovOficina.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cboTipoNotificacion.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cboTipoNotificacion.designer.cs">
+      <DependentUpon>cboTipoNotificacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cboTipoOperacion.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cboTipoOperacion.designer.cs">
+      <DependentUpon>cboTipoOperacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cboTipoOperacionRiesgos.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cboTipoOperacionRiesgos.Designer.cs">
+      <DependentUpon>cboTipoOperacionRiesgos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cboTipoOrden.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cboTipoOrden.designer.cs">
+      <DependentUpon>cboTipoOrden.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cboTipoPago.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cboTipoPago.designer.cs">
+      <DependentUpon>cboTipoPago.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cboTipoPagoMasivo.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cboTipoPagoMasivo.Designer.cs">
+      <DependentUpon>cboTipoPagoMasivo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cboTipoPagoRemun.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cboTipoPagoRemun.designer.cs">
+      <DependentUpon>cboTipoPagoRemun.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cboTipoParticip.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cboTipoParticip.designer.cs">
+      <DependentUpon>cboTipoParticip.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cboTipoPedidoLog.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cboTipoPedidoLog.designer.cs">
+      <DependentUpon>cboTipoPedidoLog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cboTipoPeriodo.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cboTipoPeriodo.designer.cs">
+      <DependentUpon>cboTipoPeriodo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cboTipoPermiso.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cboTipoPermiso.designer.cs">
+      <DependentUpon>cboTipoPermiso.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cboTipoPersona.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cboTipoPersona.Designer.cs">
+      <DependentUpon>cboTipoPersona.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cboTipoPersonaEjecActProc.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cboTipoPersonaEjecActProc.Designer.cs">
+      <DependentUpon>cboTipoPersonaEjecActProc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cboTipoPlanilla.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cboTipoPlanilla.designer.cs">
+      <DependentUpon>cboTipoPlanilla.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cboTipoProcesoLog.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cboTipoProcesoLog.designer.cs">
+      <DependentUpon>cboTipoProcesoLog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cboTipoProcJud.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cboTipoProcJud.designer.cs">
+      <DependentUpon>cboTipoProcJud.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cboTipoRegimenPens.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cboTipoRegimenPens.designer.cs">
+      <DependentUpon>cboTipoRegimenPens.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cboTipoRelacLaboral.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cboTipoRelacLaboral.designer.cs">
+      <DependentUpon>cboTipoRelacLaboral.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cboTipoRemesa.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cboTipoRemesa.Designer.cs">
+      <DependentUpon>cboTipoRemesa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cboTipoResidencia.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cboTipoResidencia.designer.cs">
+      <DependentUpon>cboTipoResidencia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cboTipoRespuestaRecuperacion.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cboTipoRespuestaRecuperacion.Designer.cs">
+      <DependentUpon>cboTipoRespuestaRecuperacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cboTipoResultado.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cboTipoResultado.Designer.cs">
+      <DependentUpon>cboTipoResultado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cboTipoRiesgoOperacional.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cboTipoRiesgoOperacional.Designer.cs">
+      <DependentUpon>cboTipoRiesgoOperacional.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cboTipoRiesgoSPLAFT.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cboTipoRiesgoSPLAFT.designer.cs">
+      <DependentUpon>cboTipoRiesgoSPLAFT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cboTipoRolHogar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cboTipoRolHogar.designer.cs">
+      <DependentUpon>cboTipoRolHogar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cboDetalleGasto.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cboDetalleGasto.Designer.cs">
+      <DependentUpon>cboDetalleGasto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cboTipoSesion.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cboTipoSesion.designer.cs">
+      <DependentUpon>cboTipoSesion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cboTipoSiembraEval.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cboTipoSiembraEval.Designer.cs">
+      <DependentUpon>cboTipoSiembraEval.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cboTipoTarjeta.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cboTipoTarjeta.designer.cs">
+      <DependentUpon>cboTipoTarjeta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cboTipoTasa.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cboTipoTasa.Designer.cs">
+      <DependentUpon>cboTipoTasa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cboTipoTasaCredito.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cboTipoTasaCredito.designer.cs">
+      <DependentUpon>cboTipoTasaCredito.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cboTipoTelefono.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cboTipoTelefono.Designer.cs">
+      <DependentUpon>cboTipoTelefono.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cboTipoTramo.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cboTipoTramo.Designer.cs">
+      <DependentUpon>cboTipoTramo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cboTipoTransaccion.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cboTipoTransaccion.designer.cs">
+      <DependentUpon>cboTipoTransaccion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cboTipoUsoLocal.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cboTipoUsoLocal.designer.cs">
+      <DependentUpon>cboTipoUsoLocal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cboTipoUsoVacaciones.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cboTipoUsoVacaciones.designer.cs">
+      <DependentUpon>cboTipoUsoVacaciones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cboTipoValor.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cboTipoValor.designer.cs">
+      <DependentUpon>cboTipoValor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cboTipoValorado.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cboTipoValorado.designer.cs">
+      <DependentUpon>cboTipoValorado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cboTipoValoradoFiltro.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cboTipoValoradoFiltro.designer.cs">
+      <DependentUpon>cboTipoValoradoFiltro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cboTipoVerificaAutonomia.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cboTipoVerificaAutonomia.Designer.cs">
+      <DependentUpon>cboTipoVerificaAutonomia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cboTipoVerificacionAsesor.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cboTipoVerificacionAsesor.Designer.cs">
+      <DependentUpon>cboTipoVerificacionAsesor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cboTipoVia.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cboTipoVia.designer.cs">
+      <DependentUpon>cboTipoVia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cboTipoZona.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cboTipoZona.designer.cs">
+      <DependentUpon>cboTipoZona.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cboTipResponsableCaja.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cboTipResponsableCaja.designer.cs">
+      <DependentUpon>cboTipResponsableCaja.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cboTipSubClasif.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cboTipSubClasif.Designer.cs">
+      <DependentUpon>cboTipSubClasif.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cboTipVivienda.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cboTipVivienda.designer.cs">
+      <DependentUpon>cboTipVivienda.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cboTramo.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cboTramo.designer.cs">
+      <DependentUpon>cboTramo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cboTreeBase.cs" />
+    <Compile Include="cboTreeBase.Designer.cs">
+      <DependentUpon>cboTreeBase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cboTurnoUsuario.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cboTurnoUsuario.designer.cs">
+      <DependentUpon>cboTurnoUsuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cboUbicaVisita.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cboUbicaVisita.Designer.cs">
+      <DependentUpon>cboUbicaVisita.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cboUbigeo.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cboUbigeo.designer.cs">
+      <DependentUpon>cboUbigeo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cboUnidadMedida.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cboUnidadMedida.designer.cs">
+      <DependentUpon>cboUnidadMedida.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cboUnidadMedidaEval.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cboUnidadMedidaEval.Designer.cs">
+      <DependentUpon>cboUnidadMedidaEval.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cboUnidadMedidaMatriz.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cboUnidadMedidaMatriz.Designer.cs">
+      <DependentUpon>cboUnidadMedidaMatriz.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cboUnidadProductivaEval.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cboUnidadProductivaEval.Designer.cs">
+      <DependentUpon>cboUnidadProductivaEval.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cboUsuarioSupervisorRec.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cboUsuarioSupervisorRec.Designer.cs">
+      <DependentUpon>cboUsuarioSupervisorRec.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cboUsuRecuperadores.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cboUsuRecuperadores.Designer.cs">
+      <DependentUpon>cboUsuRecuperadores.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cboVariableRecuperaciones.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cboVariableRecuperaciones.designer.cs">
+      <DependentUpon>cboVariableRecuperaciones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cboVariedadCultivoEval.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cboVariedadCultivoEval.Designer.cs">
+      <DependentUpon>cboVariedadCultivoEval.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cboVariedadCultivoMatriz.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cboVariedadCultivoMatriz.Designer.cs">
+      <DependentUpon>cboVariedadCultivoMatriz.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cboVisitaEscala.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cboVisitaEscala.Designer.cs">
+      <DependentUpon>cboVisitaEscala.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cboZona.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cboZona.designer.cs">
+      <DependentUpon>cboZona.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cboZonaRegistral.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cboZonaRegistral.designer.cs">
+      <DependentUpon>cboZonaRegistral.cs</DependentUpon>
+    </Compile>
+    <Compile Include="chcBase.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="chcBase.Designer.cs">
+      <DependentUpon>chcBase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cboMoneda.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cboMoneda.Designer.cs">
+      <DependentUpon>cboMoneda.cs</DependentUpon>
+    </Compile>
+    <Compile Include="chklAsesores.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="chklAsesores.designer.cs">
+      <DependentUpon>chklAsesores.cs</DependentUpon>
+    </Compile>
+    <Compile Include="chklbAgencia.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="chklbAgencia.designer.cs">
+      <DependentUpon>chklbAgencia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="chklbBase.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="chklbBase.designer.cs">
+      <DependentUpon>chklbBase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="chklFormatoAho.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="chklFormatoAho.designer.cs">
+      <DependentUpon>chklFormatoAho.cs</DependentUpon>
+    </Compile>
+    <Compile Include="clsApiCentralRsgExterno.cs" />
+    <Compile Include="clsApiConsumer.cs" />
+    <Compile Include="clsApiRespuesta.cs" />
+    <Compile Include="clsBufferedPainter.cs" />
+    <Compile Include="clsComboTreeDropDown.cs" />
+    <Compile Include="clsComboTreeNode.cs" />
+    <Compile Include="clsComboTreeNodeCollection.cs" />
+    <Compile Include="clsEnvioMensajeTexto.cs" />
+    <Compile Include="clsGestionaNivelAprobacion.cs" />
+    <Compile Include="clsObtenerDatosRen.cs" />
+    <Compile Include="clsRptEvalAgri.cs" />
+    <Compile Include="clsRptEvalAgro.cs" />
+    <Compile Include="clsRptEvalAgroH2000.cs" />
+    <Compile Include="clsRptEvalConsumo.cs" />
+    <Compile Include="clsRptEvalConvenio.cs" />
+    <Compile Include="clsRptEvalImprimeServicio.cs" />
+    <Compile Include="clsRptEvalInterface.cs" />
+    <Compile Include="clsRptEvalPreyApro.cs" />
+    <Compile Include="clsRptEvalPyme.cs" />
+    <Compile Include="clsRptEvalPymeH2000.cs" />
+    <Compile Include="clsRptEvalResumConsumo.cs" />
+    <Compile Include="clsSeguimSilencioSPLAFT.cs" />
+    <Compile Include="ClsSeguroDesgravamen.cs" />
+    <Compile Include="clsValidacionPreviaOpe.cs" />
+    <Compile Include="ConActEconomica.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ConActEconomica.designer.cs">
+      <DependentUpon>ConActEconomica.cs</DependentUpon>
+    </Compile>
+    <Compile Include="conActividad.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="conActividad.designer.cs">
+      <DependentUpon>conActividad.cs</DependentUpon>
+    </Compile>
+    <Compile Include="conActividadCIIU.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="conActividadCIIU.designer.cs">
+      <DependentUpon>conActividadCIIU.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConActividadCIIUSimp.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ConActividadCIIUSimp.Designer.cs">
+      <DependentUpon>ConActividadCIIUSimp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="conAutDatosBase.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="conAutDatosBase.Designer.cs">
+      <DependentUpon>conAutDatosBase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="conAutorizacionUsuDatos.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="conAutorizacionUsuDatos.designer.cs">
+      <DependentUpon>conAutorizacionUsuDatos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConBusCli.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ConBusCli.designer.cs">
+      <DependentUpon>ConBusCli.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConBusCliRuc.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ConBusCliRuc.Designer.cs">
+      <DependentUpon>ConBusCliRuc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConBusCliSimp.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ConBusCliSimp.Designer.cs">
+      <DependentUpon>ConBusCliSimp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConBusCol.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ConBusCol.Designer.cs">
+      <DependentUpon>ConBusCol.cs</DependentUpon>
+    </Compile>
+    <Compile Include="conBusCtaAho.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="conBusCtaAho.designer.cs">
+      <DependentUpon>conBusCtaAho.cs</DependentUpon>
+    </Compile>
+    <Compile Include="conBusCtaAhoExtr.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="conBusCtaAhoExtr.designer.cs">
+      <DependentUpon>conBusCtaAhoExtr.cs</DependentUpon>
+    </Compile>
+    <Compile Include="conBusCtaAhoTransf.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="conBusCtaAhoTransf.designer.cs">
+      <DependentUpon>conBusCtaAhoTransf.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConBusCtaCliSinBloq.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ConBusCtaCliSinBloq.designer.cs">
+      <DependentUpon>ConBusCtaCliSinBloq.cs</DependentUpon>
+    </Compile>
+    <Compile Include="conBusCtaOP.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="conBusCtaOP.designer.cs">
+      <DependentUpon>conBusCtaOP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConBusCuentaCli.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ConBusCuentaCli.designer.cs">
+      <DependentUpon>ConBusCuentaCli.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConBusDocumento.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ConBusDocumento.Designer.cs">
+      <DependentUpon>ConBusDocumento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="conBusGarantia.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="conBusGarantia.Designer.cs">
+      <DependentUpon>conBusGarantia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConBusGiro.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ConBusGiro.designer.cs">
+      <DependentUpon>ConBusGiro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConBusGrupoSol.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ConBusGrupoSol.Designer.cs">
+      <DependentUpon>ConBusGrupoSol.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConBusPersona.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ConBusPersona.Designer.cs">
+      <DependentUpon>ConBusPersona.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConBusPersonaConServicios.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ConBusPersonaConServicios.Designer.cs">
+      <DependentUpon>ConBusPersonaConServicios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="conBusPersonSplaft.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="conBusPersonSplaft.Designer.cs">
+      <DependentUpon>conBusPersonSplaft.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConBusRep.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ConBusRep.designer.cs">
+      <DependentUpon>ConBusRep.cs</DependentUpon>
+    </Compile>
+    <Compile Include="conBusSocio.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="conBusSocio.designer.cs">
+      <DependentUpon>conBusSocio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConBusSolEval.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ConBusSolEval.Designer.cs">
+      <DependentUpon>ConBusSolEval.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConBusTipoDoc.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ConBusTipoDoc.Designer.cs">
+      <DependentUpon>ConBusTipoDoc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConBusTipoPers.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ConBusTipoPers.Designer.cs">
+      <DependentUpon>ConBusTipoPers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConBusUbig.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ConBusUbig.Designer.cs">
+      <DependentUpon>ConBusUbig.cs</DependentUpon>
+    </Compile>
+    <Compile Include="conBusUbigeos.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="conBusUbigeos.Designer.cs">
+      <DependentUpon>conBusUbigeos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConCalculadoraInversionRealizada.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ConCalculadoraInversionRealizada.designer.cs">
+      <DependentUpon>ConCalculadoraInversionRealizada.cs</DependentUpon>
+    </Compile>
+    <Compile Include="conCalcVuelto.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="conCalcVuelto.Designer.cs">
+      <DependentUpon>conCalcVuelto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConCirculoSemaforo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ConCirculoSemaforo.designer.cs">
+      <DependentUpon>ConCirculoSemaforo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConCondiCredito.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ConCondiCredito.designer.cs">
+      <DependentUpon>ConCondiCredito.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConCondiCreditoGrupoSol.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ConCondiCreditoGrupoSol.Designer.cs">
+      <DependentUpon>ConCondiCreditoGrupoSol.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConCondiCreditoRural.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ConCondiCreditoRural.designer.cs">
+      <DependentUpon>ConCondiCreditoRural.cs</DependentUpon>
+    </Compile>
+    <Compile Include="conConfiguracionArchivos.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="conConfiguracionArchivos.Designer.cs">
+      <DependentUpon>conConfiguracionArchivos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConCreditoPeriodo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ConCreditoPeriodo.Designer.cs">
+      <DependentUpon>ConCreditoPeriodo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConCreditoPrimeraCuota.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ConCreditoPrimeraCuota.Designer.cs">
+      <DependentUpon>ConCreditoPrimeraCuota.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConCreditosEval.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ConCreditosEval.designer.cs">
+      <DependentUpon>ConCreditosEval.cs</DependentUpon>
+    </Compile>
+    <Compile Include="conCreditosSolProp.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="conCreditosSolProp.designer.cs">
+      <DependentUpon>conCreditosSolProp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConCreditoTasa.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ConCreditoTasa.designer.cs">
+      <DependentUpon>ConCreditoTasa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="conDatCli.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="conDatCli.Designer.cs">
+      <DependentUpon>conDatCli.cs</DependentUpon>
+    </Compile>
+    <Compile Include="conDatCredito.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="conDatCredito.designer.cs">
+      <DependentUpon>conDatCredito.cs</DependentUpon>
+    </Compile>
+    <Compile Include="conDatosReprogramacion.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="conDatosReprogramacion.Designer.cs">
+      <DependentUpon>conDatosReprogramacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConDatPerReaOperac.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ConDatPerReaOperac.designer.cs">
+      <DependentUpon>ConDatPerReaOperac.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConDestinoCredito.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ConDestinoCredito.designer.cs">
+      <DependentUpon>ConDestinoCredito.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConDetalleBBGG.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ConDetalleBBGG.Designer.cs">
+      <DependentUpon>ConDetalleBBGG.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConDetalleEERR.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ConDetalleEERR.Designer.cs">
+      <DependentUpon>ConDetalleEERR.cs</DependentUpon>
+    </Compile>
+    <Compile Include="conDetalleInvPecuario.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="conDetalleInvPecuario.Designer.cs">
+      <DependentUpon>conDetalleInvPecuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConDetalleSaldoInterviniente.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ConDetalleSaldoInterviniente.Designer.cs">
+      <DependentUpon>ConDetalleSaldoInterviniente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="conDirecPrincipal.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="conDirecPrincipal.designer.cs">
+      <DependentUpon>conDirecPrincipal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConEgresosEstacionales.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ConEgresosEstacionales.designer.cs">
+      <DependentUpon>ConEgresosEstacionales.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConEmpConvenio.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ConEmpConvenio.Designer.cs">
+      <DependentUpon>ConEmpConvenio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="conEstadoResultados.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="conEstadoResultados.designer.cs">
+      <DependentUpon>conEstadoResultados.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConEstadosFinancieros.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ConEstadosFinancieros.designer.cs">
+      <DependentUpon>ConEstadosFinancieros.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConEstadosFinancierosAgrico.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ConEstadosFinancierosAgrico.designer.cs">
+      <DependentUpon>ConEstadosFinancierosAgrico.cs</DependentUpon>
+    </Compile>
+    <Compile Include="conEstadosFinancierosAgricola.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="conEstadosFinancierosAgricola.Designer.cs">
+      <DependentUpon>conEstadosFinancierosAgricola.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConEstadosFinancierosPymeEst.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ConEstadosFinancierosPymeEst.designer.cs">
+      <DependentUpon>ConEstadosFinancierosPymeEst.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConEstadosFinancierosResumen.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ConEstadosFinancierosResumen.designer.cs">
+      <DependentUpon>ConEstadosFinancierosResumen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConEstadosFinancierosResumenConsumo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ConEstadosFinancierosResumenConsumo.designer.cs">
+      <DependentUpon>ConEstadosFinancierosResumenConsumo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConEstadosFinancierosRural.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ConEstadosFinancierosRural.designer.cs">
+      <DependentUpon>ConEstadosFinancierosRural.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConEvalCualitativa.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ConEvalCualitativa.designer.cs">
+      <DependentUpon>ConEvalCualitativa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConEvalCualitReferencias.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ConEvalCualitReferencias.designer.cs">
+      <DependentUpon>ConEvalCualitReferencias.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConFechaAñoMes.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ConFechaAñoMes.designer.cs">
+      <DependentUpon>ConFechaAñoMes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConFiltroSupervision.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ConFiltroSupervision.Designer.cs">
+      <DependentUpon>ConFiltroSupervision.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConFlujoCajaRural.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ConFlujoCajaRural.designer.cs">
+      <DependentUpon>ConFlujoCajaRural.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConImpFormatEval.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ConImpFormatEval.designer.cs">
+      <DependentUpon>ConImpFormatEval.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConIndicadores.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ConIndicadores.designer.cs">
+      <DependentUpon>ConIndicadores.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConIngEgre.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ConIngEgre.designer.cs">
+      <DependentUpon>ConIngEgre.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConIngresosEstacionales.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ConIngresosEstacionales.designer.cs">
+      <DependentUpon>ConIngresosEstacionales.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConIngresoVentaActivoRural.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ConIngresoVentaActivoRural.designer.cs">
+      <DependentUpon>ConIngresoVentaActivoRural.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConLimitesOperativos.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ConLimitesOperativos.designer.cs">
+      <DependentUpon>ConLimitesOperativos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConListAgencias.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ConListAgencias.designer.cs">
+      <DependentUpon>ConListAgencias.cs</DependentUpon>
+    </Compile>
+    <Compile Include="conListInterv.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="conListInterv.designer.cs">
+      <DependentUpon>conListInterv.cs</DependentUpon>
+    </Compile>
+    <Compile Include="conLoader.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="conLoader.designer.cs">
+      <DependentUpon>conLoader.cs</DependentUpon>
+    </Compile>
+    <Compile Include="conLoaderToolStripMenu.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="conNroTarjeta.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="conNroTarjeta.designer.cs">
+      <DependentUpon>conNroTarjeta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConOtrosIngEgr.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ConOtrosIngEgr.Designer.cs">
+      <DependentUpon>ConOtrosIngEgr.cs</DependentUpon>
+    </Compile>
+    <Compile Include="conPagoBcos.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="conPagoBcos.designer.cs">
+      <DependentUpon>conPagoBcos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="conPlanPagos.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="conPlanPagos.designer.cs">
+      <DependentUpon>conPlanPagos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="conPopUpVoucher.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="conPopUpVoucher.designer.cs">
+      <DependentUpon>conPopUpVoucher.cs</DependentUpon>
+    </Compile>
+    <Compile Include="conProducto.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="conProducto.designer.cs">
+      <DependentUpon>conProducto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConPropuestaPymeEst.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ConPropuestaPymeEst.designer.cs">
+      <DependentUpon>ConPropuestaPymeEst.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConPropuestaSimpCred.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ConPropuestaSimpCred.Designer.cs">
+      <DependentUpon>ConPropuestaSimpCred.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConPropuesta.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ConPropuesta.designer.cs">
+      <DependentUpon>ConPropuesta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConPropuestaCrediJornal.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ConPropuestaCrediJornal.Designer.cs">
+      <DependentUpon>ConPropuestaCrediJornal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="conRastreoTasaNegociable.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="conRastreoTasaNegociable.Designer.cs">
+      <DependentUpon>conRastreoTasaNegociable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="conRcc.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="conRcc.designer.cs">
+      <DependentUpon>conRcc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConReferencias.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ConReferencias.designer.cs">
+      <DependentUpon>ConReferencias.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConReferenciasSimp.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ConReferenciasSimp.Designer.cs">
+      <DependentUpon>ConReferenciasSimp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="conRptParamCaj.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="conRptParamCaj.Designer.cs">
+      <DependentUpon>conRptParamCaj.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConSemaforoLimOpe.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ConSemaforoLimOpe.designer.cs">
+      <DependentUpon>ConSemaforoLimOpe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConSolesDolar.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ConSolesDolar.designer.cs">
+      <DependentUpon>ConSolesDolar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConSolicitudCargaSeguros.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ConSolicitudCargaSeguros.Designer.cs">
+      <DependentUpon>ConSolicitudCargaSeguros.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConSolicitudSimp.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ConSolicitudSimp.Designer.cs">
+      <DependentUpon>ConSolicitudSimp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="conSplaf.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="conSplaf.designer.cs">
+      <DependentUpon>conSplaf.cs</DependentUpon>
+    </Compile>
+    <Compile Include="conTLVBalance.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="conTLVBalance.designer.cs">
+      <DependentUpon>conTLVBalance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="conTreeCatalogo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="conTreeCatalogo.designer.cs">
+      <DependentUpon>conTreeCatalogo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="conTreeCentroCosto.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="conTreeCentroCosto.designer.cs">
+      <DependentUpon>conTreeCentroCosto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="conTreeRecusivo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="conTreeRecusivo.Designer.cs">
+      <DependentUpon>conTreeRecusivo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="conUbigeo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="conUbigeo.designer.cs">
+      <DependentUpon>conUbigeo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cboAgencia.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cboAgencia.designer.cs">
+      <DependentUpon>cboAgencia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConVentasCostos.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ConVentasCostos.Designer.cs">
+      <DependentUpon>ConVentasCostos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="clsRptEvalResumApro.cs" />
+    <Compile Include="clsRptSoliAprRapida.cs" />
+    <Compile Include="clsRptGrupoSolidario.cs" />
+    <Compile Include="cboTipDestCred.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cboTipDestCred.designer.cs">
+      <DependentUpon>cboTipDestCred.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cboUnidadProductiva.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cboUnidadProductiva.designer.cs">
+      <DependentUpon>cboUnidadProductiva.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cboPerfil.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cboPerfil.Designer.cs">
+      <DependentUpon>cboPerfil.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAutorizoUsoDatosCli.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAutorizoUsoDatosCli.Designer.cs">
+      <DependentUpon>frmAutorizoUsoDatosCli.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmBuscarTipoArchivoConfiguracion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBuscarTipoArchivoConfiguracion.Designer.cs">
+      <DependentUpon>frmBuscarTipoArchivoConfiguracion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="dtpFechaSimp.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="dtpFechaSimp.Designer.cs">
+      <DependentUpon>dtpFechaSimp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAddDocRevCred.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAddDocRevCred.designer.cs">
+      <DependentUpon>FrmAddDocRevCred.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAddEditObs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAddEditObs.designer.cs">
+      <DependentUpon>frmAddEditObs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAdministrarFiles.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAdministrarFiles.Designer.cs">
+      <DependentUpon>frmAdministrarFiles.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAlertaOfertaCredito.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAlertaOfertaCredito.Designer.cs">
+      <DependentUpon>frmAlertaOfertaCredito.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAnulaSolAprobacionOpinion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAnulaSolAprobacionOpinion.Designer.cs">
+      <DependentUpon>frmAnulaSolAprobacionOpinion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmBuscaActivo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmBuscaActivo.designer.cs">
+      <DependentUpon>FrmBuscaActivo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmBuscaActivoPorCli.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBuscaActivoPorCli.Designer.cs">
+      <DependentUpon>frmBuscaActivoPorCli.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmBuscaCentroCosto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBuscaCentroCosto.designer.cs">
+      <DependentUpon>frmBuscaCentroCosto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmBuscaCtaCtb.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBuscaCtaCtb.designer.cs">
+      <DependentUpon>frmBuscaCtaCtb.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmBuscaEstablecimiento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBuscaEstablecimiento.Designer.cs">
+      <DependentUpon>frmBuscaEstablecimiento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmBuscaGarantia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBuscaGarantia.Designer.cs">
+      <DependentUpon>frmBuscaGarantia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmBuscaProyecto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBuscaProyecto.Designer.cs">
+      <DependentUpon>frmBuscaProyecto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmBuscarAdeudado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBuscarAdeudado.designer.cs">
+      <DependentUpon>frmBuscarAdeudado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmBuscarCartasFianza.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBuscarCartasFianza.designer.cs">
+      <DependentUpon>frmBuscarCartasFianza.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmBuscarCreditoCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBuscarCreditoCliente.Designer.cs">
+      <DependentUpon>frmBuscarCreditoCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmBuscarDocsRiesgos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBuscarDocsRiesgos.Designer.cs">
+      <DependentUpon>frmBuscarDocsRiesgos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmBuscarEmailAhorros.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBuscarEmailAhorros.Designer.cs">
+      <DependentUpon>frmBuscarEmailAhorros.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmBuscarReglaNegocio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBuscarReglaNegocio.Designer.cs">
+      <DependentUpon>frmBuscarReglaNegocio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmBuscarSolExt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBuscarSolExt.designer.cs">
+      <DependentUpon>frmBuscarSolExt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmBusCliAutUsoDatos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmBusCliAutUsoDatos.designer.cs">
+      <DependentUpon>FrmBusCliAutUsoDatos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmBusCliBN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBusCliBN.designer.cs">
+      <DependentUpon>frmBusCliBN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmBusCol.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmBusCol.designer.cs">
+      <DependentUpon>FrmBusCol.cs</DependentUpon>
+    </Compile>
+    <Compile Include="dtgBase.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="dtgBase.Designer.cs">
+      <DependentUpon>dtgBase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="dtLargoBase.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="dtLargoBase.designer.cs">
+      <DependentUpon>dtLargoBase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="dtpCorto.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="dtpCorto.designer.cs">
+      <DependentUpon>dtpCorto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmBase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBase.Designer.cs">
+      <DependentUpon>frmBase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmBuscaCuentaCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmBuscaCuentaCliente.designer.cs">
+      <DependentUpon>FrmBuscaCuentaCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmBusCli.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmBusCli.designer.cs">
+      <DependentUpon>FrmBusCli.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmBusCtaAho.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBusCtaAho.designer.cs">
+      <DependentUpon>frmBusCtaAho.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmBusCtaAhoVin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBusCtaAhoVin.designer.cs">
+      <DependentUpon>frmBusCtaAhoVin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmBusCtaAhoVinculacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBusCtaAhoVinculacion.designer.cs">
+      <DependentUpon>frmBusCtaAhoVinculacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmBusCtaOP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBusCtaOP.designer.cs">
+      <DependentUpon>frmBusCtaOP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmBusEvalCli.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBusEvalCli.designer.cs">
+      <DependentUpon>frmBusEvalCli.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmBusGiro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBusGiro.designer.cs">
+      <DependentUpon>frmBusGiro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmBusGrupoSol.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmBusGrupoSol.Designer.cs">
+      <DependentUpon>FrmBusGrupoSol.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmBusquedaCatalogo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBusquedaCatalogo.designer.cs">
+      <DependentUpon>frmBusquedaCatalogo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmBusquedaProveedor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBusquedaProveedor.designer.cs">
+      <DependentUpon>frmBusquedaProveedor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmBusRepo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBusRepo.Designer.cs">
+      <DependentUpon>frmBusRepo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmBusSolAhoPen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBusSolAhoPen.designer.cs">
+      <DependentUpon>frmBusSolAhoPen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmBusUsuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBusUsuario.Designer.cs">
+      <DependentUpon>frmBusUsuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmBusUsuComite.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmBusUsuComite.designer.cs">
+      <DependentUpon>FrmBusUsuComite.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCalculadoraInversionRealizada.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCalculadoraInversionRealizada.designer.cs">
+      <DependentUpon>frmCalculadoraInversionRealizada.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCargaArchivo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCargaArchivo.Designer.cs">
+      <DependentUpon>frmCargaArchivo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmChequePorCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmChequePorCliente.designer.cs">
+      <DependentUpon>frmChequePorCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmClientesHomonimos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmClientesHomonimos.designer.cs">
+      <DependentUpon>frmClientesHomonimos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmColaboradorInterviene.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmColaboradorInterviene.Designer.cs">
+      <DependentUpon>frmColaboradorInterviene.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmConfigCantOP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmConfigCantOP.Designer.cs">
+      <DependentUpon>frmConfigCantOP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmConfigurarCargaArchivo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmConfigurarCargaArchivo.Designer.cs">
+      <DependentUpon>frmConfigurarCargaArchivo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmConfigurarCargaArchivoNuevo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmConfigurarCargaArchivoNuevo.Designer.cs">
+      <DependentUpon>frmConfigurarCargaArchivoNuevo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmConfigurarParametroArchivo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmConfigurarParametroArchivo.Designer.cs">
+      <DependentUpon>frmConfigurarParametroArchivo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmConRanMonCarArc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmConRanMonCarArc.Designer.cs">
+      <DependentUpon>frmConRanMonCarArc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmControlLimitesBoveda.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmControlLimitesBoveda.Designer.cs">
+      <DependentUpon>frmControlLimitesBoveda.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCredenciales.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCredenciales.designer.cs">
+      <DependentUpon>frmCredenciales.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCuentaCreditoVinculado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCuentaCreditoVinculado.Designer.cs">
+      <DependentUpon>frmCuentaCreditoVinculado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDeclaracionJurada.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDeclaracionJurada.designer.cs">
+      <DependentUpon>frmDeclaracionJurada.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDetalleActividadPecuaria.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDetalleActividadPecuaria.Designer.cs">
+      <DependentUpon>frmDetalleActividadPecuaria.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDetalleOtrosGastos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDetalleOtrosGastos.Designer.cs">
+      <DependentUpon>frmDetalleOtrosGastos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDetalleTasaNegSimp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDetalleTasaNegSimp.Designer.cs">
+      <DependentUpon>frmDetalleTasaNegSimp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmGesAutTratamientoDatosBase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmGesAutTratamientoDatosBase.Designer.cs">
+      <DependentUpon>frmGesAutTratamientoDatosBase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmManTipoAutorizacionBase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmManTipoAutorizacionBase.Designer.cs">
+      <DependentUpon>frmManTipoAutorizacionBase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMotivoAutUsoDatos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMotivoAutUsoDatos.Designer.cs">
+      <DependentUpon>frmMotivoAutUsoDatos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmRegDocConfiguracion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRegDocConfiguracion.Designer.cs">
+      <DependentUpon>frmRegDocConfiguracion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDevSolicitud.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDevSolicitud.Designer.cs">
+      <DependentUpon>frmDevSolicitud.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmEstimacionPrecios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEstimacionPrecios.designer.cs">
+      <DependentUpon>frmEstimacionPrecios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmEvalAlterna.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEvalAlterna.Designer.cs">
+      <DependentUpon>frmEvalAlterna.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmEvaluaSobreendeuda.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEvaluaSobreendeuda.designer.cs">
+      <DependentUpon>frmEvaluaSobreendeuda.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmExperienciaClienteAlertaCumple.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmExperienciaClienteAlertaCumple.designer.cs">
+      <DependentUpon>frmExperienciaClienteAlertaCumple.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmExpEval.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmExpEval.Designer.cs">
+      <DependentUpon>frmExpEval.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmListaActivEcoInterna.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmListaActivEcoInterna.designer.cs">
+      <DependentUpon>frmListaActivEcoInterna.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmListaDatosCompletar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmListaDatosCompletar.Designer.cs">
+      <DependentUpon>frmListaDatosCompletar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmListaValoradosAsignados.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmListaValoradosAsignados.designer.cs">
+      <DependentUpon>frmListaValoradosAsignados.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMensaje.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMensaje.designer.cs">
+      <DependentUpon>frmMensaje.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMotAnulacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMotAnulacion.designer.cs">
+      <DependentUpon>frmMotAnulacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMsgAdvertencia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMsgAdvertencia.Designer.cs">
+      <DependentUpon>frmMsgAdvertencia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmObsAprobacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmObsAprobacion.designer.cs">
+      <DependentUpon>frmObsAprobacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmObsAprobacionGrupoSol.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmObsAprobacionGrupoSol.designer.cs">
+      <DependentUpon>frmObsAprobacionGrupoSol.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPerfilBuscador.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPerfilBuscador.Designer.cs">
+      <DependentUpon>frmPerfilBuscador.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmRastreoTasaNegociable.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRastreoTasaNegociable.Designer.cs">
+      <DependentUpon>frmRastreoTasaNegociable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmRecortaImagen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRecortaImagen.designer.cs">
+      <DependentUpon>frmRecortaImagen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmRegIntervCreSimp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRegIntervCreSimp.designer.cs">
+      <DependentUpon>frmRegIntervCreSimp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmRegistroDocumentoObs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRegistroDocumentoObs.Designer.cs">
+      <DependentUpon>frmRegistroDocumentoObs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmRegistroDocumentoObsAyuda.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRegistroDocumentoObsAyuda.Designer.cs">
+      <DependentUpon>frmRegistroDocumentoObsAyuda.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmRegistroNumerosTelf.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRegistroNumerosTelf.Designer.cs">
+      <DependentUpon>frmRegistroNumerosTelf.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmRegistroSustento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRegistroSustento.Designer.cs">
+      <DependentUpon>frmRegistroSustento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmRegOperacionesMultiples.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRegOperacionesMultiples.designer.cs">
+      <DependentUpon>frmRegOperacionesMultiples.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmRegOpeSplaft.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRegOpeSplaft.designer.cs">
+      <DependentUpon>frmRegOpeSplaft.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmReporte.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmReporte.designer.cs">
+      <DependentUpon>frmReporte.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmReporteLocal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmReporteLocal.designer.cs">
+      <DependentUpon>frmReporteLocal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmRespuestaMotor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRespuestaMotor.designer.cs">
+      <DependentUpon>frmRespuestaMotor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmRptAutUsoDatoClienteBase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRptAutUsoDatoClienteBase.Designer.cs">
+      <DependentUpon>frmRptAutUsoDatoClienteBase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSelAutTratamientoDatosBase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSelAutTratamientoDatosBase.Designer.cs">
+      <DependentUpon>frmSelAutTratamientoDatosBase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSolCreProducto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSolCreProducto.Designer.cs">
+      <DependentUpon>frmSolCreProducto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSolCreTasa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSolCreTasa.Designer.cs">
+      <DependentUpon>frmSolCreTasa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSolCreTasaNegSimp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSolCreTasaNegSimp.Designer.cs">
+      <DependentUpon>frmSolCreTasaNegSimp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSolDesistimientoAutTraDatosBase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSolDesistimientoAutTraDatosBase.Designer.cs">
+      <DependentUpon>frmSolDesistimientoAutTraDatosBase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSuministros.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSuministros.designer.cs">
+      <DependentUpon>frmSuministros.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSustentoArchivoSplaft.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSustentoArchivoSplaft.Designer.cs">
+      <DependentUpon>frmSustentoArchivoSplaft.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSustentoVinculacionArchivo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSustentoVinculacionArchivo.Designer.cs">
+      <DependentUpon>frmSustentoVinculacionArchivo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmTasasAprobadas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTasasAprobadas.Designer.cs">
+      <DependentUpon>frmTasasAprobadas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmValorizacionInventario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmValorizacionInventario.Designer.cs">
+      <DependentUpon>frmValorizacionInventario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmVerPdf.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmVerPdf.Designer.cs">
+      <DependentUpon>frmVerPdf.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmVerPdfGestContact.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmVerPdfGestContact.Designer.cs">
+      <DependentUpon>frmVerPdfGestContact.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmVisita.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmVisita.Designer.cs">
+      <DependentUpon>frmVisita.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmVisitaRealizadaSinVinculacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmVisitaRealizadaSinVinculacion.Designer.cs">
+      <DependentUpon>frmVisitaRealizadaSinVinculacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmVisitaSupervision.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmVisitaSupervision.Designer.cs">
+      <DependentUpon>frmVisitaSupervision.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmVisualisarDocRiesgos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmVisualisarDocRiesgos.designer.cs">
+      <DependentUpon>frmVisualisarDocRiesgos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="grbBase.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="grbBase.Designer.cs">
+      <DependentUpon>grbBase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="lblBase.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="lblBase.Designer.cs">
+      <DependentUpon>lblBase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="lblBaseCustom.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="lblBaseCustom.designer.cs">
+      <DependentUpon>lblBaseCustom.cs</DependentUpon>
+    </Compile>
+    <Compile Include="lblGrow.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="lblNumber.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="lblNumber.Designer.cs">
+      <DependentUpon>lblNumber.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ListViewEditable.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ListViewEditable.designer.cs">
+      <DependentUpon>ListViewEditable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="lstBase.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="lstBase.Designer.cs">
+      <DependentUpon>lstBase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Model\AutorizaTratamientoUsoDatos.cs" />
+    <Compile Include="Model\AutorizaTratamientoUsoDatosDTO.cs" />
+    <Compile Include="Model\clsAuditoria.cs" />
+    <Compile Include="Model\clsprueba.cs" />
+    <Compile Include="Model\DatosJuridico.cs" />
+    <Compile Include="Model\DocumentoAutorizacion.cs" />
+    <Compile Include="Model\DocumentosFirma.cs" />
+    <Compile Include="Model\FiltroDocumentoFirma.cs" />
+    <Compile Include="Model\FiltroReporteAutorizacion.cs" />
+    <Compile Include="Model\RespLisAutorizacionTraDatos.cs" />
+    <Compile Include="Model\RespLisAutorizacionTraDatosDTO.cs" />
+    <Compile Include="Model\RespLisDocumentosFirma.cs" />
+    <Compile Include="Model\RespLisSolDesistimientoUsoDatos.cs" />
+    <Compile Include="Model\RespLisTipoAutorizacion.cs" />
+    <Compile Include="Model\RespuestaAutTraDatos.cs" />
+    <Compile Include="Model\SolDesistimientoUsoDatos.cs" />
+    <Compile Include="Model\SolDesistimientoUsoDatosDTO.cs" />
+    <Compile Include="Model\TipoAutorizacion.cs" />
+    <Compile Include="Model\ToolAutorizacion.cs" />
+    <Compile Include="MQRCText.cs" />
+    <Compile Include="mthcBase.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="mthcBase.Designer.cs">
+      <DependentUpon>mthcBase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="nudBase.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="nudBase.designer.cs">
+      <DependentUpon>nudBase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PanelDockeable.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PanelDockeable.designer.cs">
+      <DependentUpon>PanelDockeable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="pbxAyuda.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="pbxAyuda.designer.cs">
+      <DependentUpon>pbxAyuda.cs</DependentUpon>
+    </Compile>
+    <Compile Include="pnlExpandCollapse.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="pnlExpandCollapse.Designer.cs">
+      <DependentUpon>pnlExpandCollapse.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PopUp.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="PopUp.Designer.cs">
+      <DependentUpon>PopUp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="rbtBase.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rbtBase.designer.cs">
+      <DependentUpon>rbtBase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="rbtnBase.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rbtnBase.Designer.cs">
+      <DependentUpon>rbtnBase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Semaforo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Semaforo.designer.cs">
+      <DependentUpon>Semaforo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="tbcBase.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="tbcBase.Designer.cs">
+      <DependentUpon>tbcBase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TimePickerColumn.cs" />
+    <Compile Include="TreeviewCbx.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="TreeviewCbx.Designer.cs">
+      <DependentUpon>TreeviewCbx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ttpToolTip.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ttpToolTip.Designer.cs">
+      <DependentUpon>ttpToolTip.cs</DependentUpon>
+    </Compile>
+    <Compile Include="txtBase.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="txtBase.Designer.cs">
+      <DependentUpon>txtBase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="txtCBCorreoElectronico.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="txtCBCorreoElectronico.designer.cs">
+      <DependentUpon>txtCBCorreoElectronico.cs</DependentUpon>
+    </Compile>
+    <Compile Include="txtCBDNI.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="txtCBDNI.designer.cs">
+      <DependentUpon>txtCBDNI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="txtCBLetra.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="txtCBLetra.designer.cs">
+      <DependentUpon>txtCBLetra.cs</DependentUpon>
+    </Compile>
+    <Compile Include="txtCBNroDocumentos.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="txtCBNroDocumentos.designer.cs">
+      <DependentUpon>txtCBNroDocumentos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="txtCBNumerosEnteros.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="txtCBNumerosEnteros.designer.cs">
+      <DependentUpon>txtCBNumerosEnteros.cs</DependentUpon>
+    </Compile>
+    <Compile Include="txtCBRUC.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="txtCBRUC.designer.cs">
+      <DependentUpon>txtCBRUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="txtEmail.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="txtEmail.designer.cs">
+      <DependentUpon>txtEmail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="txtNumerico.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="txtNumerico.designer.cs">
+      <DependentUpon>txtNumerico.cs</DependentUpon>
+    </Compile>
+    <Compile Include="txtNumRea.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="txtNumRea.Designer.cs">
+      <DependentUpon>txtNumRea.cs</DependentUpon>
+    </Compile>
+    <Compile Include="txtObjeto.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="txtObjeto.Designer.cs">
+      <DependentUpon>txtObjeto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="txtPatron.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="txtPatron.Designer.cs">
+      <DependentUpon>txtPatron.cs</DependentUpon>
+    </Compile>
+    <Compile Include="txtTelefCel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="txtTelefCel.designer.cs">
+      <DependentUpon>txtTelefCel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="txtTelefFijo.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="txtTelefFijo.designer.cs">
+      <DependentUpon>txtTelefFijo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC_Tree.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC_Tree.Designer.cs">
+      <DependentUpon>UC_Tree.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="btnExpandCollapse.resx">
+      <DependentUpon>btnExpandCollapse.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cboAbogado.resx">
+      <DependentUpon>cboAbogado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cboAgencias.resx">
+      <DependentUpon>cboAgencias.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cboCalifScoring.resx">
+      <DependentUpon>cboCalifScoring.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cboCanalRegistro.resx">
+      <DependentUpon>cboCanalRegistro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cboDestinoCredito.resx">
+      <DependentUpon>cboDestinoCredito.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cboEstadoAutUsoDatos.resx">
+      <DependentUpon>cboEstadoAutUsoDatos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cboEstadoCuentaCli.resx">
+      <DependentUpon>cboEstadoCuentaCli.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cboGrupoAsesor.resx">
+      <DependentUpon>cboGrupoAsesor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cboGrupoFactoresScoring.resx">
+      <DependentUpon>cboGrupoFactoresScoring.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cboJuez.resx">
+      <DependentUpon>cboJuez.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cboJuzgado.resx">
+      <DependentUpon>cboJuzgado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cboListaPerfil.resx">
+      <DependentUpon>cboListaPerfil.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cboMotivoAutUsoDatos.resx">
+      <DependentUpon>cboMotivoAutUsoDatos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cboMotivoDesistimiento.resx">
+      <DependentUpon>cboMotivoDesistimiento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cboMotOperacionBco.resx">
+      <DependentUpon>cboMotOperacionBco.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cboNaturalezaCnt.resx">
+      <DependentUpon>cboNaturalezaCnt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cboRegimenScoring.resx">
+      <DependentUpon>cboRegimenScoring.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cboSecretario.resx">
+      <DependentUpon>cboSecretario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cboSubProcJudicial.resx">
+      <DependentUpon>cboSubProcJudicial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cboTasadores.resx">
+      <DependentUpon>cboTasadores.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cboTipDocRevCred.resx">
+      <DependentUpon>cboTipDocRevCred.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cboTipoAutorizacion.resx">
+      <DependentUpon>cboTipoAutorizacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cboTipoEvalScoring.resx">
+      <DependentUpon>cboTipoEvalScoring.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cboTipoMapeoSPLAFT.resx">
+      <DependentUpon>cboTipoMapeoSPLAFT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cboTipoProcesoLog.resx">
+      <DependentUpon>cboTipoProcesoLog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cboTipoRiesgoSPLAFT.resx">
+      <DependentUpon>cboTipoRiesgoSPLAFT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cboTipoTransaccion.resx">
+      <DependentUpon>cboTipoTransaccion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cboTipResponsableCaja.resx">
+      <DependentUpon>cboTipResponsableCaja.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cboUnidadMedida.resx">
+      <DependentUpon>cboUnidadMedida.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConActEconomica.resx">
+      <DependentUpon>ConActEconomica.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="conActividad.resx">
+      <DependentUpon>conActividad.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="conActividadCIIU.resx">
+      <DependentUpon>conActividadCIIU.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConActividadCIIUSimp.resx">
+      <DependentUpon>ConActividadCIIUSimp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="conAutDatosBase.resx">
+      <DependentUpon>conAutDatosBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="conAutorizacionUsuDatos.resx">
+      <DependentUpon>conAutorizacionUsuDatos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConBusCli.resx">
+      <DependentUpon>ConBusCli.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConBusCliRuc.resx">
+      <DependentUpon>ConBusCliRuc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConBusCliSimp.resx">
+      <DependentUpon>ConBusCliSimp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConBusCol.resx">
+      <DependentUpon>ConBusCol.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="conBusCtaAho.resx">
+      <DependentUpon>conBusCtaAho.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="conBusCtaAhoExtr.resx">
+      <DependentUpon>conBusCtaAhoExtr.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="conBusCtaAhoTransf.resx">
+      <DependentUpon>conBusCtaAhoTransf.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConBusCtaCliSinBloq.resx">
+      <DependentUpon>ConBusCtaCliSinBloq.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="conBusCtaOP.resx">
+      <DependentUpon>conBusCtaOP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConBusCuentaCli.resx">
+      <DependentUpon>ConBusCuentaCli.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConBusDocumento.resx">
+      <DependentUpon>ConBusDocumento.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="conBusGarantia.resx">
+      <DependentUpon>conBusGarantia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConBusGiro.resx">
+      <DependentUpon>ConBusGiro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConBusGrupoSol.resx">
+      <DependentUpon>ConBusGrupoSol.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConBusPersona.resx">
+      <DependentUpon>ConBusPersona.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConBusPersonaConServicios.resx">
+      <DependentUpon>ConBusPersonaConServicios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="conBusPersonSplaft.resx">
+      <DependentUpon>conBusPersonSplaft.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConBusRep.resx">
+      <DependentUpon>ConBusRep.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="conBusSocio.resx">
+      <DependentUpon>conBusSocio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConBusSolEval.resx">
+      <DependentUpon>ConBusSolEval.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConBusTipoDoc.resx">
+      <DependentUpon>ConBusTipoDoc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConBusTipoPers.resx">
+      <DependentUpon>ConBusTipoPers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConBusUbig.resx">
+      <DependentUpon>ConBusUbig.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="conBusUbigeos.resx">
+      <DependentUpon>conBusUbigeos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConCalculadoraInversionRealizada.resx">
+      <DependentUpon>ConCalculadoraInversionRealizada.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="conCalcVuelto.resx">
+      <DependentUpon>conCalcVuelto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConCirculoSemaforo.resx">
+      <DependentUpon>ConCirculoSemaforo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConCondiCredito.resx">
+      <DependentUpon>ConCondiCredito.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConCondiCreditoGrupoSol.resx">
+      <DependentUpon>ConCondiCreditoGrupoSol.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConCondiCreditoRural.resx">
+      <DependentUpon>ConCondiCreditoRural.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="conConfiguracionArchivos.resx">
+      <DependentUpon>conConfiguracionArchivos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConCreditoPeriodo.resx">
+      <DependentUpon>ConCreditoPeriodo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConCreditoPrimeraCuota.resx">
+      <DependentUpon>ConCreditoPrimeraCuota.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConCreditosEval.resx">
+      <DependentUpon>ConCreditosEval.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="conCreditosSolProp.resx">
+      <DependentUpon>conCreditosSolProp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConCreditoTasa.resx">
+      <DependentUpon>ConCreditoTasa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="conDatCli.resx">
+      <DependentUpon>conDatCli.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="conDatCredito.resx">
+      <DependentUpon>conDatCredito.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="conDatosReprogramacion.resx">
+      <DependentUpon>conDatosReprogramacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConDatPerReaOperac.resx">
+      <DependentUpon>ConDatPerReaOperac.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConDestinoCredito.resx">
+      <DependentUpon>ConDestinoCredito.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConDetalleBBGG.resx">
+      <DependentUpon>ConDetalleBBGG.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConDetalleEERR.resx">
+      <DependentUpon>ConDetalleEERR.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="conDetalleInvPecuario.resx">
+      <DependentUpon>conDetalleInvPecuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConDetalleSaldoInterviniente.resx">
+      <DependentUpon>ConDetalleSaldoInterviniente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="conDirecPrincipal.resx">
+      <DependentUpon>conDirecPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConEgresosEstacionales.resx">
+      <DependentUpon>ConEgresosEstacionales.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConEmpConvenio.resx">
+      <DependentUpon>ConEmpConvenio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="conEstadoResultados.resx">
+      <DependentUpon>conEstadoResultados.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConEstadosFinancieros.resx">
+      <DependentUpon>ConEstadosFinancieros.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConEstadosFinancierosAgrico.resx">
+      <DependentUpon>ConEstadosFinancierosAgrico.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="conEstadosFinancierosAgricola.resx">
+      <DependentUpon>conEstadosFinancierosAgricola.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConEstadosFinancierosPymeEst.resx">
+      <DependentUpon>ConEstadosFinancierosPymeEst.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConEstadosFinancierosResumen.resx">
+      <DependentUpon>ConEstadosFinancierosResumen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConEstadosFinancierosResumenConsumo.resx">
+      <DependentUpon>ConEstadosFinancierosResumenConsumo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConEstadosFinancierosRural.resx">
+      <DependentUpon>ConEstadosFinancierosRural.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConEvalCualitativa.resx">
+      <DependentUpon>ConEvalCualitativa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConEvalCualitReferencias.resx">
+      <DependentUpon>ConEvalCualitReferencias.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConFechaAñoMes.resx">
+      <DependentUpon>ConFechaAñoMes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConFiltroSupervision.resx">
+      <DependentUpon>ConFiltroSupervision.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConFlujoCajaRural.resx">
+      <DependentUpon>ConFlujoCajaRural.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConImpFormatEval.resx">
+      <DependentUpon>ConImpFormatEval.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConIndicadores.resx">
+      <DependentUpon>ConIndicadores.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConIngEgre.resx">
+      <DependentUpon>ConIngEgre.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConIngresosEstacionales.resx">
+      <DependentUpon>ConIngresosEstacionales.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConIngresoVentaActivoRural.resx">
+      <DependentUpon>ConIngresoVentaActivoRural.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConLimitesOperativos.resx">
+      <DependentUpon>ConLimitesOperativos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConListAgencias.resx">
+      <DependentUpon>ConListAgencias.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="conListInterv.resx">
+      <DependentUpon>conListInterv.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="conNroTarjeta.resx">
+      <DependentUpon>conNroTarjeta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConOtrosIngEgr.resx">
+      <DependentUpon>ConOtrosIngEgr.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="conPagoBcos.resx">
+      <DependentUpon>conPagoBcos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="conPlanPagos.resx">
+      <DependentUpon>conPlanPagos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="conPopUpVoucher.resx">
+      <DependentUpon>conPopUpVoucher.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="conProducto.resx">
+      <DependentUpon>conProducto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConPropuestaPymeEst.resx">
+      <DependentUpon>ConPropuestaPymeEst.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConPropuestaSimpCred.resx">
+      <DependentUpon>ConPropuestaSimpCred.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConPropuesta.resx">
+      <DependentUpon>ConPropuesta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConPropuestaCrediJornal.resx">
+      <DependentUpon>ConPropuestaCrediJornal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="conRastreoTasaNegociable.resx">
+      <DependentUpon>conRastreoTasaNegociable.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="conRcc.resx">
+      <DependentUpon>conRcc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConReferencias.resx">
+      <DependentUpon>ConReferencias.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConReferenciasSimp.resx">
+      <DependentUpon>ConReferenciasSimp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="conRptParamCaj.resx">
+      <DependentUpon>conRptParamCaj.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConSemaforoLimOpe.resx">
+      <DependentUpon>ConSemaforoLimOpe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConSolesDolar.resx">
+      <DependentUpon>ConSolesDolar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConSolicitudCargaSeguros.resx">
+      <DependentUpon>ConSolicitudCargaSeguros.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConSolicitudSimp.resx">
+      <DependentUpon>ConSolicitudSimp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="conSplaf.resx">
+      <DependentUpon>conSplaf.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="conTLVBalance.resx">
+      <DependentUpon>conTLVBalance.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="conTreeCatalogo.resx">
+      <DependentUpon>conTreeCatalogo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="conTreeCentroCosto.resx">
+      <DependentUpon>conTreeCentroCosto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="conTreeRecusivo.resx">
+      <DependentUpon>conTreeRecusivo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="conUbigeo.resx">
+      <DependentUpon>conUbigeo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConVentasCostos.resx">
+      <DependentUpon>ConVentasCostos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAutorizoUsoDatosCli.resx">
+      <DependentUpon>frmAutorizoUsoDatosCli.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBuscarTipoArchivoConfiguracion.resx">
+      <DependentUpon>frmBuscarTipoArchivoConfiguracion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dtpCorto.resx">
+      <DependentUpon>dtpCorto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAddDocRevCred.resx">
+      <DependentUpon>FrmAddDocRevCred.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAddEditObs.resx">
+      <DependentUpon>frmAddEditObs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAdministrarFiles.resx">
+      <DependentUpon>frmAdministrarFiles.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAlertaOfertaCredito.resx">
+      <DependentUpon>frmAlertaOfertaCredito.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAnulaSolAprobacionOpinion.resx">
+      <DependentUpon>frmAnulaSolAprobacionOpinion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmBuscaActivo.resx">
+      <DependentUpon>FrmBuscaActivo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBuscaActivoPorCli.resx">
+      <DependentUpon>frmBuscaActivoPorCli.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBuscaCentroCosto.resx">
+      <DependentUpon>frmBuscaCentroCosto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBuscaCtaCtb.resx">
+      <DependentUpon>frmBuscaCtaCtb.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBuscaEstablecimiento.resx">
+      <DependentUpon>frmBuscaEstablecimiento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBuscaGarantia.resx">
+      <DependentUpon>frmBuscaGarantia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBuscaProyecto.resx">
+      <DependentUpon>frmBuscaProyecto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBuscarAdeudado.resx">
+      <DependentUpon>frmBuscarAdeudado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBuscarCartasFianza.resx">
+      <DependentUpon>frmBuscarCartasFianza.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBuscarCreditoCliente.resx">
+      <DependentUpon>frmBuscarCreditoCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBuscarDocsRiesgos.resx">
+      <DependentUpon>frmBuscarDocsRiesgos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBuscarEmailAhorros.resx">
+      <DependentUpon>frmBuscarEmailAhorros.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBuscarReglaNegocio.resx">
+      <DependentUpon>frmBuscarReglaNegocio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBuscarSolExt.resx">
+      <DependentUpon>frmBuscarSolExt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmBusCliAutUsoDatos.resx">
+      <DependentUpon>FrmBusCliAutUsoDatos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBusCliBN.resx">
+      <DependentUpon>frmBusCliBN.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmBusCol.resx">
+      <DependentUpon>FrmBusCol.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBase.resx">
+      <DependentUpon>frmBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmBuscaCuentaCliente.resx">
+      <DependentUpon>FrmBuscaCuentaCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmBusCli.resx">
+      <DependentUpon>FrmBusCli.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBusCtaAho.resx">
+      <DependentUpon>frmBusCtaAho.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBusCtaAhoVin.resx">
+      <DependentUpon>frmBusCtaAhoVin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBusCtaAhoVinculacion.resx">
+      <DependentUpon>frmBusCtaAhoVinculacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBusCtaOP.resx">
+      <DependentUpon>frmBusCtaOP.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBusEvalCli.resx">
+      <DependentUpon>frmBusEvalCli.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBusGiro.resx">
+      <DependentUpon>frmBusGiro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmBusGrupoSol.resx">
+      <DependentUpon>FrmBusGrupoSol.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBusquedaCatalogo.resx">
+      <DependentUpon>frmBusquedaCatalogo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBusquedaProveedor.resx">
+      <DependentUpon>frmBusquedaProveedor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBusRepo.resx">
+      <DependentUpon>frmBusRepo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBusSolAhoPen.resx">
+      <DependentUpon>frmBusSolAhoPen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBusUsuario.resx">
+      <DependentUpon>frmBusUsuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmBusUsuComite.resx">
+      <DependentUpon>FrmBusUsuComite.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCalculadoraInversionRealizada.resx">
+      <DependentUpon>frmCalculadoraInversionRealizada.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCargaArchivo.resx">
+      <DependentUpon>frmCargaArchivo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmChequePorCliente.resx">
+      <DependentUpon>frmChequePorCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmClientesHomonimos.resx">
+      <DependentUpon>frmClientesHomonimos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmColaboradorInterviene.resx">
+      <DependentUpon>frmColaboradorInterviene.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmConfigCantOP.resx">
+      <DependentUpon>frmConfigCantOP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmConfigurarCargaArchivo.resx">
+      <DependentUpon>frmConfigurarCargaArchivo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmConfigurarCargaArchivoNuevo.resx">
+      <DependentUpon>frmConfigurarCargaArchivoNuevo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmConfigurarParametroArchivo.resx">
+      <DependentUpon>frmConfigurarParametroArchivo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmConRanMonCarArc.resx">
+      <DependentUpon>frmConRanMonCarArc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmControlLimitesBoveda.resx">
+      <DependentUpon>frmControlLimitesBoveda.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCredenciales.resx">
+      <DependentUpon>frmCredenciales.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCuentaCreditoVinculado.resx">
+      <DependentUpon>frmCuentaCreditoVinculado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDeclaracionJurada.resx">
+      <DependentUpon>frmDeclaracionJurada.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDetalleActividadPecuaria.resx">
+      <DependentUpon>frmDetalleActividadPecuaria.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDetalleOtrosGastos.resx">
+      <DependentUpon>frmDetalleOtrosGastos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDetalleTasaNegSimp.resx">
+      <DependentUpon>frmDetalleTasaNegSimp.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmGesAutTratamientoDatosBase.resx">
+      <DependentUpon>frmGesAutTratamientoDatosBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmManTipoAutorizacionBase.resx">
+      <DependentUpon>frmManTipoAutorizacionBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMotivoAutUsoDatos.resx">
+      <DependentUpon>frmMotivoAutUsoDatos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRegDocConfiguracion.resx">
+      <DependentUpon>frmRegDocConfiguracion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDevSolicitud.resx">
+      <DependentUpon>frmDevSolicitud.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEstimacionPrecios.resx">
+      <DependentUpon>frmEstimacionPrecios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEvalAlterna.resx">
+      <DependentUpon>frmEvalAlterna.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEvaluaSobreendeuda.resx">
+      <DependentUpon>frmEvaluaSobreendeuda.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmExperienciaClienteAlertaCumple.resx">
+      <DependentUpon>frmExperienciaClienteAlertaCumple.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmExpEval.resx">
+      <DependentUpon>frmExpEval.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmListaActivEcoInterna.resx">
+      <DependentUpon>frmListaActivEcoInterna.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmListaDatosCompletar.resx">
+      <DependentUpon>frmListaDatosCompletar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmListaValoradosAsignados.resx">
+      <DependentUpon>frmListaValoradosAsignados.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMensaje.resx">
+      <DependentUpon>frmMensaje.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMotAnulacion.resx">
+      <DependentUpon>frmMotAnulacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMsgAdvertencia.resx">
+      <DependentUpon>frmMsgAdvertencia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmObsAprobacion.resx">
+      <DependentUpon>frmObsAprobacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmObsAprobacionGrupoSol.resx">
+      <DependentUpon>frmObsAprobacionGrupoSol.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPerfilBuscador.resx">
+      <DependentUpon>frmPerfilBuscador.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRastreoTasaNegociable.resx">
+      <DependentUpon>frmRastreoTasaNegociable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRecortaImagen.resx">
+      <DependentUpon>frmRecortaImagen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRegIntervCreSimp.resx">
+      <DependentUpon>frmRegIntervCreSimp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRegistroDocumentoObs.resx">
+      <DependentUpon>frmRegistroDocumentoObs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRegistroDocumentoObsAyuda.resx">
+      <DependentUpon>frmRegistroDocumentoObsAyuda.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRegistroNumerosTelf.resx">
+      <DependentUpon>frmRegistroNumerosTelf.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRegistroSustento.resx">
+      <DependentUpon>frmRegistroSustento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRegOperacionesMultiples.resx">
+      <DependentUpon>frmRegOperacionesMultiples.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRegOpeSplaft.resx">
+      <DependentUpon>frmRegOpeSplaft.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmReporte.resx">
+      <DependentUpon>frmReporte.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmReporteLocal.resx">
+      <DependentUpon>frmReporteLocal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRespuestaMotor.resx">
+      <DependentUpon>frmRespuestaMotor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRptAutUsoDatoClienteBase.resx">
+      <DependentUpon>frmRptAutUsoDatoClienteBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSelAutTratamientoDatosBase.resx">
+      <DependentUpon>frmSelAutTratamientoDatosBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSolCreProducto.resx">
+      <DependentUpon>frmSolCreProducto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSolCreTasa.resx">
+      <DependentUpon>frmSolCreTasa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSolCreTasaNegSimp.resx">
+      <DependentUpon>frmSolCreTasaNegSimp.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSolDesistimientoAutTraDatosBase.resx">
+      <DependentUpon>frmSolDesistimientoAutTraDatosBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSuministros.resx">
+      <DependentUpon>frmSuministros.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSustentoArchivoSplaft.resx">
+      <DependentUpon>frmSustentoArchivoSplaft.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSustentoVinculacionArchivo.resx">
+      <DependentUpon>frmSustentoVinculacionArchivo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTasasAprobadas.resx">
+      <DependentUpon>frmTasasAprobadas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmValorizacionInventario.resx">
+      <DependentUpon>frmValorizacionInventario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmVerPdf.resx">
+      <DependentUpon>frmVerPdf.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmVerPdfGestContact.resx">
+      <DependentUpon>frmVerPdfGestContact.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmVisita.resx">
+      <DependentUpon>frmVisita.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmVisitaRealizadaSinVinculacion.resx">
+      <DependentUpon>frmVisitaRealizadaSinVinculacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmVisitaSupervision.resx">
+      <DependentUpon>frmVisitaSupervision.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmVisualisarDocRiesgos.resx">
+      <DependentUpon>frmVisualisarDocRiesgos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GEN.ControlesBase.frmRespuestaMotor.resources" />
+    <EmbeddedResource Include="ListViewEditable.resx">
+      <DependentUpon>ListViewEditable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PanelDockeable.resx">
+      <DependentUpon>PanelDockeable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rbtBase.resx">
+      <DependentUpon>rbtBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rbtnBase.resx">
+      <DependentUpon>rbtnBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Semaforo.resx">
+      <DependentUpon>Semaforo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TreeviewCbx.resx">
+      <DependentUpon>TreeviewCbx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ttpToolTip.resx">
+      <DependentUpon>ttpToolTip.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="txtBase.resx">
+      <DependentUpon>txtBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="txtEmail.resx">
+      <DependentUpon>txtEmail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="txtObjeto.resx">
+      <DependentUpon>txtObjeto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="txtPatron.resx">
+      <DependentUpon>txtPatron.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC_Tree.resx">
+      <DependentUpon>UC_Tree.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagram1.cd" />
+    <None Include="Properties\DataSources\EntityLayer.clsClienteOfertas.datasource" />
+    <None Include="Properties\DataSources\EntityLayer.clsListDetGarantia.datasource" />
+    <None Include="Resources\ikosaeder-300x281.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ADM.CapaNegocio\ADM.CapaNegocio.csproj">
+      <Project>{65721033-8907-402c-8d6f-46a27793959a}</Project>
+      <Name>ADM.CapaNegocio</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CAJ.CapaNegocio\CAJ.CapaNegocio.csproj">
+      <Project>{B9C25FF4-B842-406D-9586-AD876670E129}</Project>
+      <Name>CAJ.CapaNegocio</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CLI.CapaNegocio\CLI.CapaNegocio.csproj">
+      <Project>{3C2772BC-430D-43D4-99A2-95B85AA15A89}</Project>
+      <Name>CLI.CapaNegocio</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CNE.CapaNegocio\CNE.CapaNegocio.csproj">
+      <Project>{06ad8a41-0a1a-46b0-b775-9d0599468f6a}</Project>
+      <Name>CNE.CapaNegocio</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CNT.CapaNegocio\CNT.CapaNegocio.csproj">
+      <Project>{ea4b5acb-be46-4c43-9ba7-063c61fb9d0e}</Project>
+      <Name>CNT.CapaNegocio</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CRE.CapaNegocio\CRE.CapaNegocio.csproj">
+      <Project>{FA31C866-7477-42B2-8416-280A65A5E8E3}</Project>
+      <Name>CRE.CapaNegocio</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DEP.CapaNegocio\DEP.CapaNegocio.csproj">
+      <Project>{b15e0cfd-f117-408e-bb7d-bc1441311962}</Project>
+      <Name>DEP.CapaNegocio</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\EntityLayer\EntityLayer.csproj">
+      <Project>{B5346A13-9B09-426B-AE99-BD8E300C032A}</Project>
+      <Name>EntityLayer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GEN.BotonesBase\GEN.BotonesBase.csproj">
+      <Project>{1aad7bde-3869-4acf-8b9a-7ef08f660f80}</Project>
+      <Name>GEN.BotonesBase</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GEN.CapaNegocio\GEN.CapaNegocio.csproj">
+      <Project>{a2caf7c5-a155-4d88-bea5-e3988183f6a3}</Project>
+      <Name>GEN.CapaNegocio</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GEN.Funciones\GEN.Funciones.csproj">
+      <Project>{736df628-39ab-41c0-af28-b3fc7119261e}</Project>
+      <Name>GEN.Funciones</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GEN.LibreriaOffice\GEN.LibreriaOffice.csproj">
+      <Project>{7a2eb38a-c6c7-4319-9a09-2de8124c0089}</Project>
+      <Name>GEN.LibreriaOffice</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GEN.PrintHelper\GEN.PrintHelper.csproj">
+      <Project>{072a8daa-8d24-4a77-85df-2a68c04f879f}</Project>
+      <Name>GEN.PrintHelper</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GRC.CapaNegocio\GRC.CapaNegocio.csproj">
+      <Project>{13b81341-ce5d-42d5-9d00-42cc3ebc69fb}</Project>
+      <Name>GRC.CapaNegocio</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GRH.CapaNegocio\GRH.CapaNegocio.csproj">
+      <Project>{8d2fc685-bdb8-453a-b6db-f0f4e18a9e14}</Project>
+      <Name>GRH.CapaNegocio</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\LOG.CapaNegocio\LOG.CapaNegocio.csproj">
+      <Project>{9a572638-4e45-4e0d-8d23-2da52239ad2f}</Project>
+      <Name>LOG.CapaNegocio</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\RCP.CapaNegocio\RCP.CapaNegocio.csproj">
+      <Project>{f187c4c1-3500-4061-8d35-0735747dac73}</Project>
+      <Name>RCP.CapaNegocio</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\REN.Servicio\CLI.Servicio.csproj">
+      <Project>{84dedb08-6500-4e91-b9ab-3b144f946bc7}</Project>
+      <Name>CLI.Servicio</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\RPT.CapaNegocio\RPT.CapaNegocio.csproj">
+      <Project>{311a1ffe-c16e-4b77-9b76-0347cad855fa}</Project>
+      <Name>RPT.CapaNegocio</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\RSG.CapaNegocio\RSG.CapaNegocio.csproj">
+      <Project>{14d7d948-23ee-411a-b04d-08dff680fe3b}</Project>
+      <Name>RSG.CapaNegocio</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SER.CapaNegocio\SER.CapaNegocio.csproj">
+      <Project>{542C7C4E-456B-4504-A8DD-A3D6E88CAE80}</Project>
+      <Name>SER.CapaNegocio</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SPL.CapaNegocio\SPL.CapaNegocio.csproj">
+      <Project>{0068e8f1-cd53-49bc-bbf1-e8bbc31f3dc8}</Project>
+      <Name>SPL.CapaNegocio</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Dolar.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Soles.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\solints.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Signo_dolar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\signo soles.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\limCob_01.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\limCob_02.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\limCob_03.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ayuda.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Collapse.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Expand.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnSmallAbierto.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnSmallEdit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icoBalon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnSamllJuntar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_agregar.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_quitar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delete.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\btnEditar.png" />
+    <Content Include="Resources\chevron-doble-up 2.png" />
+    <Content Include="Resources\chevron-doble-up.png" />
+    <Content Include="Resources\chevron-doble-up3.png" />
+    <Content Include="Resources\ordenar.png" />
+    <None Include="Resources\limCob_03_68.png" />
+    <None Include="Resources\limCob_02_68.png" />
+    <None Include="Resources\limCob_01_68.png" />
+    <None Include="Resources\pdf.png" />
+    <None Include="Resources\mapa.png" />
+    <None Include="Resources\img_visita.bmp" />
+    <None Include="Resources\refresh.png" />
+    <None Include="Resources\excel.png" />
+    <None Include="Resources\btn_minGuardar.bmp" />
+    <None Include="Resources\btnMiniGrabar.png" />
+    <None Include="Resources\btnMinNuevo.png" />
+    <None Include="Resources\btnDetalle.png" />
+    <Content Include="Resources\FAQ-16.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,522 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{09FE2CC0-E17E-4471-81AE-5685F204DCF3}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SolIntEls</RootNamespace>
+    <AssemblyName>SolIntEls</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>corebank circulo.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>SolIntEls.Program</StartupObject>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AxInterop.AcroPDFLib, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\LibreriasExternas\AxInterop.AcroPDFLib.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Interop.AcroPDFLib">
+      <HintPath>..\LibreriasExternas\Interop.AcroPDFLib.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.VisualBasic.PowerPacks.Vs, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAlertas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAlertas.Designer.cs">
+      <DependentUpon>frmAlertas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAprExtorno.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAprExtorno.designer.cs">
+      <DependentUpon>frmAprExtorno.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmChangePass.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmChangePass.Designer.cs">
+      <DependentUpon>frmChangePass.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmContenedorNue.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmContenedorNue.designer.cs">
+      <DependentUpon>frmContenedorNue.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPerfil.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPerfil.designer.cs">
+      <DependentUpon>frmPerfil.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPresentacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPresentacion.designer.cs">
+      <DependentUpon>frmPresentacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmFeriado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmFeriado.designer.cs">
+      <DependentUpon>frmFeriado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmReglasDinamicas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmReglasDinamicas.designer.cs">
+      <DependentUpon>frmReglasDinamicas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSolExtorno.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSolExtorno.designer.cs">
+      <DependentUpon>frmSolExtorno.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmTipoCambio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTipoCambio.designer.cs">
+      <DependentUpon>frmTipoCambio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmTipoCambioMensual.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTipoCambioMensual.designer.cs">
+      <DependentUpon>frmTipoCambioMensual.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmWebReniec.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmWebReniec.designer.cs">
+      <DependentUpon>frmWebReniec.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmWebSbsDeudasPer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmWebSbsDeudasPer.designer.cs">
+      <DependentUpon>frmWebSbsDeudasPer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Inicio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Inicio.designer.cs">
+      <DependentUpon>frm_Inicio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAlertas.resx">
+      <DependentUpon>frmAlertas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAprExtorno.resx">
+      <DependentUpon>frmAprExtorno.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmChangePass.resx">
+      <DependentUpon>frmChangePass.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmContenedorNue.resx">
+      <DependentUpon>frmContenedorNue.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPerfil.resx">
+      <DependentUpon>frmPerfil.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPresentacion.resx">
+      <DependentUpon>frmPresentacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmFeriado.resx">
+      <DependentUpon>frmFeriado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmReglasDinamicas.resx">
+      <DependentUpon>frmReglasDinamicas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSolExtorno.resx">
+      <DependentUpon>frmSolExtorno.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTipoCambio.resx">
+      <DependentUpon>frmTipoCambio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTipoCambioMensual.resx">
+      <DependentUpon>frmTipoCambioMensual.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmWebReniec.resx">
+      <DependentUpon>frmWebReniec.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmWebSbsDeudasPer.resx">
+      <DependentUpon>frmWebSbsDeudasPer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Inicio.resx">
+      <DependentUpon>frm_Inicio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="Properties\DataSources\EntityLayer.clsReglaNegocio.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ADM.CapaNegocio\ADM.CapaNegocio.csproj">
+      <Project>{65721033-8907-402c-8d6f-46a27793959a}</Project>
+      <Name>ADM.CapaNegocio</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ADM.Presentacion\ADM.Presentacion.csproj">
+      <Project>{5461FF12-7E8C-4B19-8427-5022D4173B51}</Project>
+      <Name>ADM.Presentacion</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CAJ.Presentacion\CAJ.Presentacion.csproj">
+      <Project>{DD11858D-E7B4-47EA-91CE-798C7E6A9D28}</Project>
+      <Name>CAJ.Presentacion</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CLI.Presentacion\CLI.Presentacion.csproj">
+      <Project>{F009FD8B-9EFD-4CA1-9C5E-86E223BA13C4}</Project>
+      <Name>CLI.Presentacion</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CNE.Presentacion\CNE.Presentacion.csproj">
+      <Project>{93eade1c-6854-4955-af69-ff3b32b2046e}</Project>
+      <Name>CNE.Presentacion</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CNT.Presentacion\CNT.Presentacion.csproj">
+      <Project>{956E8DA3-FE56-4C99-8D58-2A30CF8495BD}</Project>
+      <Name>CNT.Presentacion</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CoreBankActualiza\CoreBankActualiza.csproj">
+      <Project>{f47ca420-2174-4942-ac36-aabd34d948e8}</Project>
+      <Name>CoreBankActualiza</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CRE.Presentacion\CRE.Presentacion.csproj">
+      <Project>{43c5ffb4-9a89-4148-901c-bc111b3b9d9c}</Project>
+      <Name>CRE.Presentacion</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DEP.Presentacion\DEP.Presentacion.csproj">
+      <Project>{73615923-6EEF-458B-A2FB-75FC700CB427}</Project>
+      <Name>DEP.Presentacion</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\EntityLayer\EntityLayer.csproj">
+      <Project>{B5346A13-9B09-426B-AE99-BD8E300C032A}</Project>
+      <Name>EntityLayer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GEN.BotonesBase\GEN.BotonesBase.csproj">
+      <Project>{1aad7bde-3869-4acf-8b9a-7ef08f660f80}</Project>
+      <Name>GEN.BotonesBase</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GEN.CapaNegocio\GEN.CapaNegocio.csproj">
+      <Project>{A2CAF7C5-A155-4D88-BEA5-E3988183F6A3}</Project>
+      <Name>GEN.CapaNegocio</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GEN.ControlesBase\GEN.ControlesBase.csproj">
+      <Project>{2BF1CD70-8B4D-4DB6-A5E3-7F4D298A1C4E}</Project>
+      <Name>GEN.ControlesBase</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GEN.Funciones\GEN.Funciones.csproj">
+      <Project>{736df628-39ab-41c0-af28-b3fc7119261e}</Project>
+      <Name>GEN.Funciones</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GEN.LibreriaOffice\GEN.LibreriaOffice.csproj">
+      <Project>{7A2EB38A-C6C7-4319-9A09-2DE8124C0089}</Project>
+      <Name>GEN.LibreriaOffice</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GEN.PrintHelper\GEN.PrintHelper.csproj">
+      <Project>{072a8daa-8d24-4a77-85df-2a68c04f879f}</Project>
+      <Name>GEN.PrintHelper</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GRC.Presentacion\GRC.Presentacion.csproj">
+      <Project>{b854cd0c-ef5b-495c-a2e3-228818803a3f}</Project>
+      <Name>GRC.Presentacion</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GRH.Presentacion\GRH.Presentacion.csproj">
+      <Project>{9ebfcd97-293a-41fa-b5c5-21313c131e9c}</Project>
+      <Name>GRH.Presentacion</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\LOG.Presentacion\LOG.Presentacion.csproj">
+      <Project>{72d0e1f7-7dc7-43ea-8bbf-b7b10947f9f7}</Project>
+      <Name>LOG.Presentacion</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PRE.Presentacion\PRE.Presentacion.csproj">
+      <Project>{1a803347-2d2b-4d43-9a9b-45c172117476}</Project>
+      <Name>PRE.Presentacion</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\RCP.Presentacion\RCP.Presentacion.csproj">
+      <Project>{40570648-0328-42f0-a049-9089b416dfbc}</Project>
+      <Name>RCP.Presentacion</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\RPT.Presentacion\RPT.Presentacion.csproj">
+      <Project>{86A5CEAC-77CC-41F4-8F11-8E56EA554642}</Project>
+      <Name>RPT.Presentacion</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\RSG.Presentacion\RSG.Presentacion.csproj">
+      <Project>{b56e0281-9d65-483c-83d0-c007fdeb77d8}</Project>
+      <Name>RSG.Presentacion</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SER.Presentacion\SER.Presentacion.csproj">
+      <Project>{49A217B5-94AA-4302-96CD-2424823613EC}</Project>
+      <Name>SER.Presentacion</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SPL.Presentacion\SPL.Presentacion.csproj">
+      <Project>{cafe84c7-f1b7-4ea7-ade9-2fbc6daee77b}</Project>
+      <Name>SPL.Presentacion</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TDP.Presentacion\TDP.Presentacion.csproj">
+      <Project>{a8172f4d-02e8-46d5-8ca2-c0176d673edb}</Project>
+      <Name>TDP.Presentacion</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="conexion.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="corebank circulo.ico" />
+    <Content Include="Logo.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logoempresa.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="network.ico" />
+    <Content Include="conexion_alterno.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <None Include="Resources\btnPerFix.png" />
+    <None Include="Resources\btnPers.png" />
+    <None Include="Resources\btnPrint.png" />
+    <None Include="Resources\btnReniec.png" />
+    <None Include="Resources\btnRRHH.png" />
+    <None Include="Resources\NewBtnRiesgo.png" />
+    <None Include="Resources\btnSbsDeuda.png" />
+    <None Include="Resources\alerta.png" />
+    <Content Include="Resources\NewBtndepositos.png" />
+    <Content Include="Resources\NewBtndepositosSel.png" />
+    <None Include="Resources\NewBtnPresupuestosSel.png" />
+    <None Include="Resources\NewBtnPresupuestos.png" />
+    <Content Include="Resources\NewBtnRiesgo2.png" />
+    <Content Include="Resources\NewBtntratadatos.jpg" />
+    <Content Include="Resources\NewBtntratadatosSel.jpg" />
+    <Content Include="version.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <None Include="Resources\logisticaSel.png" />
+    <None Include="Resources\NewBtngthSel.png" />
+    <None Include="Resources\NewBtnsplaftSel.jpg" />
+    <None Include="Resources\NewBtnSociosSel.png" />
+    <None Include="Resources\NewBtnserviciosSel.jpg" />
+    <None Include="Resources\NewBtnreportesSel.jpg" />
+    <None Include="Resources\NewBtngthSel.jpg" />
+    <None Include="Resources\NewBtnGerencialSel.png" />
+    <None Include="Resources\NewBtncreditosSel.jpg" />
+    <None Include="Resources\NewBtncontabilidadSel.jpg" />
+    <None Include="Resources\NewBtnclientesSel.jpg" />
+    <None Include="Resources\NewBtncajaSel.jpg" />
+    <None Include="Resources\NewBtnadministracionSel.jpg" />
+    <None Include="Resources\canalesSel.jpg" />
+    <None Include="Resources\NewRecuperacionSel.png" />
+    <None Include="Resources\NewBtnSocios.png" />
+    <None Include="Resources\NewBtnGerencial.png" />
+    <None Include="Resources\NewRecuperacion.png" />
+    <None Include="Resources\NewBtngth.png" />
+    <None Include="Resources\logistica.png" />
+    <None Include="Resources\canales1.jpg" />
+    <None Include="Resources\FondoColor.png" />
+    <None Include="Resources\corebank 1.png" />
+    <None Include="Resources\NewBtnsplaft.jpg" />
+    <None Include="Resources\NewBtnservicios.jpg" />
+    <None Include="Resources\NewBtnreportes.jpg" />
+    <None Include="Resources\NewBtngth.jpg" />
+    <None Include="Resources\NewBtncreditos.jpg" />
+    <None Include="Resources\NewBtncontabilidad.jpg" />
+    <None Include="Resources\NewBtnclientes.jpg" />
+    <None Include="Resources\NewBtncaja.jpg" />
+    <None Include="Resources\NewBtnadministracion.jpg" />
+    <None Include="Resources\LOGO SOLINTELS FINAL3.png" />
+    <None Include="Resources\LOGO SOLINTELS FINAL2.png" />
+    <None Include="Resources\corebankfondo2.png" />
+    <None Include="Resources\solintels.ico" />
+    <None Include="Resources\SJBEdi.jpg" />
+    <None Include="Resources\SJB1.png" />
+    <None Include="Resources\SJB.png" />
+    <None Include="Resources\SF.png" />
+    <None Include="Resources\servicios.jpg" />
+    <None Include="Resources\reportes.jpg" />
+    <None Include="Resources\price.ico" />
+    <None Include="Resources\phppg.ico" />
+    <None Include="Resources\personal.ico" />
+    <None Include="Resources\package.ico" />
+    <None Include="Resources\openofficeorg-20-impress.png" />
+    <None Include="Resources\myspace-64px1.png" />
+    <None Include="Resources\myspace-64px.png" />
+    <None Include="Resources\Logo.png" />
+    <None Include="Resources\LOGO SOLINTELS FINAL.png" />
+    <None Include="Resources\kscd.ico" />
+    <None Include="Resources\kmail.ico" />
+    <None Include="Resources\install.ico" />
+    <None Include="Resources\info.png" />
+    <None Include="Resources\gth.jpg" />
+    <None Include="Resources\group.ico" />
+    <None Include="Resources\ftp.ico" />
+    <None Include="Resources\Fondo_Pantalla.jpg" />
+    <None Include="Resources\depositos.jpg" />
+    <None Include="Resources\db.ico" />
+    <None Include="Resources\creditos.jpg" />
+    <None Include="Resources\corebankfondo.jpg" />
+    <None Include="Resources\contabilidad.jpg" />
+    <None Include="Resources\clientes.jpg" />
+    <None Include="Resources\cash-register.ico" />
+    <None Include="Resources\caja.jpg" />
+    <None Include="Resources\btnSplaft.png" />
+    <None Include="Resources\btnSalir.png" />
+    <None Include="Resources\btnPaste.png" />
+    <None Include="Resources\btnMyDoc.png" />
+    <None Include="Resources\btnLook.png" />
+    <None Include="Resources\btnLGT1.png" />
+    <None Include="Resources\btnLGT.png" />
+    <None Include="Resources\btnGth.png" />
+    <None Include="Resources\btnFindFile.png" />
+    <None Include="Resources\btnFind1.png" />
+    <None Include="Resources\btnFind.png" />
+    <None Include="Resources\btnFin1.png" />
+    <None Include="Resources\btnFin.png" />
+    <None Include="Resources\btnFilter.png" />
+    <None Include="Resources\btnFileSave.png" />
+    <None Include="Resources\btnEditclear.png" />
+    <None Include="Resources\btnEdit.png" />
+    <None Include="Resources\btnCut.png" />
+    <None Include="Resources\btnCopy.png" />
+    <None Include="Resources\btnCnt1.png" />
+    <None Include="Resources\btnCnt.png" />
+    <None Include="Resources\btnCale.png" />
+    <None Include="Resources\btnCal.png" />
+    <None Include="Resources\btnAlar.png" />
+    <None Include="Resources\btnAddUser.png" />
+    <None Include="Resources\btnAddGroup.png" />
+    <None Include="Resources\btnAcd1.png" />
+    <None Include="Resources\btnAcd.png" />
+    <None Include="Resources\ayuda.png" />
+    <None Include="Resources\Adobe Acrobat Standard.png" />
+    <None Include="Resources\administracion.jpg" />
+    <None Include="Resources\Windows_Seven_boot_screen_by_HltBjr.png" />
+    <None Include="Resources\User.png" />
+    <None Include="Resources\statistics2.ico" />
+    <None Include="Resources\Splash01.gif" />
+    <None Include="Resources\Splash.png" />
+    <None Include="Resources\splaft.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 %28x86 y x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
